@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="office_hours_start" label="Office Hours Start" language="en" table="x_813980_charge_0_driver">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>office_hours_start</element>
+            <help/>
+            <hint/>
+            <label>Office Hours Start</label>
+            <language>en</language>
+            <name>x_813980_charge_0_driver</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-28 16:04:55</sys_created_on>
+            <sys_name>Office Hours Start</sys_name>
+            <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
+            <sys_update_name>sys_documentation_x_813980_charge_0_driver_office_hours_start_en</sys_update_name>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

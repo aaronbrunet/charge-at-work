@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="85e6ae252fc421102a6d41e72799b665" label="Location" max_length="40" name="x_813980_charge_0_location" type="collection">
+        <element label="Address" max_length="255" name="address" type="string_full_utf8"/>
+        <element label="EV Charging Available" max_length="40" name="available" type="boolean"/>
+        <element display="true" label="Name" max_length="255" name="name" type="string"/>
+    </element>
+</database>

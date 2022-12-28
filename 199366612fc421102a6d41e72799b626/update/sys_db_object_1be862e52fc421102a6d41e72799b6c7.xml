@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
     <sys_db_object action="INSERT_OR_UPDATE">
-        <access/>
+        <access>public</access>
         <actions_access>true</actions_access>
         <alter_access>true</alter_access>
         <caller_access/>
@@ -13,7 +13,7 @@
         <label>Charging Session</label>
         <live_feed_enabled>false</live_feed_enabled>
         <name>x_813980_charge_0_charging_session</name>
-        <number_ref display_value="CHRG">bbe862e52fc421102a6d41e72799b6eb</number_ref>
+        <number_ref display_value="SESH">bbe862e52fc421102a6d41e72799b6eb</number_ref>
         <provider_class/>
         <read_access>true</read_access>
         <scriptable_table>false</scriptable_table>

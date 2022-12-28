@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="00f7ee652fc421102a6d41e72799b6f2" label="Charger" max_length="40" name="x_813980_charge_0_charger" type="collection">
-        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element default="1" label="Charging Bays" max_length="40" name="charging_bays" type="integer"/>
         <element label="Description" max_length="2000" name="description" type="string_full_utf8"/>
         <element label="Location" max_length="32" name="location" reference="x_813980_charge_0_location" type="reference"/>

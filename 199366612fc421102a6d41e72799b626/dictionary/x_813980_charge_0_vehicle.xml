@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="983562e12fc421102a6d41e72799b6a7" label="Vehicle" max_length="40" name="x_813980_charge_0_vehicle" type="collection">
-        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element label="Color" max_length="40" name="color" type="string"/>
         <element label="Current Charge" max_length="38" name="current_charge" type="percent_complete"/>
         <element label="Driver" max_length="32" name="driver" reference="x_813980_charge_0_driver" type="reference"/>

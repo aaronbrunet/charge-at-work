@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="b2c32a612fc421102a6d41e72799b6ef" label="Driver" max_length="40" name="x_813980_charge_0_driver" type="collection">
-        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element label="Email (Personal)" max_length="255" name="email_personal" type="string_full_utf8"/>
         <element label="Email (Work)" max_length="255" name="email_work" type="string_full_utf8"/>
         <element label="Last Charged" max_length="40" name="last_charged" type="glide_date_time"/>
         <element display="true" label="Name" max_length="255" name="name" type="string"/>
         <element label="Office Hours" max_length="40" name="office_hours" type="string_full_utf8"/>
-        <element label="Office Hours End" max_length="40" name="office_hours_end" type="string"/>
-        <element label="Office Hours Start" max_length="40" name="office_hours_start" type="glide_time"/>
-        <element label="Phone (Personal)" max_length="40" name="phone_personal" type="phone_number_e164"/>
-        <element label="Phone (Work)" max_length="40" name="phone_work" type="phone_number_e164"/>
+        <element label="Office Hours End" max_length="40" name="office_hours_end" type="glide_time"/>
+        <element label="Office Hours Start" max_length="40" name="office_hours_start" type="calendar_date_time"/>
+        <element label="Phone (Personal)" max_length="40" name="phone_personal" type="string"/>
+        <element label="Phone (Work)" max_length="40" name="phone_work" type="string"/>
         <element label="Daily Schedule" max_length="40" name="schedule" type="glide_list"/>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
         <index name="index">

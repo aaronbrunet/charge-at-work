@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="1be862e52fc421102a6d41e72799b6c7" label="Charging Session" max_length="40" name="x_813980_charge_0_charging_session" type="collection">
-        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element label="Charger" max_length="32" name="charger" reference="x_813980_charge_0_charger" type="reference"/>
         <element label="Description" max_length="2000" name="description" type="string_full_utf8"/>
         <element label="End" max_length="40" name="end" type="calendar_date_time"/>

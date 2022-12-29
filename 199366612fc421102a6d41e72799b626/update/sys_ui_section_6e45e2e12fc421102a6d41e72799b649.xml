@@ -4,153 +4,83 @@
             <element>driver</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-12-28 16:42:50</sys_created_on>
-            <sys_id>c17f22ad2fc421102a6d41e72799b640</sys_id>
+            <sys_created_on>2022-12-29 19:20:59</sys_created_on>
+            <sys_id>df3dd0ce2f0c61102a6d41e72799b690</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_813980_charge_0_vehicle" sys_domain="global" view="Default view">6e45e2e12fc421102a6d41e72799b649</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-12-28 16:42:50</sys_updated_on>
+            <sys_updated_on>2022-12-29 19:20:59</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>year</element>
+            <element>name</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-12-28 16:42:50</sys_created_on>
-            <sys_id>457f22ad2fc421102a6d41e72799b640</sys_id>
+            <sys_created_on>2022-12-29 19:20:59</sys_created_on>
+            <sys_id>1b3dd0ce2f0c61102a6d41e72799b691</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_813980_charge_0_vehicle" sys_domain="global" view="Default view">6e45e2e12fc421102a6d41e72799b649</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-12-28 16:42:50</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>make</element>
-            <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-12-28 16:42:50</sys_created_on>
-            <sys_id>c57f22ad2fc421102a6d41e72799b640</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_813980_charge_0_vehicle" sys_domain="global" view="Default view">6e45e2e12fc421102a6d41e72799b649</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-12-28 16:42:50</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>model</element>
-            <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-12-28 16:42:50</sys_created_on>
-            <sys_id>497f22ad2fc421102a6d41e72799b640</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_813980_charge_0_vehicle" sys_domain="global" view="Default view">6e45e2e12fc421102a6d41e72799b649</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-12-28 16:42:50</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>vehicle</element>
-            <position>4</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-12-28 16:42:50</sys_created_on>
-            <sys_id>c97f22ad2fc421102a6d41e72799b640</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_813980_charge_0_vehicle" sys_domain="global" view="Default view">6e45e2e12fc421102a6d41e72799b649</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-12-28 16:42:50</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>color</element>
-            <position>5</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-12-28 16:42:50</sys_created_on>
-            <sys_id>4d7f22ad2fc421102a6d41e72799b640</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_813980_charge_0_vehicle" sys_domain="global" view="Default view">6e45e2e12fc421102a6d41e72799b649</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-12-28 16:42:50</sys_updated_on>
+            <sys_updated_on>2022-12-29 19:20:59</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>license_plate</element>
-            <position>6</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-12-28 16:42:50</sys_created_on>
-            <sys_id>cd7f22ad2fc421102a6d41e72799b640</sys_id>
+            <sys_created_on>2022-12-29 19:20:59</sys_created_on>
+            <sys_id>1f3dd0ce2f0c61102a6d41e72799b691</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_813980_charge_0_vehicle" sys_domain="global" view="Default view">6e45e2e12fc421102a6d41e72799b649</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-12-28 16:42:50</sys_updated_on>
+            <sys_updated_on>2022-12-29 19:20:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>primary_vehicle</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 19:20:59</sys_created_on>
+            <sys_id>133dd0ce2f0c61102a6d41e72799b692</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_813980_charge_0_vehicle" sys_domain="global" view="Default view">6e45e2e12fc421102a6d41e72799b649</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-29 19:20:59</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>current_charge</element>
-            <position>7</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-12-28 16:42:50</sys_created_on>
-            <sys_id>417f22ad2fc421102a6d41e72799b641</sys_id>
+            <sys_created_on>2022-12-29 19:20:59</sys_created_on>
+            <sys_id>173dd0ce2f0c61102a6d41e72799b692</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_813980_charge_0_vehicle" sys_domain="global" view="Default view">6e45e2e12fc421102a6d41e72799b649</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-12-28 16:42:50</sys_updated_on>
+            <sys_updated_on>2022-12-29 19:20:59</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>last_charged</element>
-            <position>8</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-12-28 16:42:50</sys_created_on>
-            <sys_id>c17f22ad2fc421102a6d41e72799b641</sys_id>
+            <sys_created_on>2022-12-29 19:20:59</sys_created_on>
+            <sys_id>1b3dd0ce2f0c61102a6d41e72799b692</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_813980_charge_0_vehicle" sys_domain="global" view="Default view">6e45e2e12fc421102a6d41e72799b649</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-12-28 16:42:50</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>nickname</element>
-            <position>9</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-12-28 16:42:50</sys_created_on>
-            <sys_id>457f22ad2fc421102a6d41e72799b641</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_813980_charge_0_vehicle" sys_domain="global" view="Default view">6e45e2e12fc421102a6d41e72799b649</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-12-28 16:42:50</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>private</element>
-            <position>10</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-12-28 16:42:50</sys_created_on>
-            <sys_id>c57f22ad2fc421102a6d41e72799b641</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_813980_charge_0_vehicle" sys_domain="global" view="Default view">6e45e2e12fc421102a6d41e72799b649</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-12-28 16:42:50</sys_updated_on>
+            <sys_updated_on>2022-12-29 19:20:59</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

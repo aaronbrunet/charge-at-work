@@ -2,7 +2,7 @@
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
         <attributes/>
-        <cat_item display_value="New Driver Registration">50f36b312f4861102a6d41e72799b60c</cat_item>
+        <cat_item/>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field/>
@@ -19,7 +19,7 @@
         <dynamic_ref_qual/>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
-        <field>phone_work</field>
+        <field/>
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text/>
@@ -36,23 +36,23 @@
         <macro/>
         <macroponent/>
         <mandatory>false</mandatory>
-        <map_to_field>true</map_to_field>
+        <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>phone_work</name>
-        <order>235</order>
+        <name>license_plate</name>
+        <order>300</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>ServiceNow Phone</question_text>
-        <read_only>false</read_only>
+        <question_text>License Plate</question_text>
+        <read_only>true</read_only>
         <read_roles/>
         <read_script/>
         <rec_lookup_price/>
         <rec_price_if_checked>0</rec_price_if_checked>
         <record/>
-        <record_producer_table>x_813980_charge_0_driver</record_producer_table>
+        <record_producer_table/>
         <reference/>
         <reference_qual/>
         <reference_qual_condition/>
@@ -73,13 +73,13 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-12-29 15:46:36</sys_created_on>
-        <sys_id>c32c6f792f4861102a6d41e72799b6c2</sys_id>
-        <sys_name>ServiceNow Phone</sys_name>
+        <sys_created_on>2022-12-29 21:16:19</sys_created_on>
+        <sys_id>9487744a2f8c61102a6d41e72799b63f</sys_id>
+        <sys_name>License Plate</sys_name>
         <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
-        <sys_update_name>item_option_new_c32c6f792f4861102a6d41e72799b6c2</sys_update_name>
+        <sys_update_name>item_option_new_9487744a2f8c61102a6d41e72799b63f</sys_update_name>
         <table/>
         <tooltip/>
         <type>6</type>
@@ -87,9 +87,9 @@
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
-        <validate_regex display_value="Phone Number">10cb63b92f4861102a6d41e72799b6c6</validate_regex>
+        <validate_regex/>
         <variable_name/>
-        <variable_set/>
+        <variable_set display_value="Driver Info">723b904e2f0c61102a6d41e72799b6ef</variable_set>
         <variable_width/>
         <visibility>1</visibility>
         <visible_bundle>true</visible_bundle>
@@ -98,22 +98,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=c32c6f792f4861102a6d41e72799b6c2"/>
-    <fx_price action="delete_multiple" query="id=c32c6f792f4861102a6d41e72799b6c2"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=9487744a2f8c61102a6d41e72799b63f"/>
+    <fx_price action="delete_multiple" query="id=9487744a2f8c61102a6d41e72799b63f"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>price_if_checked</field>
-        <id>c32c6f792f4861102a6d41e72799b6c2</id>
+        <id>9487744a2f8c61102a6d41e72799b63f</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-12-29 15:46:36</sys_created_on>
-        <sys_id>4b2c6bb92f4861102a6d41e72799b6a0</sys_id>
+        <sys_created_on>2022-12-29 21:16:19</sys_created_on>
+        <sys_id>0da7f44a2f8c61102a6d41e72799b64d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-12-29 15:46:36</sys_updated_on>
+        <sys_updated_on>2022-12-29 21:16:19</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -121,16 +121,16 @@
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>rec_price_if_checked</field>
-        <id>c32c6f792f4861102a6d41e72799b6c2</id>
+        <id>9487744a2f8c61102a6d41e72799b63f</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-12-29 15:46:36</sys_created_on>
-        <sys_id>cb2c6bb92f4861102a6d41e72799b69f</sys_id>
+        <sys_created_on>2022-12-29 21:16:19</sys_created_on>
+        <sys_id>85a73cc62f8c61102a6d41e72799b662</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-12-29 15:46:36</sys_updated_on>
+        <sys_updated_on>2022-12-29 21:16:19</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>

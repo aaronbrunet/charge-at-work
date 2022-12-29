@@ -40,12 +40,12 @@
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
         <name>phone_personal</name>
-        <order>500</order>
+        <order>230</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>Personal Phone Number (Optional)</question_text>
+        <question_text>Personal Phone</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -75,7 +75,7 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-12-29 15:40:32</sys_created_on>
         <sys_id>e29a2b392f4861102a6d41e72799b6d1</sys_id>
-        <sys_name>Personal Phone Number (Optional)</sys_name>
+        <sys_name>Personal Phone</sys_name>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>

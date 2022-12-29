@@ -2,18 +2,63 @@
     <sys_ui_list parent="" relationship="" sys_domain="global" table="x_813980_charge_0_vehicle" version="2" view="sys_ref_list">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>number</element>
-            <list_id display_value="x_813980_charge_0_vehicle" element="NULL" name="x_813980_charge_0_vehicle" parent="NULL" relationship="NULL" sys_domain="global" view="889fc260f90211108c8bd16244dfe72a">8ff036ad2fc421102a6d41e72799b6a3</list_id>
+            <element>name</element>
+            <list_id display_value="x_813980_charge_0_vehicle" element="NULL" name="x_813980_charge_0_vehicle" parent="NULL" relationship="NULL" sys_domain="global" view="889fc260f90211108c8bd16244dfe72a">7a14ec462f4c61102a6d41e72799b6db</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-12-28 16:49:32</sys_created_on>
-            <sys_id>8bf036ad2fc421102a6d41e72799b6a4</sys_id>
+            <sys_created_on>2022-12-29 19:50:58</sys_created_on>
+            <sys_id>3a14ec462f4c61102a6d41e72799b6dc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-12-28 16:49:32</sys_updated_on>
+            <sys_updated_on>2022-12-29 19:50:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>license_plate</element>
+            <list_id display_value="x_813980_charge_0_vehicle" element="NULL" name="x_813980_charge_0_vehicle" parent="NULL" relationship="NULL" sys_domain="global" view="889fc260f90211108c8bd16244dfe72a">7a14ec462f4c61102a6d41e72799b6db</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 19:50:58</sys_created_on>
+            <sys_id>3214ec462f4c61102a6d41e72799b6dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-29 19:50:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>primary_vehicle</element>
+            <list_id display_value="x_813980_charge_0_vehicle" element="NULL" name="x_813980_charge_0_vehicle" parent="NULL" relationship="NULL" sys_domain="global" view="889fc260f90211108c8bd16244dfe72a">7a14ec462f4c61102a6d41e72799b6db</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 19:50:58</sys_created_on>
+            <sys_id>3614ec462f4c61102a6d41e72799b6dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-29 19:50:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>driver</element>
+            <list_id display_value="x_813980_charge_0_vehicle" element="NULL" name="x_813980_charge_0_vehicle" parent="NULL" relationship="NULL" sys_domain="global" view="889fc260f90211108c8bd16244dfe72a">7a14ec462f4c61102a6d41e72799b6db</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 19:50:58</sys_created_on>
+            <sys_id>3a14ec462f4c61102a6d41e72799b6dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-29 19:50:58</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -27,10 +72,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-12-28 16:49:32</sys_created_on>
+            <sys_created_on>2022-12-29 19:50:58</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>8ff036ad2fc421102a6d41e72799b6a3</sys_id>
+            <sys_id>7a14ec462f4c61102a6d41e72799b6db</sys_id>
             <sys_name>x_813980_charge_0_vehicle</sys_name>
             <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
             <sys_policy/>

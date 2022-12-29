@@ -10,13 +10,26 @@
         <element label="Office Hours Start" max_length="40" name="office_hours_start" type="calendar_date_time"/>
         <element label="Phone (Personal)" max_length="40" name="phone_personal" type="string"/>
         <element label="Phone (Work)" max_length="40" name="phone_work" type="string"/>
+        <element choice="3" label="Preferred Contact Method" max_length="40" name="preferred_contact_method" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="ServiceNow Email" sequence="0" value="email_work"/>
+                <element inactive_on_update="false" label="Personal Email" sequence="1" value="personal_email"/>
+                <element inactive_on_update="false" label="Personal Phone" sequence="2" value="personal_phone"/>
+                <element inactive_on_update="false" label="ServiceNow Phone" sequence="3" value="servicenow_phone"/>
+            </choice>
+        </element>
+        <element label="Primary Location" max_length="32" name="primary_location" reference="x_813980_charge_0_location" type="reference"/>
+        <element label="Private" max_length="40" name="private" type="boolean"/>
         <element label="Daily Schedule" max_length="40" name="schedule" type="glide_list"/>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
         <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
         <index name="index">
-            <element name="sys_class_name"/>
+            <element name="primary_location"/>
         </index>
         <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index3">
             <element name="user"/>
         </index>
     </element>

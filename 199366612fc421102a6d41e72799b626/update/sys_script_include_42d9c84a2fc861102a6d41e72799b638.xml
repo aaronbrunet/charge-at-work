@@ -10,10 +10,56 @@
         <script><![CDATA[var ChargerClientScripts = Class.create();
 ChargerClientScripts.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 	getDriverFromUser:function(user_id){
-		gs.info(user_id);
 		var gr = new GlideRecord("x_813980_charge_0_driver");
 		var currentUserDriver = gr.get("user",user_id);
 		return gr.getValue('sys_id');
+	},
+	getPrimaryVehicleFromUser:function(user_id){
+		var user = this.getDriverFromUser(user_id);
+		var gr = new GlideRecord("x_813980_charge_0_vehicle");
+		gr.addQuery("driver",user);
+		gr.addActiveQuery();
+		gr.addQuery("primary_vehicle",true);
+		gr.query();
+		if(gr.next()){	
+				return gr.getValue('sys_id');
+		} else{
+			return;
+		}
+	},
+	getChargersFromLocation:function(location){
+		gs.info("Location:"+location);
+		var arr = [];
+		var gr = new GlideRecord("x_813980_charge_0_charger");
+		gr.addQuery("location",location);
+		gr.addActiveQuery();
+		gr.query();
+		while(gr.next()){
+			arr.push(gr.getValue("sys_id"));
+		}		
+		gs.info(arr);
+		return "sys_idIN"+arr.join(',');
+	},
+	getPrimaryChargerFromUser:function(user_id){
+		var gr = new GlideRecord("x_813980_charge_0_driver");
+		var currentUserDriver = gr.get("user",user_id);
+		var location = gr.getValue("primary_location");
+		if(location!==""){
+			return location;
+// 			var loc = new GlideRecord("x_813980_charge_0_location");
+// 			loc.get("sys_id",location);
+// 			return loc.getValue("sys_id");
+		}
+		
+	},
+	addDurationToStart:function(){
+		var start = this.getParameter('sysparm_start');
+		var duration = this.getParameter('sysparm_duration');
+		var dur = new GlideDuration(duration);		
+		var gdt = new GlideDateTime(start);
+		var durNum = dur.getNumericValue();
+		gdt.add(durNum);
+		return gdt.getValue();
 	},
     type: 'ChargerClientScripts'
 });]]></script>

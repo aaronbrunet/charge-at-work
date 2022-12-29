@@ -2,7 +2,7 @@
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
         <attributes/>
-        <cat_item display_value="New Driver Registration">50f36b312f4861102a6d41e72799b60c</cat_item>
+        <cat_item display_value="New Charging Session">6fba580e2f0c61102a6d41e72799b607</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field/>
@@ -18,11 +18,12 @@
         <dynamic_default_value/>
         <dynamic_ref_qual/>
         <enable_also_request_for>false</enable_also_request_for>
-        <example_text/>
-        <field>phone_work</field>
+        <example_text>1 - 100 %</example_text>
+        <field/>
         <global>false</global>
-        <help_tag>More information</help_tag>
-        <help_text/>
+        <help_tag>Why do you need this?</help_tag>
+        <help_text>Providing your starting charge level can be helpful, especially when other drivers want to request the charger you're using.&#13;
+</help_text>
         <hidden>false</hidden>
         <include_none>false</include_none>
         <instructions/>
@@ -35,24 +36,24 @@
         <lookup_value/>
         <macro/>
         <macroponent/>
-        <mandatory>false</mandatory>
-        <map_to_field>true</map_to_field>
+        <mandatory>true</mandatory>
+        <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>phone_work</name>
-        <order>235</order>
+        <name>current_charge</name>
+        <order>500</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>ServiceNow Phone</question_text>
+        <question_text>Current charge level</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
         <rec_lookup_price/>
         <rec_price_if_checked>0</rec_price_if_checked>
         <record/>
-        <record_producer_table>x_813980_charge_0_driver</record_producer_table>
+        <record_producer_table/>
         <reference/>
         <reference_qual/>
         <reference_qual_condition/>
@@ -67,19 +68,19 @@
 */]]></save_script>
         <scale_max>5</scale_max>
         <scale_min>0</scale_min>
-        <show_help>false</show_help>
+        <show_help>true</show_help>
         <show_help_on_load>false</show_help_on_load>
         <sp_widget/>
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-12-29 15:46:36</sys_created_on>
-        <sys_id>c32c6f792f4861102a6d41e72799b6c2</sys_id>
-        <sys_name>ServiceNow Phone</sys_name>
+        <sys_created_on>2022-12-29 21:35:48</sys_created_on>
+        <sys_id>73ebfc4e2f8c61102a6d41e72799b6e3</sys_id>
+        <sys_name>Current charge level</sys_name>
         <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
-        <sys_update_name>item_option_new_c32c6f792f4861102a6d41e72799b6c2</sys_update_name>
+        <sys_update_name>item_option_new_73ebfc4e2f8c61102a6d41e72799b6e3</sys_update_name>
         <table/>
         <tooltip/>
         <type>6</type>
@@ -87,10 +88,10 @@
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
-        <validate_regex display_value="Phone Number">10cb63b92f4861102a6d41e72799b6c6</validate_regex>
+        <validate_regex display_value="Number">556cbfe5876b1300e0ef0cf888cb0be3</validate_regex>
         <variable_name/>
         <variable_set/>
-        <variable_width/>
+        <variable_width>25</variable_width>
         <visibility>1</visibility>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
@@ -98,22 +99,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=c32c6f792f4861102a6d41e72799b6c2"/>
-    <fx_price action="delete_multiple" query="id=c32c6f792f4861102a6d41e72799b6c2"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=73ebfc4e2f8c61102a6d41e72799b6e3"/>
+    <fx_price action="delete_multiple" query="id=73ebfc4e2f8c61102a6d41e72799b6e3"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>price_if_checked</field>
-        <id>c32c6f792f4861102a6d41e72799b6c2</id>
+        <id>73ebfc4e2f8c61102a6d41e72799b6e3</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-12-29 15:46:36</sys_created_on>
-        <sys_id>4b2c6bb92f4861102a6d41e72799b6a0</sys_id>
+        <sys_created_on>2022-12-29 21:35:48</sys_created_on>
+        <sys_id>de1c784e2f8c61102a6d41e72799b65a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-12-29 15:46:36</sys_updated_on>
+        <sys_updated_on>2022-12-29 21:35:48</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -121,16 +122,16 @@
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>rec_price_if_checked</field>
-        <id>c32c6f792f4861102a6d41e72799b6c2</id>
+        <id>73ebfc4e2f8c61102a6d41e72799b6e3</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-12-29 15:46:36</sys_created_on>
-        <sys_id>cb2c6bb92f4861102a6d41e72799b69f</sys_id>
+        <sys_created_on>2022-12-29 21:35:48</sys_created_on>
+        <sys_id>561c784e2f8c61102a6d41e72799b65a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-12-29 15:46:36</sys_updated_on>
+        <sys_updated_on>2022-12-29 21:35:48</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>

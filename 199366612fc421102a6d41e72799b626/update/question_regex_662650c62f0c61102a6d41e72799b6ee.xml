@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_regex">
+    <question_regex action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <name>SN Email</name>
+        <regex>^(?![\.])[a-zA-Z0-9!#$%*\/?|^{}`~&amp;'\+\-=_.]+(?&lt;![.]+)@servicenow.com$</regex>
+        <regex_flag/>
+        <sys_class_name>question_regex</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-12-29 18:50:04</sys_created_on>
+        <sys_id>662650c62f0c61102a6d41e72799b6ee</sys_id>
+        <sys_name>SN Email</sys_name>
+        <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
+        <sys_update_name>question_regex_662650c62f0c61102a6d41e72799b6ee</sys_update_name>
+        <validation_message>Not a valid email</validation_message>
+    </question_regex>
+    <sys_translated_text action="delete_multiple" query="documentkey=662650c62f0c61102a6d41e72799b6ee"/>
+</record_update>

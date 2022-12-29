@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="x_813980_charge_0_location" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Location - Default view" name="x_813980_charge_0_location" related_list="NULL" sys_domain="global" view="Default view">9f9eb0422fcc61102a6d41e72799b65e</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_813980_charge_0_charger.location</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 21:46:48</sys_created_on>
+            <sys_id>df9eb0422fcc61102a6d41e72799b65f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-29 21:46:48</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Location - Default view" name="x_813980_charge_0_location" related_list="NULL" sys_domain="global" view="Default view">9f9eb0422fcc61102a6d41e72799b65e</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>x_813980_charge_0_driver.primary_location</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 21:46:48</sys_created_on>
+            <sys_id>d79eb0422fcc61102a6d41e72799b660</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-29 21:46:48</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Location - Default view</calculated_name>
+            <filter/>
+            <name>x_813980_charge_0_location</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 21:46:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9f9eb0422fcc61102a6d41e72799b65e</sys_id>
+            <sys_name>Location - Default view</sys_name>
+            <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
+            <sys_update_name>sys_ui_related_x_813980_charge_0_location_null</sys_update_name>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

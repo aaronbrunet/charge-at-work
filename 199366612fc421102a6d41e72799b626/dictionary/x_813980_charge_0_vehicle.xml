@@ -9,7 +9,7 @@
         <element label="License Plate" max_length="40" name="license_plate" type="string"/>
         <element label="Make" max_length="255" name="make" type="string"/>
         <element label="Model" max_length="255" name="model" type="string"/>
-        <element label="Name" max_length="255" name="name" type="string"/>
+        <element display="true" label="Name" max_length="255" name="name" type="string"/>
         <element label="Nickname" max_length="255" name="nickname" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element default="true" label="Primary Vehicle" max_length="40" name="primary_vehicle" type="boolean"/>

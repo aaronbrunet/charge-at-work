@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="983562e12fc421102a6d41e72799b6a7" label="Vehicle" max_length="40" name="x_813980_charge_0_vehicle" type="collection">
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
-        <element label="Color" max_length="40" name="color" type="string"/>
+        <element label="Color" max_length="255" name="color" type="string"/>
         <element label="Current Charge" max_length="38" name="current_charge" type="percent_complete"/>
         <element label="Driver" max_length="32" name="driver" reference="x_813980_charge_0_driver" type="reference"/>
         <element label="Last Charged" max_length="40" name="last_charged" type="calendar_date_time"/>
-        <element label="License Plate" max_length="255" name="license_plate" type="string"/>
+        <element label="License Plate" max_length="40" name="license_plate" type="string"/>
         <element label="Make" max_length="255" name="make" type="string"/>
         <element label="Model" max_length="255" name="model" type="string"/>
         <element label="Nickname" max_length="255" name="nickname" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="true" label="Primary Vehicle" max_length="40" name="primary_vehicle" type="boolean"/>
         <element label="Private" max_length="40" name="private" type="boolean"/>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
-        <element default="javascript:&quot;&quot;+current.getValue(&quot;year&quot;)+current.getValue(&quot;make&quot;);" label="Vehicle" max_length="255" name="vehicle" type="string"/>
+        <element label="Vehicle" max_length="255" name="vehicle" type="string"/>
         <element label="Year" max_length="40" name="year" type="glide_date"/>
         <index name="index">
             <element name="driver"/>

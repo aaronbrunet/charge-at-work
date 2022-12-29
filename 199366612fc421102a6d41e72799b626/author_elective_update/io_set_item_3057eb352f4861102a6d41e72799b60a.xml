@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="DELETE">
+        <order>100</order>
+        <sc_cat_item display_value="New Driver Registration">50f36b312f4861102a6d41e72799b60c</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-12-29 15:25:25</sys_created_on>
+        <sys_id>3057eb352f4861102a6d41e72799b60a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Driver Info.New Driver Registration</sys_name>
+        <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
+        <sys_update_name>io_set_item_3057eb352f4861102a6d41e72799b60a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-12-29 15:25:25</sys_updated_on>
+        <variable_set display_value="Driver Info">0147ab352f4861102a6d41e72799b64f</variable_set>
+    </io_set_item>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Charge At Work">199366612fc421102a6d41e72799b626</application>
+        <file_path/>
+        <instance_id>3e062e17db70b74052cec597059619f9</instance_id>
+        <instance_name>dev82047</instance_name>
+        <name>io_set_item_3057eb352f4861102a6d41e72799b60a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item"><io_set_item action="INSERT_OR_UPDATE"><order>100</order><sc_cat_item display_value="New Driver Registration">50f36b312f4861102a6d41e72799b60c</sc_cat_item><sys_class_name>io_set_item</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-12-29 15:25:25</sys_created_on><sys_id>3057eb352f4861102a6d41e72799b60a</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Driver Info.New Driver Registration</sys_name><sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package><sys_policy/><sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope><sys_update_name>io_set_item_3057eb352f4861102a6d41e72799b60a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-12-29 15:25:25</sys_updated_on><variable_set display_value="Driver Info">0147ab352f4861102a6d41e72799b64f</variable_set></io_set_item></record_update>]]></payload>
+        <payload_hash>1667729608</payload_hash>
+        <record_name>Driver Info.New Driver Registration</record_name>
+        <reverted_from/>
+        <source>53fcae292fc421102a6d41e72799b67c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-12-29 15:25:25</sys_created_on>
+        <sys_id>7857eb352f4861102a6d41e72799b610</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1855e7cf58a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-12-29 15:25:25</sys_updated_on>
+        <type>Catalog Variable Set</type>
+        <update_guid>b057eb35d7486110931f744177bc6a10</update_guid>
+        <update_guid_history>b057eb35d7486110931f744177bc6a10:1667729608</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Driver Info.New Driver Registration">11672f352f4861102a6d41e72799b66a</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-12-29 15:25:43</sys_created_on>
+        <sys_db_object display_value="" name="io_set_item">io_set_item</sys_db_object>
+        <sys_id>0fffec8788c64b80811ac7c57e591000</sys_id>
+        <sys_metadata>3057eb352f4861102a6d41e72799b60a</sys_metadata>
+        <sys_name>Driver Info.New Driver Registration</sys_name>
+        <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
+        <sys_scope_delete display_value="">05054c91266e4449811e41335a63e5f9</sys_scope_delete>
+        <sys_update_name>io_set_item_3057eb352f4861102a6d41e72799b60a</sys_update_name>
+        <sys_update_version display_value="io_set_item_3057eb352f4861102a6d41e72799b60a">7857eb352f4861102a6d41e72799b610</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

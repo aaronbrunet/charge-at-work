@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="00f7ee652fc421102a6d41e72799b6f2" label="Charger" max_length="40" name="x_813980_charge_0_charger" type="collection">
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element default="24/7" label="Availability" max_length="40" name="availability" type="string"/>
+        <element choice="3" default="j_1772" label="Charger Type" max_length="40" name="charger_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="J-1772" sequence="0" value="j_1772"/>
+                <element inactive_on_update="false" label="CCS" sequence="1" value="ccs"/>
+                <element inactive_on_update="false" label="Tesla (Supercharger)" sequence="2" value="tesla_supercharger"/>
+                <element inactive_on_update="false" label="NEMA 14-50" sequence="3" value="nema_14_50"/>
+                <element inactive_on_update="false" label="Wall Outlet" sequence="4" value="wall_outlet"/>
+            </choice>
+        </element>
         <element default="1" label="Charging Bays" max_length="40" name="charging_bays" type="integer"/>
         <element label="Description" max_length="2000" name="description" type="string_full_utf8"/>
         <element label="Location" max_length="32" name="location" reference="x_813980_charge_0_location" type="reference"/>
+        <element label="Maps Link" max_length="40" name="maps_link" type="url"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <index name="index">
             <element name="location"/>

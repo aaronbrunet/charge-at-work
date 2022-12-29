@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Charge@Work">e6b42b712f4861102a6d41e72799b6ad</application>
+        <assessment/>
+        <device_type/>
+        <filter table="sc_cat_item">category=e28663f12f4861102a6d41e72799b675^ORcategory=4396ebf12f4861102a6d41e72799b6d5^EQ<item display_table="sc_category" display_value="Driver Resources" endquery="false" field="category" goto="false" newquery="false" operator="=" or="false" value="e28663f12f4861102a6d41e72799b675"/>
+            <item display_table="sc_category" display_value="Charging Resources" endquery="false" field="category" goto="false" newquery="false" operator="=" or="true" value="4396ebf12f4861102a6d41e72799b6d5"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Catalog Items</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>sc_cat_item</name>
+        <order>50</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-12-29 15:23:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>91d6eff12f4861102a6d41e72799b649</sys_id>
+        <sys_name>Catalog Items</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
+        <sys_update_name>sys_app_module_91d6eff12f4861102a6d41e72799b649</sys_update_name>
+        <timeline_page/>
+        <title>Catalog Items</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

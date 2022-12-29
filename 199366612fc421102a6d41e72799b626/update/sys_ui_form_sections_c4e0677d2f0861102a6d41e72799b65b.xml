@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="c4e0677d2f0861102a6d41e72799b65b" sys_domain="global" table="x_813980_charge_0_charging_session" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 14:57:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c8e0677d2f0861102a6d41e72799b66a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_813980_charge_0_charging_session" name="x_813980_charge_0_charging_session" sys_domain="global" view="9b006b3d2f0861102a6d41e72799b62c">c4e0677d2f0861102a6d41e72799b65b</sys_ui_form>
+            <sys_ui_section caption="Driver Info" display_value="Driver Info" name="x_813980_charge_0_charging_session" sys_domain="global" view="9b006b3d2f0861102a6d41e72799b62c">f7d0677d2f0861102a6d41e72799b657</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-29 14:57:15</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 14:57:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c4e0677d2f0861102a6d41e72799b66b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_813980_charge_0_charging_session" name="x_813980_charge_0_charging_session" sys_domain="global" view="9b006b3d2f0861102a6d41e72799b62c">c4e0677d2f0861102a6d41e72799b65b</sys_ui_form>
+            <sys_ui_section caption="Charging Session" display_value="Charging Session" name="x_813980_charge_0_charging_session" sys_domain="global" view="9b006b3d2f0861102a6d41e72799b62c">57006b3d2f0861102a6d41e72799b630</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-29 14:57:15</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_813980_charge_0_charging_session</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 14:57:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c4e0677d2f0861102a6d41e72799b65b</sys_id>
+            <sys_name>x_813980_charge_0_charging_session</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
+            <sys_update_name>sys_ui_form_sections_c4e0677d2f0861102a6d41e72799b65b</sys_update_name>
+            <sys_user/>
+            <view display_value="New Session" name="New_Session">9b006b3d2f0861102a6d41e72799b62c</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

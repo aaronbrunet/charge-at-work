@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Driver Info" section_id="f7d0677d2f0861102a6d41e72799b657" sys_domain="global" table="x_813980_charge_0_charging_session" version="3" view="New_Session">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vehicle.driver</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 14:57:15</sys_created_on>
+            <sys_id>1ce0677d2f0861102a6d41e72799b671</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Driver Info" display_value="Driver Info" name="x_813980_charge_0_charging_session" sys_domain="global" view="9b006b3d2f0861102a6d41e72799b62c">f7d0677d2f0861102a6d41e72799b657</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-29 14:57:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 14:57:15</sys_created_on>
+            <sys_id>9ce0677d2f0861102a6d41e72799b671</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Driver Info" display_value="Driver Info" name="x_813980_charge_0_charging_session" sys_domain="global" view="9b006b3d2f0861102a6d41e72799b62c">f7d0677d2f0861102a6d41e72799b657</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-29 14:57:15</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vehicle</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 14:57:15</sys_created_on>
+            <sys_id>10e0677d2f0861102a6d41e72799b672</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Driver Info" display_value="Driver Info" name="x_813980_charge_0_charging_session" sys_domain="global" view="9b006b3d2f0861102a6d41e72799b62c">f7d0677d2f0861102a6d41e72799b657</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-29 14:57:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Driver Info</caption>
+            <header>false</header>
+            <name>x_813980_charge_0_charging_session</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 14:57:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f7d0677d2f0861102a6d41e72799b657</sys_id>
+            <sys_name>x_813980_charge_0_charging_session</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
+            <sys_update_name>sys_ui_section_f7d0677d2f0861102a6d41e72799b657</sys_update_name>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="New Session" name="New_Session">9b006b3d2f0861102a6d41e72799b62c</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

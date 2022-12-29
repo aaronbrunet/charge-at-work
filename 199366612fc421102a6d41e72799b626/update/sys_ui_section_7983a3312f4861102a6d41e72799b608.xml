@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Charging Session" section_id="7983a3312f4861102a6d41e72799b608" sys_domain="global" table="x_813980_charge_0_charging_session" version="3" view="Charging_Session_Details">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>charger</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 15:09:34</sys_created_on>
+            <sys_id>6cb327312f4861102a6d41e72799b6db</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Charging Session" display_value="Charging Session" name="x_813980_charge_0_charging_session" sys_domain="global" view="7183a3312f4861102a6d41e72799b604">7983a3312f4861102a6d41e72799b608</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-29 15:09:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 15:09:34</sys_created_on>
+            <sys_id>60b327312f4861102a6d41e72799b6dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Charging Session" display_value="Charging Session" name="x_813980_charge_0_charging_session" sys_domain="global" view="7183a3312f4861102a6d41e72799b604">7983a3312f4861102a6d41e72799b608</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-29 15:09:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 15:09:34</sys_created_on>
+            <sys_id>64b327312f4861102a6d41e72799b6dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Charging Session" display_value="Charging Session" name="x_813980_charge_0_charging_session" sys_domain="global" view="7183a3312f4861102a6d41e72799b604">7983a3312f4861102a6d41e72799b608</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-29 15:09:34</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 15:09:34</sys_created_on>
+            <sys_id>68b327312f4861102a6d41e72799b6dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Charging Session" display_value="Charging Session" name="x_813980_charge_0_charging_session" sys_domain="global" view="7183a3312f4861102a6d41e72799b604">7983a3312f4861102a6d41e72799b608</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-29 15:09:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>start</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 15:09:34</sys_created_on>
+            <sys_id>6cb327312f4861102a6d41e72799b6dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Charging Session" display_value="Charging Session" name="x_813980_charge_0_charging_session" sys_domain="global" view="7183a3312f4861102a6d41e72799b604">7983a3312f4861102a6d41e72799b608</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-29 15:09:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>starting_charge</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 15:09:34</sys_created_on>
+            <sys_id>60b327312f4861102a6d41e72799b6dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Charging Session" display_value="Charging Session" name="x_813980_charge_0_charging_session" sys_domain="global" view="7183a3312f4861102a6d41e72799b604">7983a3312f4861102a6d41e72799b608</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-29 15:09:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>end</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 15:09:34</sys_created_on>
+            <sys_id>64b327312f4861102a6d41e72799b6dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Charging Session" display_value="Charging Session" name="x_813980_charge_0_charging_session" sys_domain="global" view="7183a3312f4861102a6d41e72799b604">7983a3312f4861102a6d41e72799b608</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-29 15:09:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 15:09:34</sys_created_on>
+            <sys_id>68b327312f4861102a6d41e72799b6dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Charging Session" display_value="Charging Session" name="x_813980_charge_0_charging_session" sys_domain="global" view="7183a3312f4861102a6d41e72799b604">7983a3312f4861102a6d41e72799b608</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-29 15:09:34</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_updated_on</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 15:09:34</sys_created_on>
+            <sys_id>6cb327312f4861102a6d41e72799b6dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Charging Session" display_value="Charging Session" name="x_813980_charge_0_charging_session" sys_domain="global" view="7183a3312f4861102a6d41e72799b604">7983a3312f4861102a6d41e72799b608</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-29 15:09:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>planned_duration</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 15:09:34</sys_created_on>
+            <sys_id>60b327312f4861102a6d41e72799b6de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Charging Session" display_value="Charging Session" name="x_813980_charge_0_charging_session" sys_domain="global" view="7183a3312f4861102a6d41e72799b604">7983a3312f4861102a6d41e72799b608</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-29 15:09:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>planned_end</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 15:09:34</sys_created_on>
+            <sys_id>64b327312f4861102a6d41e72799b6de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Charging Session" display_value="Charging Session" name="x_813980_charge_0_charging_session" sys_domain="global" view="7183a3312f4861102a6d41e72799b604">7983a3312f4861102a6d41e72799b608</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-12-29 15:09:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Charging Session</caption>
+            <header>false</header>
+            <name>x_813980_charge_0_charging_session</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 15:08:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7983a3312f4861102a6d41e72799b608</sys_id>
+            <sys_name>x_813980_charge_0_charging_session</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
+            <sys_update_name>sys_ui_section_7983a3312f4861102a6d41e72799b608</sys_update_name>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Charging Session Details" name="Charging_Session_Details">7183a3312f4861102a6d41e72799b604</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

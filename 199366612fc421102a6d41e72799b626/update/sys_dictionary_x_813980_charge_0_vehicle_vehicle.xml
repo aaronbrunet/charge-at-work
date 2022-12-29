@@ -11,7 +11,7 @@
         <column_label>Vehicle</column_label>
         <comments/>
         <create_roles/>
-        <default_value>javascript:""+current.getValue("year")+current.getValue("make");</default_value>
+        <default_value/>
         <defaultsort/>
         <delete_roles/>
         <dependent/>

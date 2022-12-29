@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="charger_type" table="x_813980_charge_0_charger" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>charger_type</element>
+            <name>x_813980_charge_0_charger</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 14:44:56</sys_created_on>
+            <sys_name>charger_type</sys_name>
+            <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
+            <sys_update_name>sys_choice_x_813980_charge_0_charger_charger_type</sys_update_name>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>charger_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>J-1772</label>
+            <language>en</language>
+            <name>x_813980_charge_0_charger</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 14:44:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>j_1772</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>charger_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>CCS</label>
+            <language>en</language>
+            <name>x_813980_charge_0_charger</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 14:44:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>ccs</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>charger_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Tesla (Supercharger)</label>
+            <language>en</language>
+            <name>x_813980_charge_0_charger</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 14:44:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>tesla_supercharger</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>charger_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NEMA 14-50</label>
+            <language>en</language>
+            <name>x_813980_charge_0_charger</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 14:44:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>nema_14_50</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>charger_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Wall Outlet</label>
+            <language>en</language>
+            <name>x_813980_charge_0_charger</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-12-29 14:44:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>wall_outlet</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

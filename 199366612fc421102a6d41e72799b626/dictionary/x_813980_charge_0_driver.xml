@@ -12,8 +12,12 @@
         <element label="Phone (Work)" max_length="40" name="phone_work" type="string"/>
         <element label="Daily Schedule" max_length="40" name="schedule" type="glide_list"/>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
         <index name="index">
             <element name="sys_class_name"/>
+        </index>
+        <index name="index2">
+            <element name="user"/>
         </index>
     </element>
 </database>

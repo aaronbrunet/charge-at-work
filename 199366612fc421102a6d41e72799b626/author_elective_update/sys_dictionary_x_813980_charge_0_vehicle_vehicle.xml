@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_dictionary action="DELETE" element="vehicle" table="x_813980_charge_0_vehicle">
+        <active>true</active>
+        <array>false</array>
+        <attributes/>
+        <audit>false</audit>
+        <calculation/>
+        <choice>0</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label>Vehicle</column_label>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>vehicle</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <internal_type display_value="String">string</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <name>x_813980_charge_0_vehicle</name>
+        <next_element/>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-12-28 16:01:29</sys_created_on>
+        <sys_id>6ff5eee12fc421102a6d41e72799b665</sys_id>
+        <sys_name>Vehicle</sys_name>
+        <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
+        <sys_update_name>sys_dictionary_x_813980_charge_0_vehicle_vehicle</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-12-29 14:53:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_dictionary>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Charge At Work">199366612fc421102a6d41e72799b626</application>
+        <file_path/>
+        <instance_id>3e062e17db70b74052cec597059619f9</instance_id>
+        <instance_name>dev82047</instance_name>
+        <name>sys_dictionary_x_813980_charge_0_vehicle_vehicle</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="vehicle" table="x_813980_charge_0_vehicle"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label>Vehicle</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>vehicle</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="String">string</internal_type><mandatory>false</mandatory><max_length>255</max_length><name>x_813980_charge_0_vehicle</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-12-28 16:01:29</sys_created_on><sys_id>6ff5eee12fc421102a6d41e72799b665</sys_id><sys_name>Vehicle</sys_name><sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package><sys_policy/><sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope><sys_update_name>sys_dictionary_x_813980_charge_0_vehicle_vehicle</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-12-29 14:53:19</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+        <payload_hash>-608411236</payload_hash>
+        <record_name>Vehicle.Vehicle</record_name>
+        <reverted_from/>
+        <source>53fcae292fc421102a6d41e72799b67c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-12-29 14:53:19</sys_created_on>
+        <sys_id>6affd73d2f0861102a6d41e72799b6aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1855e5f92e00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-12-29 14:53:19</sys_updated_on>
+        <type>Dictionary</type>
+        <update_guid>a2ffd73d25086110c1bc73eb6c1431aa</update_guid>
+        <update_guid_history>a2ffd73d25086110c1bc73eb6c1431aa:-608411236,ac062225b8c421106b1818696837f632:317383368,bff5eee145c42110ea08ba7c1e5c0193:1569493573</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-12-29 17:24:55</sys_created_on>
+        <sys_db_object display_value="" name="sys_dictionary">sys_dictionary</sys_db_object>
+        <sys_id>4c69fe41e512436b96c194fea5bb72b9</sys_id>
+        <sys_metadata>6ff5eee12fc421102a6d41e72799b665</sys_metadata>
+        <sys_name>Vehicle</sys_name>
+        <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
+        <sys_parent display_value="Vehicle">983562e12fc421102a6d41e72799b6a7</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
+        <sys_scope_delete display_value="">05054c91266e4449811e41335a63e5f9</sys_scope_delete>
+        <sys_update_name>sys_dictionary_x_813980_charge_0_vehicle_vehicle</sys_update_name>
+        <sys_update_version display_value="sys_dictionary_x_813980_charge_0_vehicle_vehicle">6affd73d2f0861102a6d41e72799b6aa</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

@@ -93,7 +93,7 @@
         <sys_policy/>
         <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
         <sys_update_name>sc_cat_item_producer_1ef53ff12f8861102a6d41e72799b6e6</sys_update_name>
-        <table_name>x_813980_charge_0_driver</table_name>
+        <table_name>x_813980_charge_0_vehicle</table_name>
         <taxonomy_topic/>
         <template/>
         <template_manager_roles/>

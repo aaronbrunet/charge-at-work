@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new">
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
-        <attributes>ref_ac_order_by=order</attributes>
+        <attributes/>
         <cat_item display_value="New Vehicle Registration">1ef53ff12f8861102a6d41e72799b6e6</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
@@ -18,43 +18,43 @@
         <dynamic_default_value/>
         <dynamic_ref_qual/>
         <enable_also_request_for>false</enable_also_request_for>
-        <example_text/>
-        <field/>
+        <example_text>ABC123</example_text>
+        <field>license_plate</field>
         <global>false</global>
         <help_tag>What's this?</help_tag>
-        <help_text>This information isn't required, but it helps to inform other drivers of the anticipated availability of chargers on a given day.</help_text>
+        <help_text>Charge@Work uses the license plate to help identify cars currently at the charger. </help_text>
         <hidden>false</hidden>
         <include_none>false</include_none>
         <instructions/>
         <layout>normal</layout>
-        <list_table>question_choice</list_table>
-        <lookup_label>text</lookup_label>
+        <list_table/>
+        <lookup_label/>
         <lookup_price/>
-        <lookup_table>question_choice</lookup_table>
+        <lookup_table/>
         <lookup_unique>false</lookup_unique>
-        <lookup_value>value</lookup_value>
+        <lookup_value/>
         <macro/>
         <macroponent/>
-        <mandatory>false</mandatory>
-        <map_to_field>false</map_to_field>
+        <mandatory>true</mandatory>
+        <map_to_field>true</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>days_in_office</name>
-        <order>800</order>
+        <name>license_plate</name>
+        <order>850</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>Typical Days In-Office</question_text>
+        <question_text>License Plate</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
         <rec_lookup_price/>
         <rec_price_if_checked>0</rec_price_if_checked>
         <record/>
-        <record_producer_table>x_813980_charge_0_driver</record_producer_table>
+        <record_producer_table>x_813980_charge_0_vehicle</record_producer_table>
         <reference/>
-        <reference_qual>question=7dceef3d2f4861102a6d41e72799b63f</reference_qual>
+        <reference_qual/>
         <reference_qual_condition/>
         <rich_text/>
         <roles_to_use_also_request_for/>
@@ -73,20 +73,20 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-12-29 16:29:27</sys_created_on>
-        <sys_id>32f573352f8861102a6d41e72799b66b</sys_id>
-        <sys_name>Typical Days In-Office</sys_name>
+        <sys_created_on>2022-12-29 16:42:39</sys_created_on>
+        <sys_id>d9c8bbf52f8861102a6d41e72799b60f</sys_id>
+        <sys_name>License Plate</sys_name>
         <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
-        <sys_update_name>item_option_new_32f573352f8861102a6d41e72799b66b</sys_update_name>
+        <sys_update_name>item_option_new_d9c8bbf52f8861102a6d41e72799b60f</sys_update_name>
         <table/>
         <tooltip/>
-        <type>21</type>
+        <type>6</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>advanced</use_reference_qualifier>
+        <use_reference_qualifier>simple</use_reference_qualifier>
         <validate_regex/>
         <variable_name/>
         <variable_set/>
@@ -98,22 +98,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=32f573352f8861102a6d41e72799b66b"/>
-    <fx_price action="delete_multiple" query="id=32f573352f8861102a6d41e72799b66b"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=d9c8bbf52f8861102a6d41e72799b60f"/>
+    <fx_price action="delete_multiple" query="id=d9c8bbf52f8861102a6d41e72799b60f"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>price_if_checked</field>
-        <id>32f573352f8861102a6d41e72799b66b</id>
+        <id>d9c8bbf52f8861102a6d41e72799b60f</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-12-29 16:29:27</sys_created_on>
-        <sys_id>3ef573352f8861102a6d41e72799b66d</sys_id>
+        <sys_created_on>2022-12-29 16:42:40</sys_created_on>
+        <sys_id>5809ffb52f8861102a6d41e72799b60d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-12-29 16:29:27</sys_updated_on>
+        <sys_updated_on>2022-12-29 16:42:40</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -121,16 +121,16 @@
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>rec_price_if_checked</field>
-        <id>32f573352f8861102a6d41e72799b66b</id>
+        <id>d9c8bbf52f8861102a6d41e72799b60f</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-12-29 16:29:27</sys_created_on>
-        <sys_id>b2f573352f8861102a6d41e72799b66d</sys_id>
+        <sys_created_on>2022-12-29 16:42:39</sys_created_on>
+        <sys_id>d809ffb52f8861102a6d41e72799b60c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-12-29 16:29:27</sys_updated_on>
+        <sys_updated_on>2022-12-29 16:42:39</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>

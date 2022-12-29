@@ -52,7 +52,7 @@
         <rec_lookup_price/>
         <rec_price_if_checked>0</rec_price_if_checked>
         <record/>
-        <record_producer_table>x_813980_charge_0_driver</record_producer_table>
+        <record_producer_table>x_813980_charge_0_vehicle</record_producer_table>
         <reference/>
         <reference_qual/>
         <reference_qual_condition/>

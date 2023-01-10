@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_registry">
+    <sys_ux_page_registry action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_panel>d3ee4fb22f4021102a6d41e72799b6ac</admin_panel>
+        <admin_panel_table>sys_ux_app_config</admin_panel_table>
+        <auth_routes>{"login":"login","logout": "login"}</auth_routes>
+        <page/>
+        <parent_app/>
+        <path>charge-at-work</path>
+        <root_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</root_macroponent>
+        <sys_class_name>sys_ux_page_registry</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-01-01 16:12:53</sys_created_on>
+        <sys_id>e3ee4fb2d340211007166369e9e5f3d4</sys_id>
+        <sys_name>Charge At Work</sys_name>
+        <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
+        <sys_update_name>sys_ux_page_registry_e3ee4fb2d340211007166369e9e5f3d4</sys_update_name>
+        <title>Charge At Work</title>
+    </sys_ux_page_registry>
+</record_update>

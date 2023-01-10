@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="DELETE">
+        <active>true</active>
+        <app_config display_value="Charge At Work Config">d3ee4fb22f4021102a6d41e72799b6ac</app_config>
+        <description/>
+        <event_mappings>[ ]</event_mappings>
+        <macroponent display_value="Registration default">0a1a74d42f9021102a6d41e72799b649</macroponent>
+        <macroponent_config>{
+  "views" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "selectedTabIndex" : {
+    "type" : "JSON_LITERAL",
+    "value" : 0
+  },
+  "label" : {
+    "type" : "TRANSLATION_LITERAL",
+    "value" : {
+      "code" : null,
+      "message" : "",
+      "comment" : ""
+    }
+  },
+  "bare" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  },
+  "scrollable" : {
+    "type" : "JSON_LITERAL",
+    "value" : "y"
+  },
+  "headerLevel" : {
+    "type" : "JSON_LITERAL",
+    "value" : "1"
+  },
+  "headingOnlyVisibleToScreenReaders" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "interceptNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "propagateNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
+}</macroponent_config>
+        <name>Driver Registration - View</name>
+        <order>100</order>
+        <parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition>table=x_813980_charge_0_driver^sys_id!=-1</screen_condition>
+        <screen_type display_value="Registration">bd1a74d42f9021102a6d41e72799b646</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-05 21:13:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ce1ab8182f9021102a6d41e72799b6a3</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Driver Registration - View</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
+        <sys_update_name>sys_ux_screen_ce1ab8182f9021102a6d41e72799b6a3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-08 04:27:34</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="DELETE" query="documentkey=ce1ab8182f9021102a6d41e72799b6a3"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Charge At Work">199366612fc421102a6d41e72799b626</application>
+        <file_path/>
+        <instance_id>3e062e17db70b74052cec597059619f9</instance_id>
+        <instance_name>dev82047</instance_name>
+        <name>sys_ux_screen_ce1ab8182f9021102a6d41e72799b6a3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen"><sys_ux_screen action="INSERT_OR_UPDATE"><active>true</active><app_config display_value="Charge At Work Config">d3ee4fb22f4021102a6d41e72799b6ac</app_config><description/><event_mappings>[ ]</event_mappings><macroponent display_value="Registration default">0a1a74d42f9021102a6d41e72799b649</macroponent><macroponent_config>{
+  "views" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "selectedTabIndex" : {
+    "type" : "JSON_LITERAL",
+    "value" : 0
+  },
+  "label" : {
+    "type" : "TRANSLATION_LITERAL",
+    "value" : {
+      "code" : null,
+      "message" : "",
+      "comment" : ""
+    }
+  },
+  "bare" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  },
+  "scrollable" : {
+    "type" : "JSON_LITERAL",
+    "value" : "y"
+  },
+  "headerLevel" : {
+    "type" : "JSON_LITERAL",
+    "value" : "1"
+  },
+  "headingOnlyVisibleToScreenReaders" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "interceptNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "propagateNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
+}</macroponent_config><name>Driver Registration - View</name><order>100</order><parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent><required_translations>[ ]</required_translations><rollback_screen/><screen_condition>table=x_813980_charge_0_driver^sys_id!=-1</screen_condition><screen_type display_value="Registration">bd1a74d42f9021102a6d41e72799b646</screen_type><sys_class_name>sys_ux_screen</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-01-05 21:13:22</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>ce1ab8182f9021102a6d41e72799b6a3</sys_id><sys_mod_count>8</sys_mod_count><sys_name>Driver Registration - View</sys_name><sys_overrides/><sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package><sys_policy/><sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope><sys_update_name>sys_ux_screen_ce1ab8182f9021102a6d41e72799b6a3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-01-08 04:27:34</sys_updated_on></sys_ux_screen><sys_translated_text action="delete_multiple" query="documentkey=ce1ab8182f9021102a6d41e72799b6a3"/></record_update>]]></payload>
+        <payload_hash>-2000303413</payload_hash>
+        <record_name>Driver Registration - View</record_name>
+        <reverted_from/>
+        <source>53fcae292fc421102a6d41e72799b67c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-08 04:27:35</sys_created_on>
+        <sys_id>86a034492f1ca1102a6d41e72799b6eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1858fa249490000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-08 04:27:35</sys_updated_on>
+        <type>UX Screen</type>
+        <update_guid>8ea03449051ca1106e78a3d14e066aea</update_guid>
+        <update_guid_history>8ea03449051ca1106e78a3d14e066aea:-2000303413,68503c09581ca1104f50fdba10fe8f5a:-113853781,392b2081101ca110011e8bf5412395a2:1585172524,690bac41551ca11074fe9ed28a06df78:1720855594,bb45a8c9e1d8a110bda90446dbd11665:331854387,fa3528c957d8a1101784ee5704a525e0:-814575075,bdabf0982d902110a9de49ab5abcf8eb:331854387,a60bb85833902110694a76d4fcaeb362:-1945717188,ca1ab818ce902110b1417c01954d25a5:-1182025330</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-08 04:28:05</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen">sys_ux_screen</sys_db_object>
+        <sys_id>6d8426efa7974478bd2c8f39f4a16a40</sys_id>
+        <sys_metadata>ce1ab8182f9021102a6d41e72799b6a3</sys_metadata>
+        <sys_name>Driver Registration - View</sys_name>
+        <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
+        <sys_scope_delete display_value="">05054c91266e4449811e41335a63e5f9</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_ce1ab8182f9021102a6d41e72799b6a3</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_ce1ab8182f9021102a6d41e72799b6a3">86a034492f1ca1102a6d41e72799b6eb</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

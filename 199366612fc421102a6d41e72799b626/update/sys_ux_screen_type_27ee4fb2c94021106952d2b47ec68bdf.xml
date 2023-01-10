@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_screen_type">
+    <sys_ux_screen_type action="INSERT_OR_UPDATE">
+        <description/>
+        <name>Indicate your decision</name>
+        <sys_class_name>sys_ux_screen_type</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-01-01 16:12:54</sys_created_on>
+        <sys_id>27ee4fb2c94021106952d2b47ec68bdf</sys_id>
+        <sys_name>Indicate your decision</sys_name>
+        <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
+        <sys_update_name>sys_ux_screen_type_27ee4fb2c94021106952d2b47ec68bdf</sys_update_name>
+    </sys_ux_screen_type>
+    <sys_translated_text action="delete_multiple" query="documentkey=27ee4fb2c94021106952d2b47ec68bdf"/>
+</record_update>

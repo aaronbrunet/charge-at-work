@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_m2m_predicate_bundle">
+    <sys_ux_composite_data_m2m_predicate_bundle action="INSERT_OR_UPDATE">
+        <dataset display_value="Custom Portal Landing - My Tasks Dataset">e3ee4fb26e402110645c9d36a86190dc</dataset>
+        <order/>
+        <predicate_bundle display_value="My Tasks - Task bundle">afee4fb2b8402110d31f57d2a00a71d9</predicate_bundle>
+        <sys_class_name>sys_ux_composite_data_m2m_predicate_bundle</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-01-01 16:12:48</sys_created_on>
+        <sys_id>abee4fb21c402110c95bad0775e065da</sys_id>
+        <sys_name/>
+        <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
+        <sys_update_name>sys_ux_composite_data_m2m_predicate_bundle_abee4fb21c402110c95bad0775e065da</sys_update_name>
+    </sys_ux_composite_data_m2m_predicate_bundle>
+</record_update>

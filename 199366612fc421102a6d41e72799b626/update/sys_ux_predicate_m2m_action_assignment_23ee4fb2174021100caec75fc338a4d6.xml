@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_predicate_m2m_action_assignment">
+    <sys_ux_predicate_m2m_action_assignment action="INSERT_OR_UPDATE">
+        <declarative_action_assignment display_value="approve">2fee4fb2a5402110a40c730fbcb975e6</declarative_action_assignment>
+        <predicate display_value="My Tasks">abee4fb2bd402110937eb3534809acd9</predicate>
+        <sys_class_name>sys_ux_predicate_m2m_action_assignment</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-01-01 16:12:50</sys_created_on>
+        <sys_id>23ee4fb2174021100caec75fc338a4d6</sys_id>
+        <sys_name/>
+        <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
+        <sys_update_name>sys_ux_predicate_m2m_action_assignment_23ee4fb2174021100caec75fc338a4d6</sys_update_name>
+    </sys_ux_predicate_m2m_action_assignment>
+</record_update>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="x_813980_charge_0_driver" section_id="237c30d82f9021102a6d41e72799b647" sys_domain="global" table="x_813980_charge_0_driver" version="3" view="New">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>user</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-08 03:37:29</sys_created_on>
+            <sys_id>0c3528c92fd8a1102a6d41e72799b628</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_813980_charge_0_driver" display_value="x_813980_charge_0_driver" name="x_813980_charge_0_driver" sys_domain="global" view="237c30d82f9021102a6d41e72799b643">237c30d82f9021102a6d41e72799b647</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-01-08 03:37:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-08 03:37:29</sys_created_on>
+            <sys_id>443528c92fd8a1102a6d41e72799b629</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_813980_charge_0_driver" display_value="x_813980_charge_0_driver" name="x_813980_charge_0_driver" sys_domain="global" view="237c30d82f9021102a6d41e72799b643">237c30d82f9021102a6d41e72799b647</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-01-08 03:37:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>primary_location</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-08 03:37:29</sys_created_on>
+            <sys_id>483528c92fd8a1102a6d41e72799b629</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_813980_charge_0_driver" display_value="x_813980_charge_0_driver" name="x_813980_charge_0_driver" sys_domain="global" view="237c30d82f9021102a6d41e72799b643">237c30d82f9021102a6d41e72799b647</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-01-08 03:37:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>preferred_contact_method</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-08 03:37:29</sys_created_on>
+            <sys_id>4c3528c92fd8a1102a6d41e72799b629</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_813980_charge_0_driver" display_value="x_813980_charge_0_driver" name="x_813980_charge_0_driver" sys_domain="global" view="237c30d82f9021102a6d41e72799b643">237c30d82f9021102a6d41e72799b647</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-01-08 03:37:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>email_work</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-08 03:37:29</sys_created_on>
+            <sys_id>403528c92fd8a1102a6d41e72799b62a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_813980_charge_0_driver" display_value="x_813980_charge_0_driver" name="x_813980_charge_0_driver" sys_domain="global" view="237c30d82f9021102a6d41e72799b643">237c30d82f9021102a6d41e72799b647</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-01-08 03:37:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>email_personal</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-08 03:37:29</sys_created_on>
+            <sys_id>443528c92fd8a1102a6d41e72799b62a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_813980_charge_0_driver" display_value="x_813980_charge_0_driver" name="x_813980_charge_0_driver" sys_domain="global" view="237c30d82f9021102a6d41e72799b643">237c30d82f9021102a6d41e72799b647</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-01-08 03:37:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>phone_personal</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-08 03:37:29</sys_created_on>
+            <sys_id>483528c92fd8a1102a6d41e72799b62a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_813980_charge_0_driver" display_value="x_813980_charge_0_driver" name="x_813980_charge_0_driver" sys_domain="global" view="237c30d82f9021102a6d41e72799b643">237c30d82f9021102a6d41e72799b647</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-01-08 03:37:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>phone_work</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-08 03:37:29</sys_created_on>
+            <sys_id>4c3528c92fd8a1102a6d41e72799b62a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_813980_charge_0_driver" display_value="x_813980_charge_0_driver" name="x_813980_charge_0_driver" sys_domain="global" view="237c30d82f9021102a6d41e72799b643">237c30d82f9021102a6d41e72799b647</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-01-08 03:37:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>x_813980_charge_0_driver</caption>
+            <header>false</header>
+            <name>x_813980_charge_0_driver</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-05 21:23:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>237c30d82f9021102a6d41e72799b647</sys_id>
+            <sys_name>x_813980_charge_0_driver</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
+            <sys_update_name>sys_ui_section_237c30d82f9021102a6d41e72799b647</sys_update_name>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="New" name="New">237c30d82f9021102a6d41e72799b643</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

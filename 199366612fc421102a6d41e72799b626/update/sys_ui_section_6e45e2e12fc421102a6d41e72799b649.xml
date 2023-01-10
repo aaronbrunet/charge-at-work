@@ -4,13 +4,13 @@
             <element>driver</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-12-29 19:20:59</sys_created_on>
-            <sys_id>df3dd0ce2f0c61102a6d41e72799b690</sys_id>
+            <sys_created_on>2023-01-10 03:21:59</sys_created_on>
+            <sys_id>ecd4f6a12f1065102a6d41e72799b61e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_813980_charge_0_vehicle" sys_domain="global" view="Default view">6e45e2e12fc421102a6d41e72799b649</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-12-29 19:20:59</sys_updated_on>
+            <sys_updated_on>2023-01-10 03:21:59</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>name</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-12-29 19:20:59</sys_created_on>
-            <sys_id>1b3dd0ce2f0c61102a6d41e72799b691</sys_id>
+            <sys_created_on>2023-01-10 03:21:59</sys_created_on>
+            <sys_id>28d4f6a12f1065102a6d41e72799b61f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_813980_charge_0_vehicle" sys_domain="global" view="Default view">6e45e2e12fc421102a6d41e72799b649</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-12-29 19:20:59</sys_updated_on>
+            <sys_updated_on>2023-01-10 03:21:59</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>license_plate</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-12-29 19:20:59</sys_created_on>
-            <sys_id>1f3dd0ce2f0c61102a6d41e72799b691</sys_id>
+            <sys_created_on>2023-01-10 03:21:59</sys_created_on>
+            <sys_id>2cd4f6a12f1065102a6d41e72799b61f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_813980_charge_0_vehicle" sys_domain="global" view="Default view">6e45e2e12fc421102a6d41e72799b649</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-12-29 19:20:59</sys_updated_on>
+            <sys_updated_on>2023-01-10 03:21:59</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>primary_vehicle</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-12-29 19:20:59</sys_created_on>
-            <sys_id>133dd0ce2f0c61102a6d41e72799b692</sys_id>
+            <sys_created_on>2023-01-10 03:21:59</sys_created_on>
+            <sys_id>20d4f6a12f1065102a6d41e72799b620</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_813980_charge_0_vehicle" sys_domain="global" view="Default view">6e45e2e12fc421102a6d41e72799b649</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-12-29 19:20:59</sys_updated_on>
+            <sys_updated_on>2023-01-10 03:21:59</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>current_charge</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-12-29 19:20:59</sys_created_on>
-            <sys_id>173dd0ce2f0c61102a6d41e72799b692</sys_id>
+            <sys_created_on>2023-01-10 03:21:59</sys_created_on>
+            <sys_id>24d4f6a12f1065102a6d41e72799b620</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_813980_charge_0_vehicle" sys_domain="global" view="Default view">6e45e2e12fc421102a6d41e72799b649</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-12-29 19:20:59</sys_updated_on>
+            <sys_updated_on>2023-01-10 03:21:59</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,13 +74,27 @@
             <element>last_charged</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-12-29 19:20:59</sys_created_on>
-            <sys_id>1b3dd0ce2f0c61102a6d41e72799b692</sys_id>
+            <sys_created_on>2023-01-10 03:21:59</sys_created_on>
+            <sys_id>28d4f6a12f1065102a6d41e72799b620</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_813980_charge_0_vehicle" sys_domain="global" view="Default view">6e45e2e12fc421102a6d41e72799b649</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-12-29 19:20:59</sys_updated_on>
+            <sys_updated_on>2023-01-10 03:21:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-10 03:21:59</sys_created_on>
+            <sys_id>2cd4f6a12f1065102a6d41e72799b620</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_813980_charge_0_vehicle" sys_domain="global" view="Default view">6e45e2e12fc421102a6d41e72799b649</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-01-10 03:21:59</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

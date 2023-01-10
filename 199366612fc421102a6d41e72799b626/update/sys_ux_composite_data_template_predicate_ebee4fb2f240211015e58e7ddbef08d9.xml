@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_template_predicate">
+    <sys_ux_composite_data_template_predicate action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="kb_knowledge">active=true^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <custom_condition/>
+        <custom_field_list/>
+        <field_list>short_description,rating,topic,sys_view_count,article_type,category</field_list>
+        <name>Custom Portal Landing - Popular Articles Predicate</name>
+        <order/>
+        <predicate_bundle/>
+        <required_roles/>
+        <sys_class_name>sys_ux_composite_data_template_predicate</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-01-01 16:12:47</sys_created_on>
+        <sys_id>ebee4fb2f240211015e58e7ddbef08d9</sys_id>
+        <sys_name>Custom Portal Landing - Popular Articles Predicate</sys_name>
+        <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
+        <sys_update_name>sys_ux_composite_data_template_predicate_ebee4fb2f240211015e58e7ddbef08d9</sys_update_name>
+        <table>kb_knowledge</table>
+        <ux_template display_value="Custom Portal Landing - Popular Articles">efee4fb2cd4021101bb0931e6bd856d9</ux_template>
+    </sys_ux_composite_data_template_predicate>
+</record_update>

@@ -2,9 +2,10 @@
     <sys_uib_screen_test_values action="INSERT_OR_UPDATE">
         <macroponent_config>{
   "table" : "x_813980_charge_0_driver",
-  "sysId" : "-1"
+  "sysId" : "-1",
+  "type" : "driver"
 }</macroponent_config>
-        <screen display_value="Driver Registration New">7cafe0092f1ca1102a6d41e72799b6bb</screen>
+        <screen display_value="New Driver Registration">7cafe0092f1ca1102a6d41e72799b6bb</screen>
         <sys_class_name>sys_uib_screen_test_values</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-01-08 04:23:07</sys_created_on>

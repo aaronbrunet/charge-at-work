@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="Registration Success default">6b6972e52f1065102a6d41e72799b64a</macroponent>
+        <name>confirmation_message_1/caption</name>
+        <preset/>
+        <required_translations/>
+        <script><![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {any} params.imports
+  */
+function evaluateProperty({api}) {
+	return `${api.state.referenceLabel} ${api.state.successNumber}`;
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-10 03:45:12</sys_created_on>
+        <sys_id>b42a76292f1065102a6d41e72799b6b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>confirmation_message_1/caption</sys_name>
+        <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
+        <sys_update_name>sys_ux_client_script_b42a76292f1065102a6d41e72799b6b8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-10 03:45:12</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Charge At Work">199366612fc421102a6d41e72799b626</application>
+        <file_path/>
+        <instance_id>3e062e17db70b74052cec597059619f9</instance_id>
+        <instance_name>dev82047</instance_name>
+        <name>sys_ux_client_script_b42a76292f1065102a6d41e72799b6b8</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="Registration Success default"&gt;6b6972e52f1065102a6d41e72799b64a&lt;/macroponent&gt;&lt;name&gt;confirmation_message_1/caption&lt;/name&gt;&lt;preset/&gt;&lt;required_translations/&gt;&lt;script&gt;&lt;![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {any} params.imports
+  */
+function evaluateProperty({api}) {
+	return `${api.state.referenceLabel} ${api.state.successNumber}`;
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-01-10 03:45:12&lt;/sys_created_on&gt;&lt;sys_id&gt;b42a76292f1065102a6d41e72799b6b8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;confirmation_message_1/caption&lt;/sys_name&gt;&lt;sys_package display_value="Charge At Work" source="x_813980_charge_0"&gt;199366612fc421102a6d41e72799b626&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Charge At Work"&gt;199366612fc421102a6d41e72799b626&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_b42a76292f1065102a6d41e72799b6b8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-01-10 03:45:12&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;transform&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-84405007</payload_hash>
+        <record_name>confirmation_message_1/caption</record_name>
+        <reverted_from/>
+        <source>53fcae292fc421102a6d41e72799b67c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-10 03:48:22</sys_created_on>
+        <sys_id>1fdaf2692f1065102a6d41e72799b69d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18599cb1a2c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-10 03:48:22</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>d3daf26968106510698b90403bd24a9d</update_guid>
+        <update_guid_history>d3daf26968106510698b90403bd24a9d:-84405007,8fba7269e81065107b3085ea969ec320:-1784674513,302a76294610651055f2568df81c86bb:-84405007</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-10 03:48:54</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>2227b6b91dea4f6087a88c80a9ca7790</sys_id>
+        <sys_metadata>b42a76292f1065102a6d41e72799b6b8</sys_metadata>
+        <sys_name>confirmation_message_1/caption</sys_name>
+        <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
+        <sys_scope_delete display_value="">05054c91266e4449811e41335a63e5f9</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_b42a76292f1065102a6d41e72799b6b8</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_b42a76292f1065102a6d41e72799b6b8">1fdaf2692f1065102a6d41e72799b69d</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

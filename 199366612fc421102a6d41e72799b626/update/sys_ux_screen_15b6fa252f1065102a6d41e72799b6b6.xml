@@ -4,20 +4,8 @@
         <app_config display_value="Charge At Work Config">d3ee4fb22f4021102a6d41e72799b6ac</app_config>
         <description/>
         <event_mappings>[ ]</event_mappings>
-        <macroponent display_value="New Driver Registration">20af64c52f1ca1102a6d41e72799b63a</macroponent>
+        <macroponent display_value="Order success Default Copy">78b6ba252f1065102a6d41e72799b6bc</macroponent>
         <macroponent_config>{
-  "views" : {
-    "type" : "JSON_LITERAL",
-    "value" : ""
-  },
-  "selectedTabIndex" : {
-    "type" : "JSON_LITERAL",
-    "value" : 0
-  },
-  "type" : {
-    "type" : "JSON_LITERAL",
-    "value" : ""
-  },
   "label" : {
     "type" : "TRANSLATION_LITERAL",
     "value" : {
@@ -51,25 +39,25 @@
     "value" : false
   }
 }</macroponent_config>
-        <name>New Driver Registration</name>
-        <order>1</order>
+        <name>Order success Default Copy</name>
+        <order>0</order>
         <parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent>
         <required_translations>[ ]</required_translations>
         <rollback_screen/>
-        <screen_condition>type=driver</screen_condition>
-        <screen_type display_value="Registration">bd1a74d42f9021102a6d41e72799b646</screen_type>
+        <screen_condition/>
+        <screen_type display_value="Order success">23ee4fb2ca40211090a779ebc0814adf</screen_type>
         <sys_class_name>sys_ux_screen</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-01-08 04:23:07</sys_created_on>
+        <sys_created_on>2023-01-10 03:30:13</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>7cafe0092f1ca1102a6d41e72799b6bb</sys_id>
-        <sys_name>New Driver Registration</sys_name>
+        <sys_id>15b6fa252f1065102a6d41e72799b6b6</sys_id>
+        <sys_name>Order success Default Copy</sys_name>
         <sys_overrides/>
         <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
-        <sys_update_name>sys_ux_screen_7cafe0092f1ca1102a6d41e72799b6bb</sys_update_name>
+        <sys_update_name>sys_ux_screen_15b6fa252f1065102a6d41e72799b6b6</sys_update_name>
     </sys_ux_screen>
-    <sys_translated_text action="delete_multiple" query="documentkey=7cafe0092f1ca1102a6d41e72799b6bb"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=15b6fa252f1065102a6d41e72799b6b6"/>
 </record_update>

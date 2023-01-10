@@ -4,7 +4,7 @@
   "table" : "task",
   "sysId" : "6a1d922cf94611108c8bd16244dfe7bd"
 }</macroponent_config>
-        <screen display_value="Driver Registration New">7cafe0092f1ca1102a6d41e72799b6bb</screen>
+        <screen display_value="New Driver Registration">7cafe0092f1ca1102a6d41e72799b6bb</screen>
         <sys_class_name>sys_uib_screen_test_values</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-01-08 04:23:08</sys_created_on>

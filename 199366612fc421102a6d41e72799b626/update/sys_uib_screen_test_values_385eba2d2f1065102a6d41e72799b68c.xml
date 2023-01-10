@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_screen_test_values">
     <sys_uib_screen_test_values action="INSERT_OR_UPDATE">
         <macroponent_config>{
-  "table" : "x_813980_charge_0_driver",
-  "sysId" : "-1",
+  "table" : "task",
+  "sysId" : "6a1d922cf94611108c8bd16244dfe7bd",
   "type" : "vehicle"
 }</macroponent_config>
-        <screen display_value="New Vehicle Registration">7bc33a212f1065102a6d41e72799b6ee</screen>
+        <screen display_value="Registration Success - Vehicle">685eba2d2f1065102a6d41e72799b652</screen>
         <sys_class_name>sys_uib_screen_test_values</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-01-10 03:17:33</sys_created_on>
-        <sys_id>77c3b2612f1065102a6d41e72799b614</sys_id>
+        <sys_created_on>2023-01-10 04:03:30</sys_created_on>
+        <sys_id>385eba2d2f1065102a6d41e72799b68c</sys_id>
         <sys_name/>
         <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
-        <sys_update_name>sys_uib_screen_test_values_77c3b2612f1065102a6d41e72799b614</sys_update_name>
+        <sys_update_name>sys_uib_screen_test_values_385eba2d2f1065102a6d41e72799b68c</sys_update_name>
     </sys_uib_screen_test_values>
 </record_update>

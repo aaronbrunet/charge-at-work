@@ -5,22 +5,22 @@
         <extension_point/>
         <fields>type</fields>
         <icon/>
-        <name>Registration</name>
+        <name>Registration Success</name>
         <optional_parameters/>
         <order>0</order>
         <parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent>
         <parent_macroponent_composition_element_id/>
-        <route_type>registration</route_type>
-        <screen_type display_value="Registration">bd1a74d42f9021102a6d41e72799b646</screen_type>
+        <route_type>registration_success</route_type>
+        <screen_type display_value="Registration Success">236972e52f1065102a6d41e72799b648</screen_type>
         <sys_class_name>sys_ux_app_route</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-01-05 21:13:22</sys_created_on>
-        <sys_id>821ab8182f9021102a6d41e72799b6ad</sys_id>
-        <sys_name>Registration</sys_name>
+        <sys_created_on>2023-01-10 03:42:08</sys_created_on>
+        <sys_id>3369fae52f1065102a6d41e72799b6cc</sys_id>
+        <sys_name>Registration Success</sys_name>
         <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
-        <sys_update_name>sys_ux_app_route_821ab8182f9021102a6d41e72799b6ad</sys_update_name>
+        <sys_update_name>sys_ux_app_route_3369fae52f1065102a6d41e72799b6cc</sys_update_name>
     </sys_ux_app_route>
-    <sys_translated_text action="delete_multiple" query="documentkey=821ab8182f9021102a6d41e72799b6ad"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=3369fae52f1065102a6d41e72799b6cc"/>
 </record_update>

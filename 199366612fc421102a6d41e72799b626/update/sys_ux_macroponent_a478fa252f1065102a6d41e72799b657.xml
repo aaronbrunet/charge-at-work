@@ -84,173 +84,6 @@
   "isNonDestructive" : false,
   "items" : [ ],
   "styles" : { }
-}, {
-  "elementId" : "container_1",
-  "elementLabel" : "Container 1",
-  "propertyValues" : {
-    "ariaRegionHeadingLevel" : {
-      "type" : "JSON_LITERAL",
-      "value" : "1"
-    },
-    "ariaRegionName" : {
-      "type" : "TRANSLATION_LITERAL",
-      "value" : {
-        "code" : null,
-        "message" : "",
-        "comment" : ""
-      }
-    },
-    "includeAriaHeading" : {
-      "type" : "JSON_LITERAL",
-      "value" : false
-    },
-    "type" : {
-      "type" : "JSON_LITERAL",
-      "value" : "section"
-    },
-    "ariaRole" : {
-      "type" : "JSON_LITERAL",
-      "value" : ""
-    }
-  },
-  "eventMappings" : [ ],
-  "slot" : null,
-  "definition" : {
-    "id" : "d356d14b6e293a3020a244b63d278d8f",
-    "type" : "MACROPONENT"
-  },
-  "overrides" : {
-    "composition" : [ {
-      "elementId" : "catalog_item_1",
-      "elementLabel" : "Catalog Item 1",
-      "propertyValues" : {
-        "showRequestForHeader" : {
-          "type" : "JSON_LITERAL",
-          "value" : "true"
-        },
-        "propagateNotifications" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "sysId" : {
-          "type" : "JSON_LITERAL",
-          "value" : "1ef53ff12f8861102a6d41e72799b6e6"
-        },
-        "label" : {
-          "type" : "TRANSLATION_LITERAL",
-          "value" : {
-            "code" : null,
-            "message" : "",
-            "comment" : ""
-          }
-        },
-        "headingOnlyVisibleToScreenReaders" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "interceptNotifications" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "hideOptionsLabel" : {
-          "type" : "JSON_LITERAL",
-          "value" : "false"
-        },
-        "referrer" : {
-          "type" : "JSON_LITERAL",
-          "value" : "default"
-        },
-        "submitPosition" : {
-          "type" : "JSON_LITERAL",
-          "value" : "right"
-        },
-        "headerLevel" : {
-          "type" : "JSON_LITERAL",
-          "value" : "1"
-        },
-        "engagementChannel" : {
-          "type" : "JSON_LITERAL",
-          "value" : "default"
-        },
-        "requestedForId" : {
-          "type" : "JSON_LITERAL",
-          "value" : null
-        },
-        "bare" : {
-          "type" : "JSON_LITERAL",
-          "value" : true
-        },
-        "scrollable" : {
-          "type" : "JSON_LITERAL",
-          "value" : "none"
-        }
-      },
-      "eventMappings" : [ {
-        "eventMappingId" : "clcpolffddkaadcciddffhhurxfbbbbeejii",
-        "isConfiguration" : false,
-        "offRowStorageId" : null,
-        "sourceEventApiName" : "sn_sc_record_form.SN_CATALOG_FORM_CONNECTED#REQUEST_GENERATED",
-        "sourceEventCorrelationId" : null,
-        "sourceEventDefinition" : {
-          "apiName" : "sn_sc_record_form.SN_CATALOG_FORM_CONNECTED#REQUEST_GENERATED",
-          "id" : null,
-          "type" : "UXEVENT"
-        },
-        "sourceEventSysId" : null,
-        "targets" : [ {
-          "broker" : null,
-          "clientScript" : {
-            "sysId" : "160872652f1065102a6d41e72799b68e"
-          },
-          "conditional" : null,
-          "declarativeAction" : null,
-          "event" : null,
-          "operation" : null,
-          "targetId" : "clcpolffddkaadccjddffhhuyiguighe",
-          "type" : "CLIENT_SCRIPT"
-        } ]
-      } ],
-      "slot" : null,
-      "definition" : {
-        "id" : "afeef20635001010f877265d86f080df",
-        "type" : "MACROPONENT"
-      },
-      "overrides" : null,
-      "isHidden" : {
-        "type" : "JSON_LITERAL",
-        "value" : null
-      },
-      "isHero" : false,
-      "extensionPoints" : [ ],
-      "isNonDestructive" : false,
-      "items" : [ ],
-      "styles" : { }
-    } ],
-    "layout" : {
-      "default" : {
-        "children" : null,
-        "isInline" : null,
-        "items" : [{"element_id":"catalog_item_1","styles":{}}],
-        "root" : null,
-        "rules" : null,
-        "styles" : {"flex-direction":"column","padding":"var(--now-static-space--lg)","margin":"var(--now-static-space--lg)"},
-        "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
-        "type" : "flex"
-      },
-      "version" : "3.0.0"
-    }
-  },
-  "isHidden" : {
-    "type" : "JSON_LITERAL",
-    "value" : null
-  },
-  "isHero" : false,
-  "extensionPoints" : [ ],
-  "isNonDestructive" : false,
-  "items" : [ ],
-  "styles" : {
-    "width" : "100%"
-  }
 } ]</composition>
         <da_relay_models/>
         <data>[ {
@@ -277,11 +110,10 @@
         "category" : "props"
       }
     },
-    "inputQuery" : {
-      "type" : "CONTEXT_BINDING",
+    "formParams" : {
+      "type" : "DATA_OUTPUT_BINDING",
       "binding" : {
-        "address" : [ "query" ],
-        "category" : "props"
+        "address" : [ "rpCtrl", "extraParamsProp" ]
       }
     },
     "view" : {
@@ -295,6 +127,17 @@
       "type" : "JSON_LITERAL",
       "value" : ""
     },
+    "inputQuery" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "query" ],
+        "category" : "props"
+      }
+    },
+    "showActivityStreamInDetails" : {
+      "type" : "JSON_LITERAL",
+      "value" : true
+    },
     "detailsContext" : {
       "type" : "CONTEXT_BINDING",
       "binding" : {
@@ -302,9 +145,40 @@
         "category" : "props"
       }
     },
-    "inputExtraParams" : {
-      "type" : "JSON_LITERAL",
-      "value" : ""
+    "actionConfigId" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "actionConfigId" ],
+        "category" : "app"
+      }
+    },
+    "headerConfigId" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "headerConfigId" ],
+        "category" : "app"
+      }
+    },
+    "ribbonConfigId" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "ribbonConfigId" ],
+        "category" : "app"
+      }
+    },
+    "viewRuleConfigId" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "viewRuleConfigId" ],
+        "category" : "app"
+      }
+    },
+    "highlightedValueConfigId" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "highlightedValueConfigId" ],
+        "category" : "app"
+      }
     }
   },
   "readEvaluationMode" : "EAGER"
@@ -441,7 +315,7 @@
   "default" : {
     "children" : null,
     "isInline" : null,
-    "items" : [{"element_id":"container_1","styles":{}}],
+    "items" : [],
     "root" : null,
     "rules" : null,
     "styles" : {"flex-direction":"column"},
@@ -451,7 +325,7 @@
   "version" : "3.0.0"
 }</layout>
         <macroponent_dependencies/>
-        <name>New Vehicle Registration</name>
+        <name>Driver Registration Success</name>
         <output_prop_mapping/>
         <props>[ {
   "name" : "screen",
@@ -509,7 +383,7 @@
   "valueType" : null,
   "mandatory" : true,
   "defaultValue" : null,
-  "description" : "",
+  "description" : null,
   "readOnly" : false,
   "selectable" : false,
   "disabled" : false
@@ -521,7 +395,7 @@
   "valueType" : null,
   "mandatory" : true,
   "defaultValue" : null,
-  "description" : "",
+  "description" : null,
   "readOnly" : false,
   "selectable" : false,
   "disabled" : false
@@ -579,18 +453,6 @@
   "readOnly" : false,
   "selectable" : false,
   "disabled" : false
-}, {
-  "name" : "type",
-  "label" : "Type",
-  "fieldType" : "string",
-  "typeMetadata" : null,
-  "valueType" : "string",
-  "mandatory" : false,
-  "defaultValue" : "",
-  "description" : "",
-  "readOnly" : true,
-  "selectable" : false,
-  "disabled" : false
 } ]</props>
         <required_translations>[ ]</required_translations>
         <root_component/>
@@ -600,13 +462,13 @@
         <state_properties>[ ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-01-10 03:17:32</sys_created_on>
-        <sys_id>ebc33a212f1065102a6d41e72799b6e6</sys_id>
-        <sys_name>New Vehicle Registration</sys_name>
+        <sys_created_on>2023-01-10 03:37:48</sys_created_on>
+        <sys_id>a478fa252f1065102a6d41e72799b657</sys_id>
+        <sys_name>Driver Registration Success</sys_name>
         <sys_package display_value="Charge At Work" source="x_813980_charge_0">199366612fc421102a6d41e72799b626</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charge At Work">199366612fc421102a6d41e72799b626</sys_scope>
-        <sys_update_name>sys_ux_macroponent_ebc33a212f1065102a6d41e72799b6e6</sys_update_name>
+        <sys_update_name>sys_ux_macroponent_a478fa252f1065102a6d41e72799b657</sys_update_name>
     </sys_ux_macroponent>
-    <sys_translated_text action="delete_multiple" query="documentkey=ebc33a212f1065102a6d41e72799b6e6"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=a478fa252f1065102a6d41e72799b657"/>
 </record_update>

@@ -12,7 +12,7 @@
         <element label="Phone (Work)" max_length="40" name="phone_work" type="string"/>
         <element choice="3" label="Preferred Contact Method" max_length="40" name="preferred_contact_method" type="choice">
             <choice>
-                <element inactive_on_update="false" label="ServiceNow Email" sequence="0" value="email_work"/>
+                <element inactive_on_update="false" label="ServiceNow Email" sequence="0" value="work_email"/>
                 <element inactive_on_update="false" label="Personal Email" sequence="1" value="personal_email"/>
                 <element inactive_on_update="false" label="Personal Phone" sequence="2" value="personal_phone"/>
                 <element inactive_on_update="false" label="ServiceNow Phone" sequence="3" value="servicenow_phone"/>

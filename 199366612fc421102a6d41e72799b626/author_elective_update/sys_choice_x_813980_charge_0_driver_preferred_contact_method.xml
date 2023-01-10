@@ -26,7 +26,7 @@
             <sys_created_on>2022-12-29 18:55:15</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <value>email_work</value>
+            <value>work_email</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>

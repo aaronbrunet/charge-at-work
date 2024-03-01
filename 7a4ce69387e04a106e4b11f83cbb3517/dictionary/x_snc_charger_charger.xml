@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="f67caa9387e04a106e4b11f83cbb3564" label="Charger" max_length="40" name="x_snc_charger_charger" type="collection">
-        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element label="Description" max_length="40" name="description" type="string"/>
         <element label="ID" max_length="5000" name="id" type="string"/>
-        <element label="Last update" max_length="40" name="last_update" type="glide_date_time"/>
+        <element default="javascript:new GlideDateTime()" label="Last update" max_length="40" name="last_update" type="glide_date_time"/>
         <element label="Location" max_length="40" name="location" type="string"/>
         <element label="Name" max_length="5000" name="name" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
-        <element choice="3" label="Status" max_length="40" name="service_status" type="choice">
+        <element choice="3" default="ok" label="Status" max_length="40" name="service_status" type="choice">
             <choice>
                 <element inactive_on_update="false" label="OK" sequence="0" value="ok"/>
                 <element inactive_on_update="false" label="Error" sequence="1" value="error"/>
@@ -17,9 +17,9 @@
                 <element inactive_on_update="false" label="Coming Soon" sequence="5" value="coming_soon"/>
             </choice>
         </element>
-        <element choice="3" label="State" max_length="40" name="state" type="choice">
+        <element choice="3" default="available" label="State" max_length="40" name="state" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Disconnected" sequence="0" value="disconnected"/>
+                <element inactive_on_update="false" label="Available" sequence="0" value="available"/>
                 <element inactive_on_update="false" label="Connected" sequence="1" value="connected"/>
                 <element inactive_on_update="false" label="Charging" sequence="2" value="charging"/>
                 <element inactive_on_update="false" label="Unknown" sequence="3" value="unknown"/>

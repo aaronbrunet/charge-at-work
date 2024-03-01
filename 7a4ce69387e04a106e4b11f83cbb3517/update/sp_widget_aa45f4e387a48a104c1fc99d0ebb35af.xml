@@ -7,10 +7,12 @@
 };]]></client_script>
         <controller_as>c</controller_as>
         <css>.charge-card {&#13;
+  padding: 2rem;&#13;
+  margin: 2rem;&#13;
   border: 1px solid grey;&#13;
   border-radius: 2rem;&#13;
-  height: 10rem;&#13;
-  width: 10rem;&#13;
+  height: 100%;&#13;
+  width: 15rem;&#13;
 }</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
@@ -24,7 +26,7 @@
   
 }]]></link>
         <name>Charger Card</name>
-        <option_schema>[{"displayValue":"Charger","name":"charger_id","section":"other","label":"Charger ID","type":"reference","value":"x_snc_charger_charger","ed":{"reference":"x_snc_charger_charger"}}]</option_schema>
+        <option_schema>[{"displayValue":"Charger","hint":"Hint","name":"charger_id","section":"Data","label":"Charger ID","type":"reference","value":"x_snc_charger_charger","ed":{"reference":"x_snc_charger_charger"}}]</option_schema>
         <public>false</public>
         <roles/>
         <script><![CDATA[(function() {
@@ -47,7 +49,13 @@
 	charger.get(data.charger_id);
 
 	if(charger){
-		console.log(charger.getDisplayValue('number'));
+		data.fields = $sp.getFields(charger, 'active,description,id,last_update,location,name,number,service_status,state,sys_created_on,sys_id');
+		for(i in data.fields){
+			var field = data.fields[i];
+			console.log(field);
+			data[field.name] = field;
+		}
+
 		var co = {};
 		co.number = charger.getDisplayValue('number');
 		co.description = charger.getDisplayValue('description');
@@ -61,21 +69,22 @@
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-01 01:51:35</sys_created_on>
         <sys_id>aa45f4e387a48a104c1fc99d0ebb35af</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>Charger Card</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sp_widget_aa45f4e387a48a104c1fc99d0ebb35af</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-01 02:27:09</sys_updated_on>
+        <sys_updated_on>2024-03-01 04:26:30</sys_updated_on>
         <template><![CDATA[<div class="charge-card">
-<!-- your widget template -->
-  <p>Hello world</p>
-{{data.charger_id}}
   <div ng-if="data.found && data.charger">
-  	{{data.charger.number}}
-      	{{data.charger.description}}
+    <h4 ng-if="data.number && data.name">{{data.number.display_value}} | {{data.name.display_value}}</h4>
+    <p ng-if="data.description">{{data.description.display_value}}</p>
+    <p ng-if="data.state">{{data.state.display_value}}</p>
+  </div>
+  <div ng-if="!data.found && !data.charger">
+    <p>No charger found</p>
   </div>
 </div>]]></template>
     </sp_widget>

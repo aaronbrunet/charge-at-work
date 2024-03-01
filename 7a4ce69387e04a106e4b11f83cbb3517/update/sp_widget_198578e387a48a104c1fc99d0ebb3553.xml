@@ -4,12 +4,46 @@
         <client_script><![CDATA[api.controller=function() {
   /* widget controller */
   var c = this;
+
+  c.activeTab = 'available';
+
+
+  c.filterList = function(action){
+	console.log(action);
+	c.activeTab = action;		 
+	c.data.filter = action;
+	if(action == 'available'){
+		c.data.list = c.data.list.filter(c => c.state.value == 'available');
+	} else {
+		c.data.list = c.data.widgets;
+	}
+	//reset page
+	// c.data.prev = 0;
+	// c.data.next = c.data.pagination;
+	// data.curr_page = 1;
+	// c.server.update();
+  }
 };]]></client_script>
         <controller_as>c</controller_as>
-        <css>.charge-card-list {&#13;
+        <css>.charge-container {&#13;
   border: 1px solid grey;&#13;
   border-radius: 2rem;&#13;
   display: flex;&#13;
+  padding: 2rem;&#13;
+  margin: 2rem;&#13;
+}&#13;
+&#13;
+.charge-card-list {&#13;
+  display: flex;&#13;
+  width: 100%;&#13;
+  overflow-x: scroll;&#13;
+}&#13;
+&#13;
+.column {&#13;
+  flex-direction: column;&#13;
+}&#13;
+&#13;
+.row {&#13;
   flex-direction: row;&#13;
 }</css>
         <data_table>sp_instance</data_table>
@@ -40,12 +74,16 @@
   var w = {};
   
   var charger = new GlideRecord(TABLE_CHARGERS);
+
   charger.query();
 
   while(charger._next()){
-	w.options = {charger_id:charger.getUniqueValue()};
-	data.widgets.push($sp.getWidget("charger-card",w.options));
+	var options = {charger_id:charger.getUniqueValue()};
+	//var available = charger.getValue('state') == 'available'
+	var state = $sp.getField(charger,'state');
+	data.widgets.push({widget:$sp.getWidget("charger-card",options),state:state});
   }
+data.list = data.widgets;
 
 })();]]></script>
         <servicenow>false</servicenow>
@@ -53,21 +91,27 @@
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-01 01:58:30</sys_created_on>
         <sys_id>198578e387a48a104c1fc99d0ebb3553</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>Charger Card List</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sp_widget_198578e387a48a104c1fc99d0ebb3553</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-01 02:12:12</sys_updated_on>
-        <template><![CDATA[<div class="charge-card-list">
-  <div ng-if="data.widgets && data.widgets.length > 0" ng-repeat="c in data.widgets">
-  	<sp-widget widget="c"></sp-widget>
+        <sys_updated_on>2024-03-01 04:56:59</sys_updated_on>
+        <template><![CDATA[<div class="charge-container column">
+  <div class="charge-card-list row">
+    <div ng-if="data.list && data.list.length > 0" ng-repeat="c in data.list">
+      <sp-widget widget="c.widget"></sp-widget>
+    </div>
+    <div ng-if="!data.list || data.list.length <= 0">
+      <p>No chargers found</p>
+    </div>    
   </div>
-  <div ng-if="!data.widgets || data.widgets.length <= 0">
-    <p>No chargers found</p>
-  </div>
+  <div class="charge-card-list-controls row">
+      <button class="btn btn-option charge-button" ng-click="c.filterList('available')">Available</button>
+      <button class="btn btn-option charge-button" ng-click="c.filterList('all')">All</button>
+    </div>
 </div>]]></template>
     </sp_widget>
 </record_update>

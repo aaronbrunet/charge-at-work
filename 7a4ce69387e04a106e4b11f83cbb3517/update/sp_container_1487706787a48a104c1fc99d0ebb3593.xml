@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="INSERT_OR_UPDATE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Charge Playground - Container 1</name>
+        <order>1</order>
+        <sp_page display_value="charge_playground">7e3538e387a48a104c1fc99d0ebb3587</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>aaron.brunet</sys_created_by>
+        <sys_created_on>2024-03-01 02:00:18</sys_created_on>
+        <sys_id>1487706787a48a104c1fc99d0ebb3593</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Charge Playground - Container 1</sys_name>
+        <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
+        <sys_update_name>sp_container_1487706787a48a104c1fc99d0ebb3593</sys_update_name>
+        <sys_updated_by>aaron.brunet</sys_updated_by>
+        <sys_updated_on>2024-03-01 02:00:18</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+</record_update>

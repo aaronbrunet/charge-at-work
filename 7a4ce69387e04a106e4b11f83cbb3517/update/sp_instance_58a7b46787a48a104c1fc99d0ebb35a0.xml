@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>2</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">f897f46787a48a104c1fc99d0ebb351a</sp_column>
+        <sp_widget display_value="Charger Card List">198578e387a48a104c1fc99d0ebb3553</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>aaron.brunet</sys_created_by>
+        <sys_created_on>2024-03-01 02:00:51</sys_created_on>
+        <sys_id>58a7b46787a48a104c1fc99d0ebb35a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
+        <sys_update_name>sp_instance_58a7b46787a48a104c1fc99d0ebb35a0</sys_update_name>
+        <sys_updated_by>aaron.brunet</sys_updated_by>
+        <sys_updated_on>2024-03-01 02:00:51</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=58a7b46787a48a104c1fc99d0ebb35a0"/>
+</record_update>

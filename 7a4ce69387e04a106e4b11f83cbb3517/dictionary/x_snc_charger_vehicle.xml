@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="fb0d26d387e04a106e4b11f83cbb3543" label="Vehicle" max_length="40" name="x_snc_charger_vehicle" type="collection">
+        <element label="Active" max_length="40" name="active" read_only="true" type="boolean"/>
+        <element label="Color" max_length="5000" name="color" type="string"/>
+        <element label="Description" max_length="5000" name="description" type="string"/>
+        <element display="true" label="License plate" mandatory="true" max_length="5000" name="license_plate" type="string"/>
+        <element label="License plate state" max_length="40" name="license_plate_state" type="string"/>
+        <element label="Make" max_length="5000" name="make" type="string"/>
+        <element label="Model" max_length="5000" name="model" type="string"/>
+        <element label="Name" max_length="5000" name="name" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Owner" max_length="32" name="owner" reference="sys_user" type="reference"/>
+        <element label="Primary vehicle" max_length="40" name="primary_vehicle" type="boolean"/>
+        <element label="Year" max_length="5000" name="year" type="string"/>
+        <index name="index">
+            <element name="owner"/>
+        </index>
+    </element>
+</database>

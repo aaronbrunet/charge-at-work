@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="186ee61787e04a106e4b11f83cbb35b1" label="Driver" max_length="40" name="x_snc_charger_driver" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Authorised" max_length="40" name="authorized" type="boolean"/>
+        <element choice="3" label="Contact preference" max_length="40" name="contact_preference" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Email" sequence="0" value="email"/>
+                <element inactive_on_update="false" label="Phone" sequence="1" value="phone"/>
+                <element inactive_on_update="false" label="Teams" sequence="2" value="teams"/>
+            </choice>
+        </element>
+        <element label="Location" max_length="40" name="location" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index2">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

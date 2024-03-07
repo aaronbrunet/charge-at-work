@@ -6,40 +6,27 @@
         <css/>
         <glyph/>
         <id/>
-        <order>1</order>
+        <order>3</order>
         <roles/>
         <short_description/>
         <size>md</size>
         <sp_column display_value="1">f897f46787a48a104c1fc99d0ebb351a</sp_column>
-        <sp_widget display_value="Charger Card List">198578e387a48a104c1fc99d0ebb3553</sp_widget>
+        <sp_widget display_value="Charger Queue">2996e3958774c2106e4b11f83cbb35ec</sp_widget>
         <sys_class_name>sp_instance</sys_class_name>
         <sys_created_by>aaron.brunet</sys_created_by>
-        <sys_created_on>2024-03-01 02:00:51</sys_created_on>
-        <sys_id>58a7b46787a48a104c1fc99d0ebb35a0</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_created_on>2024-03-07 01:19:16</sys_created_on>
+        <sys_id>a1a763d58774c2106e4b11f83cbb3542</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
-        <sys_update_name>sp_instance_58a7b46787a48a104c1fc99d0ebb35a0</sys_update_name>
+        <sys_update_name>sp_instance_a1a763d58774c2106e4b11f83cbb3542</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-07 02:11:42</sys_updated_on>
+        <sys_updated_on>2024-03-07 01:19:16</sys_updated_on>
         <title/>
         <url/>
-        <widget_parameters><![CDATA[{
-	"filter": {
-		"value": "all",
-		"displayValue": "All"
-	},
-	"limit": {
-		"value": "3",
-		"displayValue": "3"
-	},
-	"location": {
-		"value": "Test",
-		"displayValue": "Test"
-	}
-}]]></widget_parameters>
+        <widget_parameters/>
     </sp_instance>
-    <sys_translated_text action="delete_multiple" query="documentkey=58a7b46787a48a104c1fc99d0ebb35a0"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=a1a763d58774c2106e4b11f83cbb3542"/>
 </record_update>

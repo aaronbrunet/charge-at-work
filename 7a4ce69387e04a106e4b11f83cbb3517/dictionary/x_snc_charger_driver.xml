@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="186ee61787e04a106e4b11f83cbb35b1" label="Driver" max_length="40" name="x_snc_charger_driver" type="collection">
+    <element db_object_id="186ee61787e04a106e4b11f83cbb35b1" label="Driver Registration" max_length="40" name="x_snc_charger_driver" type="collection">
         <element label="Active" max_length="40" name="active" type="boolean"/>
         <element label="Authorised" max_length="40" name="authorized" type="boolean"/>
         <element choice="3" label="Contact preference" max_length="40" name="contact_preference" type="choice">

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.charge-queue-container {&#13;
+  border: 1px solid grey;&#13;
+  border-radius: 2rem;&#13;
+  display: flex;&#13;
+  padding: 2rem;&#13;
+  margin: 2rem;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>charger-queue</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Charger Queue</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	const TABLE_CHARGERS = 'x_snc_charger_charger';
+	data.available_chargers = false;
+	var chargers = new GlideRecord(TABLE_CHARGERS);
+	chargers.addQuery('state','available');
+	chargers.query();
+	if(chargers.hasNext()){
+		data.available_chargers = true;
+
+		var _options = {filter:'available',embedded:true,show_filter_buttons:false};
+		//var available = charger.getValue('state') == 'available'
+		data.widget = $sp.getWidget("charger-card-list",_options);
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>aaron.brunet</sys_created_by>
+        <sys_created_on>2024-03-07 01:15:14</sys_created_on>
+        <sys_id>2996e3958774c2106e4b11f83cbb35ec</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Charger Queue</sys_name>
+        <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
+        <sys_update_name>sp_widget_2996e3958774c2106e4b11f83cbb35ec</sys_update_name>
+        <sys_updated_by>aaron.brunet</sys_updated_by>
+        <sys_updated_on>2024-03-07 02:19:03</sys_updated_on>
+        <template><![CDATA[<div class="charge-queue-container">
+  <div ng-if="!data.available_chargers">
+    <p>Sorry, all chargers are currently full.</p>
+    <button>Join the Queue</button>
+  </div>
+  <div ng-if="data.available_chargers">
+    <p>Available chargers</p>
+    <sp-widget widget="data.widget"></sp-widget>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

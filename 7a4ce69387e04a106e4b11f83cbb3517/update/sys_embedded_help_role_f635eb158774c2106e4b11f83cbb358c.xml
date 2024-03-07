@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <role display_value="x_snc_charger.manager" name="x_snc_charger.manager">8d35ef158774c2106e4b11f83cbb3514</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>aaron.brunet</sys_created_by>
+        <sys_created_on>2024-03-07 01:08:43</sys_created_on>
+        <sys_id>f635eb158774c2106e4b11f83cbb358c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>8d35ef158774c2106e4b11f83cbb3514</sys_name>
+        <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
+        <sys_update_name>sys_embedded_help_role_f635eb158774c2106e4b11f83cbb358c</sys_update_name>
+        <sys_updated_by>aaron.brunet</sys_updated_by>
+        <sys_updated_on>2024-03-07 01:08:43</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

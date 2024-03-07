@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="7c2fe25787e04a106e4b11f83cbb35ea" label="Charge event" max_length="40" name="x_snc_charger_charge_event" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Cancellation reason" max_length="500" name="cancellation_reason" type="string"/>
         <element label="Charger" max_length="32" name="charger" reference="x_snc_charger_charger" type="reference"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="javascript:new GlideDateTime();" label="Requested on" max_length="255" name="requested_on" type="glide_date_time"/>
         <element choice="3" label="State" max_length="40" name="state" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Pending" sequence="0" value="pending"/>
-                <element inactive_on_update="false" label="In progress" sequence="1" value="in_progress"/>
-                <element inactive_on_update="false" label="Complete" sequence="2" value="complete"/>
-                <element inactive_on_update="false" label="Cancelled / Error" sequence="3" value="cancelled"/>
+                <element inactive_on_update="false" label="Requested" sequence="0" value="requested"/>
+                <element inactive_on_update="false" label="Pending" sequence="1" value="pending"/>
+                <element inactive_on_update="false" label="In progress" sequence="2" value="in_progress"/>
+                <element inactive_on_update="false" label="Complete" sequence="3" value="complete"/>
+                <element inactive_on_update="false" label="Cancelled / Error" sequence="4" value="cancelled"/>
             </choice>
         </element>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>

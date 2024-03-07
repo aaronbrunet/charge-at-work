@@ -35,10 +35,12 @@
 	const TABLE_QUEUE = 'x_snc_charger_charge_event';
 
 	var me = gs.getUserID();
+	data.me = me;
 	//console.log(['me',me]);
 
 	data.available_chargers = false;
 	data.my_request = false;
+	data.queue = [];
 	
 	var chargers = new GlideRecord(TABLE_CHARGERS);
 	chargers.addQuery('state','available');
@@ -53,39 +55,49 @@
 		var queue = new GlideRecord(TABLE_QUEUE);
 		queue.addQuery('state','requested');
 		queue.addActiveQuery();
+		queue.orderBy('requested_on');
 		queue.query();
 		data.queue_length = queue.getRowCount();
-
-		var my_request = new GlideRecord(TABLE_QUEUE);
-		my_request.addQuery('requested_by',me);
-		my_request.addQuery('state','requested');
-		my_request.addActiveQuery();
-		my_request.query();
-		if(my_request.next()){
-			//console.log('found me!');
-			//console.log(JSON.stringify(my_request));
-			data.my_request = true;
+		while(queue.next()){
+			data.queue.push({sys_id:queue.getUniqueValue(),requested_by:queue.getValue('requested_by')});
+			if(queue.getValue('requested_by') == me){
+				data.my_request = true;
+			}
 		}
 
+		// var my_request = new GlideRecord(TABLE_QUEUE);
+		// my_request.addQuery('requested_by',me);
+		// my_request.addQuery('state','requested');
+		// my_request.addActiveQuery();
+		// my_request.orderBy('requested_on');
+		// my_request.query();
+		// if(my_request.next()){
+		// 	data.my_request = true;
+		// }
+
 	}
+	data.my_queue = data.queue.findIndex(q => q.requested_by == data.me)+1;
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-07 01:15:14</sys_created_on>
         <sys_id>2996e3958774c2106e4b11f83cbb35ec</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_name>Charger Queue</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sp_widget_2996e3958774c2106e4b11f83cbb35ec</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-07 03:23:38</sys_updated_on>
+        <sys_updated_on>2024-03-07 03:51:45</sys_updated_on>
         <template><![CDATA[<div class="charge-queue-container">
   <div ng-if="!data.available_chargers">
     <p>Sorry, all chargers are currently full.</p>
-    <p>There {{data.queue_length == 1 ? 'is' : 'are'}} currently {{data.queue_length}} in queue</p>
+    <p>There {{data.queue_length == 1 ? 'is' : 'are'}} {{data.queue_length}} currently waiting.
+    <br/>
+      You are #{{data.my_queue}} in queue.
+    </p>
     <button ng-if="!data.my_request">Join the Queue</button>
     <button ng-if="data.my_request">Update My Request</button>
   </div>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="f67caa9387e04a106e4b11f83cbb3564" label="Charger" max_length="40" name="x_snc_charger_charger" type="collection">
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Bay" max_length="40" name="bay" type="string"/>
         <element label="Description" max_length="40" name="description" type="string"/>
         <element label="ID" max_length="5000" name="id" type="string"/>
         <element default="javascript:new GlideDateTime()" label="Last update" max_length="40" name="last_update" type="glide_date_time"/>

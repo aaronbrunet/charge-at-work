@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller=function() {
+        <client_script><![CDATA[api.controller=function($scope,spUtil) {
   /* widget controller */
   var c = this;
   
 
   c.activeTab = 'available';
 
+  c.refresh = function(){
+	spUtil.update($scope).then(function(e){	
+	});
+  }
 
   c.filterList = function(action){
 	c.activeTab = action;		 
@@ -72,7 +76,7 @@
 // 	data.options.push(...data.options,input);
 // 	data.option_type += '&input';
 //   }
- console.log([data.option_type,data.options]);
+ //console.log([data.option_type,data.options]);
   const TABLE_CHARGERS = 'x_snc_charger_charger';
   
   data.widgets = [];
@@ -81,25 +85,27 @@
   var w = {};
   var _filter = '';
   if(input && input.filter){
+	console.log('got input filter '+input.filter)
 	_filter = input.filter;
   } else {
 	_filter = data.options.filter;
   }
+  if(_filter == 'all'){_filter = '';}
 	
-	switch(data.options.filter){
-		case 'all':
-			_filter = '';
-		break;
-		case 'available':
-			_filter = data.options.filter;
-		break;
-		case 'charging':
-			_filter = data.options.filter;
-		break;
-	}
+	// switch(data.options.filter){
+	// 	case 'all':
+	// 		_filter = '';
+	// 	break;
+	// 	case 'available':
+	// 		_filter = data.options.filter;
+	// 	break;
+	// 	case 'charging':
+	// 		_filter = data.options.filter;
+	// 	break;
+	// }
 	
   var charger = new GlideRecord(TABLE_CHARGERS);
-  if(_filter && _filter !== ''){
+  if(_filter !== ''){
 	console.log('filtering '+_filter);
 	charger.addQuery('state',_filter);
   }
@@ -119,15 +125,16 @@ data.list = data.widgets;
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-01 01:58:30</sys_created_on>
         <sys_id>198578e387a48a104c1fc99d0ebb3553</sys_id>
-        <sys_mod_count>55</sys_mod_count>
+        <sys_mod_count>65</sys_mod_count>
         <sys_name>Charger Card List</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sp_widget_198578e387a48a104c1fc99d0ebb3553</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-07 02:33:07</sys_updated_on>
+        <sys_updated_on>2024-03-07 03:31:02</sys_updated_on>
         <template><![CDATA[<div class="charge-container column {{data.options.embedded == 'false' && 'outer'}}">
+  <button ng-click="c.refresh()">Refresh</button>
   <div class="charge-card-list row">
     <div ng-if="data.list && data.list.length > 0" ng-repeat="c in data.list">
       <sp-widget widget="c.widget"></sp-widget>

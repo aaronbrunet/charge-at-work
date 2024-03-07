@@ -1,16 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="" section_id="df3fa65787e04a106e4b11f83cbb3562" sys_domain="global" table="x_snc_charger_charge_event" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>number</element>
+            <element>requested_on</element>
             <position>0</position>
             <sys_created_by>aaron.brunet</sys_created_by>
-            <sys_created_on>2024-02-29 16:04:57</sys_created_on>
-            <sys_id>1f3fa65787e04a106e4b11f83cbb3565</sys_id>
+            <sys_created_on>2024-03-07 02:51:28</sys_created_on>
+            <sys_id>90cc371987b4c2106e4b11f83cbb357e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_charger_charge_event" sys_domain="global" view="Default view">df3fa65787e04a106e4b11f83cbb3562</sys_ui_section>
             <sys_updated_by>aaron.brunet</sys_updated_by>
-            <sys_updated_on>2024-02-29 16:04:57</sys_updated_on>
+            <sys_updated_on>2024-03-07 02:51:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>requested_by</element>
+            <position>1</position>
+            <sys_created_by>aaron.brunet</sys_created_by>
+            <sys_created_on>2024-03-07 02:51:29</sys_created_on>
+            <sys_id>98cc371987b4c2106e4b11f83cbb357e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_charger_charge_event" sys_domain="global" view="Default view">df3fa65787e04a106e4b11f83cbb3562</sys_ui_section>
+            <sys_updated_by>aaron.brunet</sys_updated_by>
+            <sys_updated_on>2024-03-07 02:51:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vehicle</element>
+            <position>2</position>
+            <sys_created_by>aaron.brunet</sys_created_by>
+            <sys_created_on>2024-03-07 02:51:29</sys_created_on>
+            <sys_id>9ccc371987b4c2106e4b11f83cbb357e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_charger_charge_event" sys_domain="global" view="Default view">df3fa65787e04a106e4b11f83cbb3562</sys_ui_section>
+            <sys_updated_by>aaron.brunet</sys_updated_by>
+            <sys_updated_on>2024-03-07 02:51:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>charger</element>
+            <position>3</position>
+            <sys_created_by>aaron.brunet</sys_created_by>
+            <sys_created_on>2024-03-07 02:51:29</sys_created_on>
+            <sys_id>90cc371987b4c2106e4b11f83cbb357f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_charger_charge_event" sys_domain="global" view="Default view">df3fa65787e04a106e4b11f83cbb3562</sys_ui_section>
+            <sys_updated_by>aaron.brunet</sys_updated_by>
+            <sys_updated_on>2024-03-07 02:51:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

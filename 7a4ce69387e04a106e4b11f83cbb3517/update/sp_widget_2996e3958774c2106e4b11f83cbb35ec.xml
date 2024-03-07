@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller=function() {
+        <client_script><![CDATA[api.controller=function($scope,spUtil) {
   /* widget controller */
   var c = this;
 };]]></client_script>
@@ -32,7 +32,14 @@
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
 	const TABLE_CHARGERS = 'x_snc_charger_charger';
+	const TABLE_QUEUE = 'x_snc_charger_charge_event';
+
+	var me = gs.getUserID();
+	//console.log(['me',me]);
+
 	data.available_chargers = false;
+	data.my_request = false;
+	
 	var chargers = new GlideRecord(TABLE_CHARGERS);
 	chargers.addQuery('state','available');
 	chargers.query();
@@ -42,6 +49,24 @@
 		var _options = {filter:'available',embedded:true,show_filter_buttons:false};
 		//var available = charger.getValue('state') == 'available'
 		data.widget = $sp.getWidget("charger-card-list",_options);
+	} else {
+		var queue = new GlideRecord(TABLE_QUEUE);
+		queue.addQuery('state','requested');
+		queue.addActiveQuery();
+		queue.query();
+		data.queue_length = queue.getRowCount();
+
+		var my_request = new GlideRecord(TABLE_QUEUE);
+		my_request.addQuery('requested_by',me);
+		my_request.addQuery('state','requested');
+		my_request.addActiveQuery();
+		my_request.query();
+		if(my_request.next()){
+			//console.log('found me!');
+			//console.log(JSON.stringify(my_request));
+			data.my_request = true;
+		}
+
 	}
 })();]]></script>
         <servicenow>false</servicenow>
@@ -49,18 +74,20 @@
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-07 01:15:14</sys_created_on>
         <sys_id>2996e3958774c2106e4b11f83cbb35ec</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name>Charger Queue</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sp_widget_2996e3958774c2106e4b11f83cbb35ec</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-07 02:19:03</sys_updated_on>
+        <sys_updated_on>2024-03-07 03:23:38</sys_updated_on>
         <template><![CDATA[<div class="charge-queue-container">
   <div ng-if="!data.available_chargers">
     <p>Sorry, all chargers are currently full.</p>
-    <button>Join the Queue</button>
+    <p>There {{data.queue_length == 1 ? 'is' : 'are'}} currently {{data.queue_length}} in queue</p>
+    <button ng-if="!data.my_request">Join the Queue</button>
+    <button ng-if="data.my_request">Update My Request</button>
   </div>
   <div ng-if="data.available_chargers">
     <p>Available chargers</p>

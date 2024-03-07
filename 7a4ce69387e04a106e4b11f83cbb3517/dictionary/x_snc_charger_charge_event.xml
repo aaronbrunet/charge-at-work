@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="7c2fe25787e04a106e4b11f83cbb35ea" label="Charge event" max_length="40" name="x_snc_charger_charge_event" type="collection">
-        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element label="Cancellation reason" max_length="500" name="cancellation_reason" type="string"/>
         <element label="Charger" max_length="32" name="charger" reference="x_snc_charger_charger" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
+        <element default="javascript:gs.getUserID()" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Requested by" max_length="32" name="requested_by" reference="sys_user" type="reference" use_dynamic_default="true"/>
         <element default="javascript:new GlideDateTime();" label="Requested on" max_length="255" name="requested_on" type="glide_date_time"/>
-        <element choice="3" label="State" max_length="40" name="state" type="choice">
+        <element choice="3" default="requested" label="State" max_length="40" name="state" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Requested" sequence="0" value="requested"/>
                 <element inactive_on_update="false" label="Pending" sequence="1" value="pending"/>
@@ -15,14 +16,17 @@
             </choice>
         </element>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
-        <element label="Vehicle" max_length="32" name="vehicle" reference="x_snc_charger_vehicle" type="reference"/>
+        <element label="Vehicle" max_length="32" name="vehicle" reference="x_snc_charger_vehicle" reference_qual="javascript:current.owner.user = gs.getUserID()" type="reference" use_reference_qualifier="advanced"/>
         <index name="index">
             <element name="charger"/>
         </index>
         <index name="index2">
-            <element name="sys_class_name"/>
+            <element name="requested_by"/>
         </index>
         <index name="index3">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index4">
             <element name="vehicle"/>
         </index>
     </element>

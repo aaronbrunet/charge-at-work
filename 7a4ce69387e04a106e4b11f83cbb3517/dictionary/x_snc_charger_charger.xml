@@ -25,6 +25,7 @@
                 <element inactive_on_update="false" label="Charging" sequence="2" value="charging"/>
                 <element inactive_on_update="false" label="Unknown" sequence="3" value="unknown"/>
                 <element inactive_on_update="false" label="Offline" sequence="4" value="offline"/>
+                <element inactive_on_update="false" label="Error" sequence="5" value="error"/>
             </choice>
         </element>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>

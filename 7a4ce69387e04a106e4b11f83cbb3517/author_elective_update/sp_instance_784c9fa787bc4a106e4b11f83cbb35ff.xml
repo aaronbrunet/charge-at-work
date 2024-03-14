@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">032c9fa787bc4a106e4b11f83cbb3548</sp_column>
+        <sp_widget display_value="Charger Card">aa45f4e387a48a104c1fc99d0ebb35af</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>aaron.brunet</sys_created_by>
+        <sys_created_on>2024-03-14 00:15:51</sys_created_on>
+        <sys_id>784c9fa787bc4a106e4b11f83cbb35ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
+        <sys_update_name>sp_instance_784c9fa787bc4a106e4b11f83cbb35ff</sys_update_name>
+        <sys_updated_by>aaron.brunet</sys_updated_by>
+        <sys_updated_on>2024-03-14 00:15:51</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=784c9fa787bc4a106e4b11f83cbb35ff"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</application>
+        <file_path/>
+        <instance_id>6bc7963ddb04515c07072f17d496198d</instance_id>
+        <instance_name>empabrunet02</instance_name>
+        <name>sp_instance_784c9fa787bc4a106e4b11f83cbb35ff</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">032c9fa787bc4a106e4b11f83cbb3548</sp_column><sp_widget display_value="Charger Card">aa45f4e387a48a104c1fc99d0ebb35af</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>aaron.brunet</sys_created_by><sys_created_on>2024-03-14 00:15:51</sys_created_on><sys_id>784c9fa787bc4a106e4b11f83cbb35ff</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package><sys_policy/><sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope><sys_update_name>sp_instance_784c9fa787bc4a106e4b11f83cbb35ff</sys_update_name><sys_updated_by>aaron.brunet</sys_updated_by><sys_updated_on>2024-03-14 00:15:51</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=784c9fa787bc4a106e4b11f83cbb35ff"/></record_update>]]></payload>
+        <payload_hash>539934902</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>7d25b4e387a48a104c1fc99d0ebb35df</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>aaron.brunet</sys_created_by>
+        <sys_created_on>2024-03-14 00:15:52</sys_created_on>
+        <sys_id>0d4cdfa787bc4a106e4b11f83cbb3501</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18e3a50b8160000001</sys_recorded_at>
+        <sys_updated_by>aaron.brunet</sys_updated_by>
+        <sys_updated_on>2024-03-14 00:15:52</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>414cdfa707bc4a107d05f65bb754bf01</update_guid>
+        <update_guid_history>414cdfa707bc4a107d05f65bb754bf01:539934902</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">566627ef87bc4a106e4b11f83cbb35a1</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>aaron.brunet</sys_created_by>
+        <sys_created_on>2024-03-14 01:00:11</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>9ba6170bb63945a8b038a5c99edc6c40</sys_id>
+        <sys_metadata>784c9fa787bc4a106e4b11f83cbb35ff</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
+        <sys_scope_delete display_value="">4ff64489119e40cbad30d7719c4fc3a9</sys_scope_delete>
+        <sys_update_name>sp_instance_784c9fa787bc4a106e4b11f83cbb35ff</sys_update_name>
+        <sys_update_version display_value="sp_instance_784c9fa787bc4a106e4b11f83cbb35ff">0d4cdfa787bc4a106e4b11f83cbb3501</sys_update_version>
+        <sys_updated_by>aaron.brunet</sys_updated_by>
+        <sys_updated_on>2024-03-14 01:00:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

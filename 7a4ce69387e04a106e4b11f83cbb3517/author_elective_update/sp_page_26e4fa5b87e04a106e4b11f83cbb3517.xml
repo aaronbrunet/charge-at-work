@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="DELETE">
+        <category>custom</category>
+        <css/>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <human_readable_url_structure/>
+        <id>charge_home</id>
+        <internal>false</internal>
+        <omit_watcher>false</omit_watcher>
+        <public>true</public>
+        <roles/>
+        <seo_script/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>aaron.brunet</sys_created_by>
+        <sys_created_on>2024-02-29 16:29:57</sys_created_on>
+        <sys_id>26e4fa5b87e04a106e4b11f83cbb3517</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>charge_home</sys_name>
+        <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
+        <sys_update_name>sp_page_26e4fa5b87e04a106e4b11f83cbb3517</sys_update_name>
+        <sys_updated_by>aaron.brunet</sys_updated_by>
+        <sys_updated_on>2024-02-29 16:29:57</sys_updated_on>
+        <title>Charge Home</title>
+        <use_seo_script>false</use_seo_script>
+    </sp_page>
+    <sys_translated_text action="DELETE" query="documentkey=26e4fa5b87e04a106e4b11f83cbb3517"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</application>
+        <file_path/>
+        <instance_id>6bc7963ddb04515c07072f17d496198d</instance_id>
+        <instance_name>empabrunet02</instance_name>
+        <name>sp_page_26e4fa5b87e04a106e4b11f83cbb3517</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><category>custom</category><css/><draft>false</draft><dynamic_title_structure/><human_readable_url_structure/><id>charge_home</id><internal>false</internal><omit_watcher>false</omit_watcher><public>true</public><roles/><seo_script/><short_description/><sys_class_name>sp_page</sys_class_name><sys_created_by>aaron.brunet</sys_created_by><sys_created_on>2024-02-29 16:29:57</sys_created_on><sys_id>26e4fa5b87e04a106e4b11f83cbb3517</sys_id><sys_mod_count>0</sys_mod_count><sys_name>charge_home</sys_name><sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package><sys_policy/><sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope><sys_update_name>sp_page_26e4fa5b87e04a106e4b11f83cbb3517</sys_update_name><sys_updated_by>aaron.brunet</sys_updated_by><sys_updated_on>2024-02-29 16:29:57</sys_updated_on><title>Charge Home</title><use_seo_script>false</use_seo_script></sp_page><sys_translated_text action="delete_multiple" query="documentkey=26e4fa5b87e04a106e4b11f83cbb3517"/></record_update>]]></payload>
+        <payload_hash>1432455964</payload_hash>
+        <record_name>charge_home</record_name>
+        <reverted_from/>
+        <source>b24ce69387e04a106e4b11f83cbb3526</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>aaron.brunet</sys_created_by>
+        <sys_created_on>2024-02-29 16:29:57</sys_created_on>
+        <sys_id>51f47e5b87e04a106e4b11f83cbb352a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18df5b37e8c0000001</sys_recorded_at>
+        <sys_updated_by>aaron.brunet</sys_updated_by>
+        <sys_updated_on>2024-02-29 16:29:57</sys_updated_on>
+        <type>Page</type>
+        <update_guid>95f47e5bb8e04a103089418944df5629</update_guid>
+        <update_guid_history>95f47e5bb8e04a103089418944df5629:1432455964</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="charge_home">d78c17e787bc4a106e4b11f83cbb3551</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>aaron.brunet</sys_created_by>
+        <sys_created_on>2024-03-14 00:17:07</sys_created_on>
+        <sys_db_object display_value="" name="sp_page">sp_page</sys_db_object>
+        <sys_id>6dc4bdb27c21464ca40bab7131bece39</sys_id>
+        <sys_metadata>26e4fa5b87e04a106e4b11f83cbb3517</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>charge_home</sys_name>
+        <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
+        <sys_scope_delete display_value="">4ff64489119e40cbad30d7719c4fc3a9</sys_scope_delete>
+        <sys_update_name>sp_page_26e4fa5b87e04a106e4b11f83cbb3517</sys_update_name>
+        <sys_update_version display_value="sp_page_26e4fa5b87e04a106e4b11f83cbb3517">51f47e5b87e04a106e4b11f83cbb352a</sys_update_version>
+        <sys_updated_by>aaron.brunet</sys_updated_by>
+        <sys_updated_on>2024-03-14 00:17:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

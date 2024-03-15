@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller=function($scope,spUtil) {
+        <client_script><![CDATA[api.controller=function($scope,spUtil,spModal) {
   /* widget controller */
   var c = this;
   
@@ -20,7 +20,21 @@
   	});
   };
 
-  
+  c.request = function(charger_id){
+	
+	spModal.open({
+		"title" : "Join the Queue",
+			"widget" : "widget-sc-cat-item-v2",
+			"widgetInput" : {
+				sys_id: 'ef53f80c878d8a106e4b11f83cbb35b0',
+				display_cart_on_right: false,
+				auto_redirect: "false",
+			},
+			"buttons": [
+				{label:'✔ Confirm', primary: true}
+			]
+		});
+  };
 
   c.activeTab = 'available';
 
@@ -123,7 +137,7 @@
 	var _options = {charger_id:charger.getUniqueValue()};
 	//var available = charger.getValue('state') == 'available'
 	var state = $sp.getField(charger,'state');
-	data.widgets.push({widget:$sp.getWidget("charger-card",_options),state:state});
+	data.widgets.push({widget:$sp.getWidget("charger-card",_options),state:state,charger_id:_options.charger_id});
   }
 data.filter = _filter;
 data.list = data.widgets;
@@ -134,21 +148,23 @@ data.list = data.widgets;
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-01 01:58:30</sys_created_on>
         <sys_id>198578e387a48a104c1fc99d0ebb3553</sys_id>
-        <sys_mod_count>101</sys_mod_count>
+        <sys_mod_count>106</sys_mod_count>
         <sys_name>Charger Card List</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sp_widget_198578e387a48a104c1fc99d0ebb3553</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-14 03:15:50</sys_updated_on>
+        <sys_updated_on>2024-03-15 02:03:13</sys_updated_on>
         <template><![CDATA[<div class="charge-container column {{data.options.embedded == 'false' && 'outer'}}" ng-if="data.list && (data.list.length > 0 || (data.list.length < 1 && data.options.hide_on_empty == 'false'))">
   <div>
     <button class="btn btn-option charge-button" ng-click="c.refresh()" ng-if="!data.options.live_update">Refresh</button>
   </div>
   <div class="charge-card-list row">
-    <div ng-if="data.list && data.list.length > 0" ng-repeat="c in data.list">
-      <sp-widget widget="c.widget"></sp-widget>
+    <div ng-if="data.list && data.list.length > 0" ng-repeat="w in data.list">
+      <div ng-click="c.request(w.charger_id)">
+        <sp-widget widget="w.widget"></sp-widget>
+      </div>
     </div>
     <div ng-if="!data.list || data.list.length <= 0">
       <p>No chargers found</p>

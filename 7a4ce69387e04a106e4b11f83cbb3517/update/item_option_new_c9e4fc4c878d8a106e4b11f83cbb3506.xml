@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new">
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
-        <attributes>ref_qual_elements=driver,is_searchable_choice=false</attributes>
-        <cat_item display_value="New Charge Session">5faf888c870d8a106e4b11f83cbb35fc</cat_item>
+        <attributes/>
+        <cat_item display_value="Join Charge Queue">ef53f80c878d8a106e4b11f83cbb35b0</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field/>
         <choice_table/>
         <create_roles/>
         <default_html_value/>
-        <default_value/>
+        <default_value>Orlando</default_value>
         <delete_roles/>
         <delivery_plan/>
         <description/>
@@ -25,38 +25,38 @@
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text/>
-        <hidden>false</hidden>
+        <hidden>true</hidden>
         <include_none>false</include_none>
         <instructions/>
         <layout>normal</layout>
         <list_table/>
-        <lookup_label>id,bay</lookup_label>
+        <lookup_label/>
         <lookup_price/>
-        <lookup_table>x_snc_charger_charger</lookup_table>
+        <lookup_table/>
         <lookup_unique>false</lookup_unique>
-        <lookup_value>sys_id</lookup_value>
+        <lookup_value/>
         <macro/>
         <macroponent/>
-        <mandatory>true</mandatory>
+        <mandatory>false</mandatory>
         <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>charger</name>
-        <order>100</order>
+        <name>location</name>
+        <order>50</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>Charger</question_text>
+        <question_text>Location</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
         <rec_lookup_price/>
         <rec_price_if_checked>0</rec_price_if_checked>
         <record/>
-        <record_producer_table/>
-        <reference>x_snc_charger_charger</reference>
-        <reference_qual>javascript:"location="+ current.variables.location</reference_qual>
+        <record_producer_table>x_snc_charger_charge_event</record_producer_table>
+        <reference/>
+        <reference_qual/>
         <reference_qual_condition/>
         <rich_text/>
         <roles_to_use_also_request_for/>
@@ -75,23 +75,23 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>aaron.brunet</sys_created_by>
-        <sys_created_on>2024-03-14 22:41:20</sys_created_on>
-        <sys_id>1cffc4cc870d8a106e4b11f83cbb350c</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name>Charger</sys_name>
+        <sys_created_on>2024-03-15 01:21:34</sys_created_on>
+        <sys_id>c9e4fc4c878d8a106e4b11f83cbb3506</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Location</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
-        <sys_update_name>item_option_new_1cffc4cc870d8a106e4b11f83cbb350c</sys_update_name>
+        <sys_update_name>item_option_new_c9e4fc4c878d8a106e4b11f83cbb3506</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-15 01:13:25</sys_updated_on>
+        <sys_updated_on>2024-03-15 01:21:34</sys_updated_on>
         <table/>
         <tooltip/>
-        <type>18</type>
+        <type>6</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>advanced</use_reference_qualifier>
+        <use_reference_qualifier>simple</use_reference_qualifier>
         <validate_regex/>
         <variable_name/>
         <variable_set/>
@@ -103,22 +103,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=1cffc4cc870d8a106e4b11f83cbb350c"/>
-    <fx_price action="delete_multiple" query="id=1cffc4cc870d8a106e4b11f83cbb350c"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=c9e4fc4c878d8a106e4b11f83cbb3506"/>
+    <fx_price action="delete_multiple" query="id=c9e4fc4c878d8a106e4b11f83cbb3506"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>price_if_checked</field>
-        <id>1cffc4cc870d8a106e4b11f83cbb350c</id>
+        <id>c9e4fc4c878d8a106e4b11f83cbb3506</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>aaron.brunet</sys_created_by>
-        <sys_created_on>2024-03-14 22:41:21</sys_created_on>
-        <sys_id>d23098cc870d8a106e4b11f83cbb3591</sys_id>
+        <sys_created_on>2024-03-15 01:21:34</sys_created_on>
+        <sys_id>59e4f08c878d8a106e4b11f83cbb35bf</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-14 22:41:21</sys_updated_on>
+        <sys_updated_on>2024-03-15 01:21:34</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -126,16 +126,16 @@
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>rec_price_if_checked</field>
-        <id>1cffc4cc870d8a106e4b11f83cbb350c</id>
+        <id>c9e4fc4c878d8a106e4b11f83cbb3506</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>aaron.brunet</sys_created_by>
-        <sys_created_on>2024-03-14 22:41:21</sys_created_on>
-        <sys_id>5a3098cc870d8a106e4b11f83cbb3590</sys_id>
+        <sys_created_on>2024-03-15 01:21:34</sys_created_on>
+        <sys_id>dde4f08c878d8a106e4b11f83cbb35be</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-14 22:41:21</sys_updated_on>
+        <sys_updated_on>2024-03-15 01:21:34</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>

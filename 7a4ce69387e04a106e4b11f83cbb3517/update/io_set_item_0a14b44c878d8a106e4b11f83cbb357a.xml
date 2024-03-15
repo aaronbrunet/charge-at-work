@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <sc_cat_item display_value="Join Charge Queue">ef53f80c878d8a106e4b11f83cbb35b0</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>aaron.brunet</sys_created_by>
+        <sys_created_on>2024-03-15 01:18:04</sys_created_on>
+        <sys_id>0a14b44c878d8a106e4b11f83cbb357a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Include Driver.Join Charge Queue</sys_name>
+        <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
+        <sys_update_name>io_set_item_0a14b44c878d8a106e4b11f83cbb357a</sys_update_name>
+        <sys_updated_by>aaron.brunet</sys_updated_by>
+        <sys_updated_on>2024-03-15 01:18:04</sys_updated_on>
+        <variable_set display_value="Include Driver">44f1b4c8878d8a106e4b11f83cbb3541</variable_set>
+    </io_set_item>
+</record_update>

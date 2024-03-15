@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope,$rootScope,spUtil,$timeout) {
+  /* widget controller */
+  var c = this;
+
+	//$timeout(function(){
+		var init_charger = $scope.page.g_form.getValue('charger');
+		//console.log('got charger '+init_charger);
+		spUtil.get('charger-card',{charger_id:init_charger}).then(function(response){
+			c.charger = response;
+		});
+	//},300);
+	
+
+   $rootScope.$on("field.change", function(evt, parms) {
+	if (parms.field.name == 'charger') {
+		var _options = {charger_id:parms.newValue};
+		spUtil.get('charger-card',_options).then(function(response){
+			c.charger= response;
+		});
+	}
+  });
+
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>charger-card-sc-wrapper</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Charger Card SC Wrapper</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>aaron.brunet</sys_created_by>
+        <sys_created_on>2024-03-15 00:20:06</sys_created_on>
+        <sys_id>1e65e040878d8a106e4b11f83cbb35aa</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>Charger Card SC Wrapper</sys_name>
+        <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
+        <sys_update_name>sp_widget_1e65e040878d8a106e4b11f83cbb35aa</sys_update_name>
+        <sys_updated_by>aaron.brunet</sys_updated_by>
+        <sys_updated_on>2024-03-15 01:03:50</sys_updated_on>
+        <template><![CDATA[<div>
+<sp-widget widget="c.charger"></sp-widget>
+</div>]]></template>
+    </sp_widget>
+</record_update>

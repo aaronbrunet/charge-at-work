@@ -6,40 +6,33 @@
   var c = this;
 
   c.emitMyChargingSession = function(){
-	console.log('getting and emitting charge session')
 	if(c.data.charge_session && c.data.charge_session !=''){
-		console.log(c.data.charge_session);
+		//console.log(c.data.charge_session);
 		$rootScope.$emit('my_charging_session',c.data.charge_session);
-		console.log('emitted!');
-	} else {
-		// $timeout(function(){
-		// 	c.emitMyChargingSession();
-		// },4000);
+		//console.log('emitted!');
 	}
   };
 
   c.liveUpdate = function(){
-	console.log('Updating my session live');
-	spUtil.recordWatch($scope, c.data.constants.TABLE_CHARGERS, c.data.charger_filter, function(record){
-		spUtil.update($scope).then(function(){
-
-		});
+	console.log('LIVE: My Charging Session');
+	//Watch the Charger table live
+	if(c.data.rw.charger){
+		spUtil.recordWatch($scope, c.data.constants.TABLE_CHARGERS, c.data.rw.charger, function(record){
+			spUtil.update($scope);//.then(function(){});
+		})
+	};
+	//Watch the Charge events table live
+	spUtil.recordWatch($scope, c.data.constants.TABLE_QUEUE, c.data.rw.queue, function(record) {
+		spUtil.update($scope);//.then(function(){});
 	});
-	spUtil.recordWatch($scope, c.data.constants.TABLE_QUEUE, c.data.queue_filter, function(record) {
-		//console.log([c.data.filter,name]);
-		spUtil.update($scope).then(function(){
-
-		});
-	});
-  }
-
-  
+  };
 
   $timeout(function(){
 	//c.emitMyChargingSession();
 	c.liveUpdate();
   });
 
+  //Watch local charge_session obj
   $scope.$watch('data.charge_session',function(){
 	c.emitMyChargingSession();
   });
@@ -48,7 +41,7 @@
 
 };]]></client_script>
         <controller_as>c</controller_as>
-        <css>.charge-card {&#13;
+        <css>/*.charge-card {&#13;
   padding: 2rem;&#13;
   margin: 2rem;&#13;
   border: 1px solid grey;&#13;
@@ -60,6 +53,21 @@
   	  box-shadow: 0 0.2rem 1rem 0 rgba(0, 0, 0, .1);&#13;
 &#13;
   }&#13;
+}*/&#13;
+&#13;
+.block {&#13;
+	margin: 1rem;&#13;
+  	padding: 1rem;&#13;
+}&#13;
+&#13;
+.row {&#13;
+  display: flex;&#13;
+  flex-direction: row;&#13;
+}&#13;
+.column {&#13;
+  display: flex;&#13;
+  flex-direction: column;&#13;
+  border: 1px solid red;&#13;
 }</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
@@ -82,16 +90,38 @@
   var cu = new ChargerUtils();
   data.constants = cu.getConstants();
   const {TABLE_CHARGERS,TABLE_QUEUE} = data.constants;
-  var me = gs.getUserID();
-  //data.filter = 'requested_by='+me+'^state=in_progress';
-  data.queue_filter = 'active=true^requested_by='+me+'^requested_onONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()';
-  //var charger = new GlideRecord(TABLE_CHARGERS);
-  var chargeSession = cu.getChargeSession(data.queue_filter);
-  data.charge_session = chargeSession;
+
+	data.charge_session = {
+		charger: '',
+		details: {},
+	};
+	data.rw = {};
+
+  data.charge_session.details.user = gs.getUserID();
+  data.queue_filter = 'active=true^requested_by='+data.charge_session.details.user+'^requested_onONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()';
+  
+  var chargeSession = new GlideRecord(TABLE_QUEUE);
+  chargeSession.get(cu.getChargeSessionID(data.queue_filter));
+  
   if(chargeSession){
-	data.charger_filter = 'sys_id='+chargeSession.charger;
-  	//var charger = cu.getChargerIDByUser(me,'in_progress').charger;
-	data.widget = $sp.getWidget("charger-card",{charger_id:chargeSession.charger});
+	//data.charge_session.details = chargeSession;
+	for(prop in chargeSession){
+		var returned = chargeSession.getDisplayValue(prop) ? chargeSession.getDisplayValue(prop) : chargeSession[prop];
+		//console.log(prop+': '+ returned);
+		if(returned){
+			data.charge_session.details[prop] = {
+				display: returned,
+				label: chargeSession.getLabel(prop),
+				value: chargeSession.getValue(prop),
+			};
+			//console.log(JSON.stringify(data.charge_session.details[prop]));
+		}
+	}
+	data.charge_session.charger = chargeSession.getValue('charger');
+	//console.log(data.charge_session.charger);
+	if(data.charge_session.charger) data.rw.charger = 'sys_id='+data.charge_session.charger;
+	data.rw.queue = data.queue_filter;
+	data.widget = $sp.getWidget("charger-card",{charger_id:data.charge_session.charger});
   }
   
 })();]]></script>
@@ -100,30 +130,46 @@
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-14 00:50:40</sys_created_on>
         <sys_id>084027ab87bc4a106e4b11f83cbb35e8</sys_id>
-        <sys_mod_count>38</sys_mod_count>
+        <sys_mod_count>75</sys_mod_count>
         <sys_name>My Charging Session</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sp_widget_084027ab87bc4a106e4b11f83cbb35e8</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-15 02:06:58</sys_updated_on>
+        <sys_updated_on>2024-03-16 16:19:55</sys_updated_on>
         <template><![CDATA[<!--<div ng-if="data.charge_session">-->
 <div>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <div>
-    <h2>Current Charge Session</h2>
-    <div>
-      <div ng-if="data.charge_session">
-    	<sp-widget widget="data.widget"></sp-widget>
-    	<button class="btn btn-option charge-button">Complete Session</button>
-    </div>
-      <div ng-if="!data.charge_session">
-		<div class="charge-card">        
-          No charge session
+    <div class="row block">
+      <div class="column block">
+        <div ng-if="data.charge_session.charger != ''">
+          <sp-widget widget="data.widget"></sp-widget>
+          <button class="btn btn-option charge-button" ng-if="data.charge_session.details.state.value != 'requested'">Complete Session</button>
+        </div>
+
+        <div ng-if="data.charge_session.charger == ''">
+          <div class="charge-card">        
+            No charge session
+          </div>
         </div>
       </div>
+      
+      <div class="column block">
+		<div>
+          <h4 ng-if="data.charge_session.details.state.value != 'requested'">My Charge Session</h4>
+          <h4 ng-if="data.charge_session.details.state.value == 'requested'">Waiting For Available Charger</h4>
+          <ul>
+            <li ng-if="data.charge_session.details.state.value == '!requested'">Started: {{data.charge_session.details.requested_on.display}}</li>
+            <li ng-if="data.charge_session.details.state.value == 'requested'">Requested: {{data.charge_session.details.requested_on.display}}</li>
+            <li>Vehicle: {{data.charge_session.details.vehicle.display}}</li>
+          </ul>
+        </div>
+      </div>
+      
     </div>
+    
   </div>
 </div>]]></template>
     </sp_widget>

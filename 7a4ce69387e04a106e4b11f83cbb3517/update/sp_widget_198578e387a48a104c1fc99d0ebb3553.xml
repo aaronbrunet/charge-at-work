@@ -101,7 +101,7 @@
   
 }]]></link>
         <name>Charger Card List</name>
-        <option_schema>[{"name":"filter","section":"Behavior","default_value":"all","label":"Filter","type":"choice","choices":[{"label":"all","value":"all"},{"label":"available","value":"available"},{"label":"charging","value":"charging"},{"label":"error","value":"error"},{"label":"favorite","value":"favorite"},{"label":"mine","value":"mine"},{"label":"offline","value":"offline"}]},{"name":"limit","section":"Behavior","default_value":"3","label":"Limit","type":"choice","choices":[{"label":"1","value":"1"},{"label":"3","value":"3"},{"label":"6","value":"6"},{"label":"9","value":"9"},{"label":"all","value":"all"}]},{"name":"location","section":"Data","label":"Location","type":"string"},{"name":"show_filter_buttons","section":"Presentation","default_value":"true","label":"Show filter buttons","type":"boolean"},{"name":"hide_on_empty","section":"Presentation","default_value":"false","label":"Hide on empty","type":"boolean"},&#13;
+        <option_schema>[{"name":"filter","section":"Behavior","default_value":"all","label":"Filter","type":"choice","choices":[{"label":"all","value":"all"},{"label":"available","value":"available"},{"label":"charging","value":"charging"},{"label":"error","value":"error"},{"label":"favorite","value":"favorite"},{"label":"mine","value":"mine"},{"label":"offline","value":"offline"}]},{"name":"click_action","section":"Behavior","default_value":"none","label":"Click action","type":"choice","choices":[{"label":"none","value":"none"},{"label":"New session","value":"new_sesssion"},{"label":"Join queue","value":"join_queue"},{"label":"Details","value":"details"}]},{"name":"limit","section":"Behavior","default_value":"3","label":"Limit","type":"choice","choices":[{"label":"1","value":"1"},{"label":"3","value":"3"},{"label":"6","value":"6"},{"label":"9","value":"9"},{"label":"all","value":"all"}]},{"name":"location","section":"Data","label":"Location","type":"string"},{"name":"show_filter_buttons","section":"Presentation","default_value":"true","label":"Show filter buttons","type":"boolean"},{"name":"hide_on_empty","section":"Presentation","default_value":"false","label":"Hide on empty","type":"boolean"},&#13;
 {"name":"live_update","section":"Behavior","default_value":"false","label":"Live update","type":"boolean"},{"name":"embedded","section":"Behavior","default_value":"false","label":"Embedded","type":"boolean"}]</option_schema>
         <public>false</public>
         <roles/>
@@ -115,6 +115,8 @@
   
   data.widgets = [];
   
+
+
   //todo: populate
   var w = {};
   var _filter = '';
@@ -134,7 +136,7 @@
   charger.query();
 
   while(charger._next()){
-	var _options = {charger_id:charger.getUniqueValue()};
+	var _options = {charger_id:charger.getUniqueValue(),click_action:data.options.click_action};
 	//var available = charger.getValue('state') == 'available'
 	var state = $sp.getField(charger,'state');
 	data.widgets.push({widget:$sp.getWidget("charger-card",_options),state:state,charger_id:_options.charger_id});
@@ -148,21 +150,21 @@ data.list = data.widgets;
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-01 01:58:30</sys_created_on>
         <sys_id>198578e387a48a104c1fc99d0ebb3553</sys_id>
-        <sys_mod_count>106</sys_mod_count>
+        <sys_mod_count>112</sys_mod_count>
         <sys_name>Charger Card List</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sp_widget_198578e387a48a104c1fc99d0ebb3553</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-15 02:03:13</sys_updated_on>
+        <sys_updated_on>2024-03-16 16:52:25</sys_updated_on>
         <template><![CDATA[<div class="charge-container column {{data.options.embedded == 'false' && 'outer'}}" ng-if="data.list && (data.list.length > 0 || (data.list.length < 1 && data.options.hide_on_empty == 'false'))">
   <div>
     <button class="btn btn-option charge-button" ng-click="c.refresh()" ng-if="!data.options.live_update">Refresh</button>
   </div>
   <div class="charge-card-list row">
     <div ng-if="data.list && data.list.length > 0" ng-repeat="w in data.list">
-      <div ng-click="c.request(w.charger_id)">
+      <div>
         <sp-widget widget="w.widget"></sp-widget>
       </div>
     </div>

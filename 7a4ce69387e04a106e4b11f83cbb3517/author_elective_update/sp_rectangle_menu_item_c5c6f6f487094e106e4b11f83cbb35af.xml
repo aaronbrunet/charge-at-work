@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item">
+    <sp_rectangle_menu_item action="DELETE">
+        <active>true</active>
+        <color>default</color>
+        <condition/>
+        <display_1/>
+        <display_2/>
+        <display_date/>
+        <filter/>
+        <glyph/>
+        <hint/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <label>Home</label>
+        <order>50</order>
+        <record_script/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description/>
+        <sp_page display_value="charge_home">a7fbdba787bc4a106e4b11f83cbb356f</sp_page>
+        <sp_rectangle_menu display_value="Charger Header Menu">9c9576b487094e106e4b11f83cbb35e2</sp_rectangle_menu>
+        <sp_rectangle_menu_item/>
+        <sys_class_name>sp_rectangle_menu_item</sys_class_name>
+        <sys_created_by>aaron.brunet</sys_created_by>
+        <sys_created_on>2024-03-17 18:44:41</sys_created_on>
+        <sys_id>c5c6f6f487094e106e4b11f83cbb35af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Home</sys_name>
+        <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
+        <sys_update_name>sp_rectangle_menu_item_c5c6f6f487094e106e4b11f83cbb35af</sys_update_name>
+        <sys_updated_by>aaron.brunet</sys_updated_by>
+        <sys_updated_on>2024-03-17 18:44:41</sys_updated_on>
+        <table/>
+        <type>page</type>
+        <url/>
+        <url_target/>
+    </sp_rectangle_menu_item>
+    <sys_translated_text action="DELETE" query="documentkey=c5c6f6f487094e106e4b11f83cbb35af"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</application>
+        <file_path/>
+        <instance_id>6bc7963ddb04515c07072f17d496198d</instance_id>
+        <instance_name>empabrunet02</instance_name>
+        <name>sp_rectangle_menu_item_c5c6f6f487094e106e4b11f83cbb35af</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item"><sp_rectangle_menu_item action="INSERT_OR_UPDATE"><active>true</active><color>default</color><condition/><display_1/><display_2/><display_date/><filter/><glyph/><hint/><kb_article/><kb_category/><kb_topic/><label>Home</label><order>50</order><record_script/><sc_cat_item/><sc_category/><short_description/><sp_page display_value="charge_home">a7fbdba787bc4a106e4b11f83cbb356f</sp_page><sp_rectangle_menu display_value="Charger Header Menu">9c9576b487094e106e4b11f83cbb35e2</sp_rectangle_menu><sp_rectangle_menu_item/><sys_class_name>sp_rectangle_menu_item</sys_class_name><sys_created_by>aaron.brunet</sys_created_by><sys_created_on>2024-03-17 18:44:41</sys_created_on><sys_id>c5c6f6f487094e106e4b11f83cbb35af</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Home</sys_name><sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package><sys_policy/><sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope><sys_update_name>sp_rectangle_menu_item_c5c6f6f487094e106e4b11f83cbb35af</sys_update_name><sys_updated_by>aaron.brunet</sys_updated_by><sys_updated_on>2024-03-17 18:44:41</sys_updated_on><table/><type>page</type><url/><url_target/></sp_rectangle_menu_item><sys_translated_text action="delete_multiple" query="documentkey=c5c6f6f487094e106e4b11f83cbb35af"/></record_update>]]></payload>
+        <payload_hash>276654056</payload_hash>
+        <record_name>Home</record_name>
+        <reverted_from/>
+        <source>7d25b4e387a48a104c1fc99d0ebb35df</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>aaron.brunet</sys_created_by>
+        <sys_created_on>2024-03-17 18:44:41</sys_created_on>
+        <sys_id>38d6f6f487094e106e4b11f83cbb35b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18e4dbaf5410000001</sys_recorded_at>
+        <sys_updated_by>aaron.brunet</sys_updated_by>
+        <sys_updated_on>2024-03-17 18:44:41</sys_updated_on>
+        <type>Menu Item</type>
+        <update_guid>7cd6f6f472094e10bf0b712349ee4db5</update_guid>
+        <update_guid_history>7cd6f6f472094e10bf0b712349ee4db5:276654056</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Home">9c893e7887094e106e4b11f83cbb35a7</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>aaron.brunet</sys_created_by>
+        <sys_created_on>2024-03-17 18:56:23</sys_created_on>
+        <sys_db_object display_value="" name="sp_rectangle_menu_item">sp_rectangle_menu_item</sys_db_object>
+        <sys_id>4e5403c846ba41ac9702e90071908f44</sys_id>
+        <sys_metadata>c5c6f6f487094e106e4b11f83cbb35af</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Home</sys_name>
+        <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
+        <sys_scope_delete display_value="">4ff64489119e40cbad30d7719c4fc3a9</sys_scope_delete>
+        <sys_update_name>sp_rectangle_menu_item_c5c6f6f487094e106e4b11f83cbb35af</sys_update_name>
+        <sys_update_version display_value="sp_rectangle_menu_item_c5c6f6f487094e106e4b11f83cbb35af">38d6f6f487094e106e4b11f83cbb35b6</sys_update_version>
+        <sys_updated_by>aaron.brunet</sys_updated_by>
+        <sys_updated_on>2024-03-17 18:56:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

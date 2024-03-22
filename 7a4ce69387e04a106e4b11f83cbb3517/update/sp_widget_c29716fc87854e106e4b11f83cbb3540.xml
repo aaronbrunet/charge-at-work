@@ -1644,7 +1644,7 @@
 }
 	]]></link>
         <name>SC Catalog Item With Input</name>
-        <option_schema>[{"name":"show_add_cart_button","section":"other","label":"Show Add Cart Button","type":"boolean"},{"hint":"If you turn on this, you will be able to see field validation messages on right side","name":"show_field_validation_messages","default_value":"true","section":"other","label":"Show field validation messages","type":"boolean"},{"hint":"Show Add/Update Wish List buttons","name":"show_add_to_wishlist_button","default_value":"true","section":"other","label":"Show Add/Update Wish List buttons","type":"boolean"},{"hint":"Embedded modal","name":"embedded","default_value":"false","section":"other","label":"Is this embedded in a modal?","type":"boolean"},{"hint":"Order item section on top. If you uncheck this, order section will be displayed at bottom of screen","name":"display_cart_on_right","default_value":"true","section":"other","label":"Order Item Section On Top","type":"boolean"},{"hint":"Show item description in few words with an option to read more","name":"show_less_description","default_value":"true","section":"other","label":"Enable Show More/Less for Item description on Mobile","type":"boolean"},{"hint":"Hide the Delivery Time in the widget","name":"hide_delivery_time","section":"other","default_value":"false","label":"Hide Delivery Time","type":"boolean"},{"hint":"Makes it a preview page","name":"is_preview","section":"other","default_value":"false","label":"Is preview","type":"boolean"}]</option_schema>
+        <option_schema>[{"name":"show_add_cart_button","section":"other","label":"Show Add Cart Button","type":"boolean"},{"hint":"If you turn on this, you will be able to see field validation messages on right side","name":"show_field_validation_messages","default_value":"true","section":"other","label":"Show field validation messages","type":"boolean"},{"hint":"Show Add/Update Wish List buttons","name":"show_add_to_wishlist_button","default_value":"true","section":"other","label":"Show Add/Update Wish List buttons","type":"boolean"},{"hint":"Embedded modal","name":"embedded","default_value":"false","section":"other","label":"Is this embedded in a modal?","type":"boolean"},{"hint":"Order item section on top. If you uncheck this, order section will be displayed at bottom of screen","name":"display_cart_on_right","default_value":"false","section":"other","label":"Order Item Section On Top","type":"boolean"},{"hint":"Show item description in few words with an option to read more","name":"show_less_description","default_value":"true","section":"other","label":"Enable Show More/Less for Item description on Mobile","type":"boolean"},{"hint":"Hide the Delivery Time in the widget","name":"hide_delivery_time","section":"other","default_value":"false","label":"Hide Delivery Time","type":"boolean"},{"hint":"Makes it a preview page","name":"is_preview","section":"other","default_value":"false","label":"Is preview","type":"boolean"}]</option_schema>
         <public>true</public>
         <roles/>
         <script><![CDATA[// populate the 'data' variable with catalog item, variables, and variable view
@@ -2121,14 +2121,14 @@
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-17 16:28:15</sys_created_on>
         <sys_id>c29716fc87854e106e4b11f83cbb3540</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name>SC Catalog Item With Input</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sp_widget_c29716fc87854e106e4b11f83cbb3540</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-17 18:37:14</sys_updated_on>
+        <sys_updated_on>2024-03-22 02:22:57</sys_updated_on>
         <template><![CDATA[<div id="sc_cat_item" ng-if="::(data.recordFound && !data.not_for_mobile)" sn-atf-blacklist="IS_SERVICE_CATALOG">
   <sp-widget widget="c.orderItemModal" ng-if="c.orderItemModal"></sp-widget>
   <div class="row" ng-if="::data.sc_cat_item" ng-class="{'native-mobile': options.native_mobile == 'true'}">
@@ -2251,6 +2251,7 @@
                   ${Update Wish List}
                 </button>
               </span>
+              <button sp-ellipsis-tooltip sp-ellipsis-tooltip-title="Cancel" ng-if="::c.showOrderNowButton()" tabindex="0" name="cancel" id="cancel-btn" ng-disabled="disableControls()" ng-click="c.modalCancel()" ng-if="data.embedded" class="btn btn-secondary bottom-button-width text-overflow-ellipsis">Cancel</button>            
               <button sp-ellipsis-tooltip sp-ellipsis-tooltip-title="{{submitButtonMsg}}" ng-if="::c.showOrderNowButton()" tabindex="0" name="submit" ng-disabled="disableControls()" ng-click="triggerOnSubmit()" class="btn btn-primary bottom-button-width text-overflow-ellipsis" id="submit-btn" aria-live="assertive">{{submitButtonMsg}}</button>
               <span ng-if="submitting" style="padding-left:4px">${Submitting...}</span>
               <span ng-if="validating" style="padding-left:4px">${Validating...}</span>
@@ -2358,7 +2359,8 @@
               ${Update Cart}
             </button>
             <div class="form-group m-b-xs">
-              <button ng-if="::c.showOrderNowButton()" tabindex="0" name="submit" id="submit-btn" ng-disabled="disableControls()" ng-click="triggerOnSubmit()" class="btn btn-primary rounded m-l-lg padder-xl">{{submitButtonMsg}}</button>
+                <button sp-ellipsis-tooltip sp-ellipsis-tooltip-title="Cancel" ng-if="::c.showOrderNowButton()" tabindex="0" name="cancel" id="cancel-btn" ng-disabled="disableControls()" ng-click="c.modalCancel()" ng-if="data.embedded" class="btn btn-secondary btn-block text-overflow-ellipsis">Cancel</button>            
+				<button ng-if="::c.showOrderNowButton()" tabindex="0" name="submit" id="submit-btn" ng-disabled="disableControls()" ng-click="triggerOnSubmit()" class="btn btn-primary rounded m-l-lg padder-xl">{{submitButtonMsg}}</button>
               <span ng-if="submitting" style="padding-left:4px">${Submitting...}</span>
             </div>
           </div>

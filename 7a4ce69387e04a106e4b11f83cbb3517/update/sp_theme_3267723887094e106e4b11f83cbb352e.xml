@@ -2,7 +2,42 @@
     <sp_theme action="INSERT_OR_UPDATE">
         <css_variables>$c-primary: #717171;&#13;
 $c-bg-light: white;&#13;
-$c-bg-inverse: black;</css_variables>
+$c-bg-inverse: black;&#13;
+&#13;
+.charger-widget .block, .charger-widget.block {&#13;
+      margin: 1rem;&#13;
+      padding: 1rem;&#13;
+  }&#13;
+&#13;
+.charger-widget .row, .charger-widget.row {&#13;
+    display: flex;&#13;
+    flex-direction: row;&#13;
+  }&#13;
+&#13;
+.charger-widget .column, .charger-widget.column {&#13;
+    display: flex;&#13;
+    flex-direction: column;&#13;
+  }&#13;
+&#13;
+  .charge-container {&#13;
+    display: flex;&#13;
+    padding: 2rem;&#13;
+    margin: 2rem;&#13;
+  }&#13;
+&#13;
+  .charge-card {&#13;
+    position: relative;&#13;
+    padding: 2rem;&#13;
+    margin: 2rem;&#13;
+    border: 1px solid grey;&#13;
+    border-radius: 2rem;&#13;
+    height: 15rem;&#13;
+    aspect-ratio: 1 / 1;&#13;
+    color: black;&#13;
+  }&#13;
+  .charge-card:hover {&#13;
+    box-shadow: 0 0.2rem 1rem 0 rgba(0, 0, 0, .1);&#13;
+  }</css_variables>
         <footer/>
         <footer_fixed>false</footer_fixed>
         <header display_value="Charger Header">c7a7363887094e106e4b11f83cbb35d0</header>
@@ -12,14 +47,14 @@ $c-bg-inverse: black;</css_variables>
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-17 18:47:24</sys_created_on>
         <sys_id>3267723887094e106e4b11f83cbb352e</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Charger Theme</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sp_theme_3267723887094e106e4b11f83cbb352e</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-17 19:27:35</sys_updated_on>
+        <sys_updated_on>2024-03-21 19:38:35</sys_updated_on>
         <turn_off_scss_compilation>false</turn_off_scss_compilation>
     </sp_theme>
 </record_update>

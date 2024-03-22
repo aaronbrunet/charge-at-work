@@ -55,6 +55,7 @@
   }&#13;
 }*/&#13;
 &#13;
+/*&#13;
 .block {&#13;
 	margin: 1rem;&#13;
   	padding: 1rem;&#13;
@@ -68,6 +69,11 @@
   display: flex;&#13;
   flex-direction: column;&#13;
   border: 1px solid red;&#13;
+}&#13;
+*/&#13;
+&#13;
+.column {&#13;
+	border: 1px solid red;&#13;
 }</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
@@ -130,25 +136,24 @@
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-14 00:50:40</sys_created_on>
         <sys_id>084027ab87bc4a106e4b11f83cbb35e8</sys_id>
-        <sys_mod_count>76</sys_mod_count>
+        <sys_mod_count>84</sys_mod_count>
         <sys_name>My Charging Session</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sp_widget_084027ab87bc4a106e4b11f83cbb35e8</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-17 18:50:48</sys_updated_on>
-        <template><![CDATA[<!--<div ng-if="data.charge_session">-->
-<div>
-  <div>
+        <sys_updated_on>2024-03-21 19:35:19</sys_updated_on>
+        <template><![CDATA[<div ng-if="data.charge_session.charger" class="charger-widget">
     <div class="row block">
       <div class="column block">
-        <div ng-if="data.charge_session.charger != ''">
+        <div ng-if="data.charge_session.charger && data.charge_session.charger != ''">
+          {{data.charge_session.charger}}
           <sp-widget widget="data.widget"></sp-widget>
           <button class="btn btn-option charge-button" ng-if="data.charge_session.details.state.value != 'requested'">Complete Session</button>
         </div>
 
-        <div ng-if="data.charge_session.charger == ''">
+        <div ng-if="!data.charge_session.charger || data.charge_session.charger == ''">
           <div class="charge-card">        
             No charge session
           </div>
@@ -168,8 +173,6 @@
       </div>
       
     </div>
-    
-  </div>
 </div>]]></template>
     </sp_widget>
 </record_update>

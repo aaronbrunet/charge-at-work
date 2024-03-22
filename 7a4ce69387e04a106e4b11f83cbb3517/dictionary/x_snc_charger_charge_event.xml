@@ -16,7 +16,7 @@
                 <element inactive_on_update="false" label="Cancelled / Error" sequence="4" value="cancelled"/>
             </choice>
         </element>
-        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
         <element label="Vehicle" max_length="32" name="vehicle" reference="x_snc_charger_vehicle" reference_qual="javascript:current.owner.user = gs.getUserID()" type="reference" use_reference_qualifier="advanced"/>
         <index name="index">
             <element name="charger"/>

@@ -11,22 +11,29 @@
 	c.data.charge_session_exists = (parms.charge_event && parms.charge_event != '');
 	console.log(c.data.charge_session);
   });
+
+  spUtil.recordWatch($scope, c.data.constants.TABLE_CHARGERS, 'state=available', function(name) {
+		console.log([name]);
+		spUtil.update($scope).then(function(){
+		// 	// $scope.server.update().then(function(){
+		});
+	});
 };]]></client_script>
         <controller_as>c</controller_as>
         <css>.charge-queue-container {&#13;
-  border: 1px solid grey;&#13;
+  /*border: 1px solid grey;*/&#13;
+      box-shadow: 0 0.2rem 1rem 0 rgba(0, 0, 0, .1);&#13;
+&#13;
   border-radius: 2rem;&#13;
   display: flex;&#13;
   padding: 2rem;&#13;
   margin: 2rem;&#13;
 }&#13;
 &#13;
-.column {&#13;
-  flex-direction: column;&#13;
-}&#13;
-&#13;
-.row {&#13;
-  flex-direction: row;&#13;
+.charge-queue-title {&#13;
+	align-items: center;&#13;
+  	justify-content: center;&#13;
+  	text-align: center;&#13;
 }</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
@@ -47,8 +54,8 @@
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
 	var cu = new ChargerUtils();
-	var constants = cu.getConstants();
-	const {TABLE_CHARGERS,TABLE_QUEUE} = constants;
+	data.constants = cu.getConstants();
+	const {TABLE_CHARGERS,TABLE_QUEUE} = data.constants;
 
 	var me = gs.getUserID();
 	data.me = me;
@@ -65,10 +72,7 @@
 	chargers.query();
 	if(chargers.hasNext()){
 		data.available_chargers = true;
-
-		var _options = {filter:'available',embedded:true,show_filter_buttons:false,live_update:true,click_action:'new_session'};
-		//var available = charger.getValue('state') == 'available'
-		data.widget = $sp.getWidget("charger-card-list",_options);
+		data.available_chargers_count = chargers.getRowCount();
 	} else {
 		var queue = new GlideRecord(TABLE_QUEUE);
 		//queue.addQuery('state','requested');
@@ -95,6 +99,15 @@
 		// }
 
 	}
+	var _options = {
+		filter:'available',
+		embedded:true,
+		show_filter_buttons:false,
+		live_update:false,
+		click_action:'new_session'
+	};
+		//var available = charger.getValue('state') == 'available'
+	data.widget = $sp.getWidget("charger-card-list",_options);
 	data.my_queue = data.queue.findIndex(q => q.requested_by == data.me)+1;
 })();]]></script>
         <servicenow>false</servicenow>
@@ -102,27 +115,38 @@
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-07 01:15:14</sys_created_on>
         <sys_id>2996e3958774c2106e4b11f83cbb35ec</sys_id>
-        <sys_mod_count>61</sys_mod_count>
+        <sys_mod_count>79</sys_mod_count>
         <sys_name>Charger Queue</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sp_widget_2996e3958774c2106e4b11f83cbb35ec</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-16 16:52:47</sys_updated_on>
-        <template><![CDATA[<div class="charge-queue-container column">
-  <h2>Charger Queue</h2>
-  <div class="row" ng-if="!data.available_chargers || c.data.charge_session.state=='requested'">
+        <sys_updated_on>2024-03-22 02:44:48</sys_updated_on>
+        <template><![CDATA[<div class="charge-queue-container column charger-widget">
+  <div class="charge-queue-title column">
+    <div ng-if="data.available_chargers">
+    	<h2>Available Chargers</h2>
+    	<h4>{{data.available_chargers_count}} chargers available</h4>
+    </div>
+    <div ng-if="!data.available_chargers">
+    	<h2 ng-if="!data.my_request">Join the Queue</h2>
+    	<h2 ng-if="data.my_request">Your Queue</h2>
+      	<h4>Subtitle here</h4>
+    </div>
+    
+  </div>
+  <div class="column" ng-if="!data.available_chargers || c.data.charge_session.state=='requested'">
     <p ng-if="!data.available_chargers">Sorry, all chargers are currently full.</p>
     <p>There {{data.queue_length == 1 ? 'is' : 'are'}} {{data.queue_length}} currently waiting.
     <br/>
-      You are #{{data.my_queue}} in queue.
+      <span ng-if="data.my_request">You are #{{data.my_queue}} in queue.</span>
     </p>
-    <button ng-if="!data.my_request">Join the Queue</button>
-    <button ng-if="data.my_request">Update My Request</button>
+    <button ng-if="!data.my_request" class="btn btn-option">Join the Queue</button>
+    <button ng-if="data.my_request" class="btn btn-option">Update My Request</button>
   </div>
-  <div ng-if="data.available_chargers">
-    <p>Available chargers</p>
+  <!--<div ng-if="data.available_chargers">-->
+  <div>
     <sp-widget widget="data.widget"></sp-widget>
   </div>
 </div>]]></template>

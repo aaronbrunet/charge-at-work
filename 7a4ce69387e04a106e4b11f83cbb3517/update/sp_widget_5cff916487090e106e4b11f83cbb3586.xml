@@ -5,6 +5,7 @@
   /* widget controller */
   var c = this;
   var options = c.options;
+  $scope.loading = true;
     var inputs = c.data.input;
 	//console.log(inputs);
 	//console.log($scope);
@@ -12,12 +13,29 @@
 	$timeout(function(){
 		spUtil.get('sc-cat-item-with-input',inputs).then(function(response){
 				c.cat_item = response;	
+				$scope.loading = false;
 		});
 	});
   
 };]]></client_script>
         <controller_as>c</controller_as>
-        <css/>
+        <css>.loading-spinner {&#13;
+	display: flex;&#13;
+  	flex-direction: column;&#13;
+    align-items: center;&#13;
+  i {&#13;
+  	animation: spin 1s infinite linear;&#13;
+  }&#13;
+}&#13;
+&#13;
+@keyframes spin {&#13;
+    from {&#13;
+        transform:rotate(0deg);&#13;
+    }&#13;
+    to {&#13;
+        transform:rotate(360deg);&#13;
+    }&#13;
+}</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
         <description/>
@@ -44,16 +62,20 @@
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-16 17:50:04</sys_created_on>
         <sys_id>5cff916487090e106e4b11f83cbb3586</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_name>SC Input Wrapper</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sp_widget_5cff916487090e106e4b11f83cbb3586</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-17 18:34:51</sys_updated_on>
+        <sys_updated_on>2024-03-27 03:32:26</sys_updated_on>
         <template><![CDATA[<div>
-<sp-widget widget="c.cat_item"></sp-widget>
+  <div ng-if="loading" class="loading-spinner">
+    <h4>Loading...</h4>
+    <span><i class="fa-solid fa-spinner"></i></span>
+  </div>
+	<sp-widget widget="c.cat_item"></sp-widget>
 </div>]]></template>
     </sp_widget>
 </record_update>

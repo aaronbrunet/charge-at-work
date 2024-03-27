@@ -114,9 +114,11 @@
   /*border-color: rgba(255, 255, 255, 0.25);*/&#13;
 }&#13;
 &#13;
+&#13;
+&#13;
 .navbar-inverse .navbar-nav &gt; .open &gt; a, .navbar-inverse .navbar-nav &gt; .open &gt; a:hover, .navbar-inverse .navbar-nav &gt; .open &gt; a:focus {&#13;
 	background-color: transparent;&#13;
-  &#13;
+  	color: initial;&#13;
   .navbar-avatar {&#13;
   	background-color: $c-bg-inverse;&#13;
   }&#13;
@@ -128,6 +130,7 @@
 &#13;
 .nav-item {&#13;
     display: flex;&#13;
+    position: relative;&#13;
     &#13;
   	align-items: center;&#13;
     justify-content: center;&#13;
@@ -267,6 +270,38 @@ margin: 0px;&#13;
     display: flex !important;&#13;
     height: auto !important;&#13;
   }&#13;
+  .about-menu {&#13;
+	left: 50%;&#13;
+    transform: translateX(-50%);&#13;
+  	padding: .5rem;&#13;
+  	text-align: center;&#13;
+  }&#13;
+  .about-menu:before {&#13;
+    content: "";&#13;
+    position: absolute;&#13;
+    border-color: rgba(194, 225, 245, 0);&#13;
+    border: solid transparent;&#13;
+    border-bottom-color: white;&#13;
+    border-width: 11px;&#13;
+    margin-left: -10px;&#13;
+    top: -21px;&#13;
+    right: 65px;&#13;
+    z-index: 1;&#13;
+  } &#13;
+&#13;
+  .about-menu:after {&#13;
+      content: "";&#13;
+      position: absolute;&#13;
+      right: 66px;&#13;
+      top: -21px;&#13;
+      width: 0;&#13;
+      height: 0;&#13;
+      border: solid transparent;&#13;
+      border-width: 10px;&#13;
+      border-bottom-color: #2B1A41;&#13;
+      z-index: 0;&#13;
+  }&#13;
+&#13;
 }&#13;
 &#13;
 @media (max-width: 992px) {&#13;
@@ -483,14 +518,14 @@ data.loginWidget = $sp.getWidgetFromInstance('login-modal');]]></script>
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-17 18:48:23</sys_created_on>
         <sys_id>c7a7363887094e106e4b11f83cbb35d0</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>43</sys_mod_count>
         <sys_name>Charger Header</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sp_header_footer_c7a7363887094e106e4b11f83cbb35d0</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-27 02:50:38</sys_updated_on>
+        <sys_updated_on>2024-03-27 03:22:11</sys_updated_on>
         <template><![CDATA[<div>
   <nav class="navbar-inverse" ng-class="::{'navbar':!isViewNative, 'is-native': isViewNative}"
        role="navigation" aria-label="${Primary}">
@@ -516,7 +551,11 @@ data.loginWidget = $sp.getWidgetFromInstance('login-modal');]]></script>
       </div>
       <div class="nav navbar-nav nav-item">
         <span>
-          <a>About</a>
+          <a class="toggle-dropdown" data-toggle="dropdown" aria-expanded="false">About</a>
+          <div class="dropdown-menu about-menu" role="menu">
+            <p>DEVELOPMENT VERSION</p>
+            <p>Last updated March 26th</p>
+          </div>
         </span>
       </div>
       <div class="nav navbar-nav nav-item">

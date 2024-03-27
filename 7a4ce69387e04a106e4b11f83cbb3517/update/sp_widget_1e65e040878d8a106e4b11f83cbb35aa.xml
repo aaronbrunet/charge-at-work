@@ -4,13 +4,13 @@
         <client_script><![CDATA[api.controller=function($scope,$rootScope,spUtil,$timeout) {
   /* widget controller */
   var c = this;
-	$timeout(function(){		
-		var init_charger = $scope.page.g_form.getValue('charger');
-		//console.log('got charger '+init_charger);
-		spUtil.get('charger-card',{charger_id:init_charger}).then(function(response){
-			c.charger = response;
-		});
+  $timeout(function(){		
+	var init_charger = $scope.page.g_form.getValue('charger');
+	//console.log('got charger '+init_charger);
+	spUtil.get('charger-card',{charger_id:init_charger}).then(function(response){
+		c.charger = response;
 	});
+  });
 	
 	$rootScope.$on("field.change", function(evt, parms) {
 	if (parms.field.name == 'charger') {
@@ -49,14 +49,14 @@
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-15 00:20:06</sys_created_on>
         <sys_id>1e65e040878d8a106e4b11f83cbb35aa</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name>Charger Card SC Wrapper</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sp_widget_1e65e040878d8a106e4b11f83cbb35aa</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-17 18:33:33</sys_updated_on>
+        <sys_updated_on>2024-03-27 02:09:51</sys_updated_on>
         <template><![CDATA[<div>
 <sp-widget widget="c.charger"></sp-widget>
 </div>]]></template>

@@ -7,6 +7,7 @@
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
         <element default="javascript:gs.getUserID()" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Requested by" max_length="32" name="requested_by" reference="sys_user" type="reference" use_dynamic_default="true"/>
         <element default="javascript:new GlideDateTime();" label="Requested on" max_length="255" name="requested_on" type="glide_date_time"/>
+        <element label="Request Preference" max_length="32" name="request_preference" reference="x_snc_charger_charger" type="reference"/>
         <element choice="3" default="requested" label="State" max_length="40" name="state" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Requested" sequence="0" value="requested"/>
@@ -22,12 +23,15 @@
             <element name="charger"/>
         </index>
         <index name="index2">
-            <element name="requested_by"/>
+            <element name="request_preference"/>
         </index>
         <index name="index3">
-            <element name="sys_class_name"/>
+            <element name="requested_by"/>
         </index>
         <index name="index4">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index5">
             <element name="vehicle"/>
         </index>
     </element>

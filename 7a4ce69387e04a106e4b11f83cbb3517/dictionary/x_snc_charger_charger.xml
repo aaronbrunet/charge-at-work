@@ -11,21 +11,19 @@
         <element choice="3" default="ok" label="Status" max_length="40" name="service_status" type="choice">
             <choice>
                 <element inactive_on_update="false" label="OK" sequence="0" value="ok"/>
-                <element inactive_on_update="false" label="Error" sequence="1" value="error"/>
-                <element inactive_on_update="false" label="Unknown" sequence="2" value="unknown"/>
-                <element inactive_on_update="false" label="Under Maintenance" sequence="3" value="under_maintenance"/>
-                <element inactive_on_update="false" label="Unavailable" sequence="4" value="unavailable"/>
-                <element inactive_on_update="false" label="Coming Soon" sequence="5" value="coming_soon"/>
+                <element inactive_on_update="false" label="Unknown" sequence="1" value="unknown"/>
+                <element inactive_on_update="false" label="Unavailable" sequence="2" value="unavailable"/>
+                <element inactive_on_update="false" label="Coming Soon" sequence="3" value="coming_soon"/>
             </choice>
         </element>
         <element choice="3" default="available" label="State" max_length="40" name="state" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Available" sequence="0" value="available"/>
-                <element inactive_on_update="false" label="Connected" sequence="1" value="connected"/>
-                <element inactive_on_update="false" label="Charging" sequence="2" value="charging"/>
-                <element inactive_on_update="false" label="Unknown" sequence="3" value="unknown"/>
-                <element inactive_on_update="false" label="Offline" sequence="4" value="offline"/>
-                <element inactive_on_update="false" label="Error" sequence="5" value="error"/>
+                <element inactive_on_update="false" label="Pending" sequence="1" value="pending"/>
+                <element inactive_on_update="false" label="Connected" sequence="2" value="connected"/>
+                <element inactive_on_update="false" label="Charging" sequence="3" value="charging"/>
+                <element inactive_on_update="false" label="Unknown" sequence="4" value="unknown"/>
+                <element inactive_on_update="false" label="Offline" sequence="5" value="offline"/>
             </choice>
         </element>
         <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>

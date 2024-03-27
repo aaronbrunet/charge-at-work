@@ -6,7 +6,7 @@
   var c = this;
   
   c.liveUpdate = function(){
-	console.log('Updating list live with filter: '+c.data.filter);
+	console.log('Charger Card List: Updating list live with filter: '+c.data.filter);
 	var filter = 'state='+c.data.filter;
 	spUtil.recordWatch($scope, c.data.constants.TABLE_CHARGERS, filter, function(name) {
 		//console.log([filter,name]);
@@ -56,7 +56,7 @@
 
   $timeout(function(){
 	if(c.data.options.live_update == true){
-		console.log('LIVE: Charger Card List');
+		console.log('Charger Card List: LIVE: Charger Card List');
 		c.liveUpdate();
 	}
   },500);
@@ -156,14 +156,14 @@ data.list = data.widgets;
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-01 01:58:30</sys_created_on>
         <sys_id>198578e387a48a104c1fc99d0ebb3553</sys_id>
-        <sys_mod_count>122</sys_mod_count>
+        <sys_mod_count>123</sys_mod_count>
         <sys_name>Charger Card List</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sp_widget_198578e387a48a104c1fc99d0ebb3553</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-22 02:44:05</sys_updated_on>
+        <sys_updated_on>2024-03-22 02:57:05</sys_updated_on>
         <template><![CDATA[<div class="charge-container column {{data.options.embedded == 'false' && 'outer'}} charger-widget" ng-if="data.list && (data.list.length > 0 || (data.list.length < 1 && data.options.hide_on_empty == 'false'))">
   <div ng-if="false">
     <button class="btn btn-option charge-button" ng-click="c.refresh()" ng-if="!data.options.live_update">Refresh</button>

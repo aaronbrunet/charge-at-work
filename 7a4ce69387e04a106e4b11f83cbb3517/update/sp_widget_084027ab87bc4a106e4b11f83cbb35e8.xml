@@ -9,7 +9,7 @@
 	if(c.data.charge_session && c.data.charge_session !=''){
 		//console.log(c.data.charge_session);
 		$rootScope.$emit('my_charging_session',c.data.charge_session);
-		//console.log('emitted!');
+		console.log(['emitted!',c.data.charge_session]);
 	}
   };
 
@@ -17,11 +17,13 @@
 	console.log('LIVE: My Charging Session');
 	//Watch the Charger table live
 	if(c.data.rw.charger){
+		// console.log('rw charger');
 		spUtil.recordWatch($scope, c.data.constants.TABLE_CHARGERS, c.data.rw.charger, function(record){
 			spUtil.update($scope);//.then(function(){});
 		})
 	};
 	//Watch the Charge events table live
+	// console.log('rw charge events');
 	spUtil.recordWatch($scope, c.data.constants.TABLE_QUEUE, c.data.rw.queue, function(record) {
 		spUtil.update($scope);//.then(function(){});
 	});
@@ -41,37 +43,13 @@
 
 };]]></client_script>
         <controller_as>c</controller_as>
-        <css>/*.charge-card {&#13;
+        <css>.my-charging-container {&#13;
+  box-shadow: 0 0.2rem 1rem 0 rgba(0, 0, 0, .1);&#13;
+  border-radius: 2rem;&#13;
+  display: flex;&#13;
   padding: 2rem;&#13;
   margin: 2rem;&#13;
-  border: 1px solid grey;&#13;
-  border-radius: 2rem;&#13;
-  height: 100%;&#13;
-  width: 15rem;&#13;
-  &#13;
-  &amp;:hover {&#13;
-  	  box-shadow: 0 0.2rem 1rem 0 rgba(0, 0, 0, .1);&#13;
-&#13;
-  }&#13;
-}*/&#13;
-&#13;
-/*&#13;
-.block {&#13;
-	margin: 1rem;&#13;
-  	padding: 1rem;&#13;
 }&#13;
-&#13;
-.row {&#13;
-  display: flex;&#13;
-  flex-direction: row;&#13;
-}&#13;
-.column {&#13;
-  display: flex;&#13;
-  flex-direction: column;&#13;
-  border: 1px solid red;&#13;
-}&#13;
-*/&#13;
-&#13;
 .column {&#13;
 	border: 1px solid red;&#13;
 }</css>
@@ -136,19 +114,18 @@
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-14 00:50:40</sys_created_on>
         <sys_id>084027ab87bc4a106e4b11f83cbb35e8</sys_id>
-        <sys_mod_count>84</sys_mod_count>
+        <sys_mod_count>99</sys_mod_count>
         <sys_name>My Charging Session</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sp_widget_084027ab87bc4a106e4b11f83cbb35e8</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-21 19:35:19</sys_updated_on>
-        <template><![CDATA[<div ng-if="data.charge_session.charger" class="charger-widget">
+        <sys_updated_on>2024-03-27 01:30:58</sys_updated_on>
+        <template><![CDATA[<div ng-if="data.charge_session.charger && data.charge_session.details.state.value == 'in_progress'" class="charger-widget my-charging-container">
     <div class="row block">
       <div class="column block">
         <div ng-if="data.charge_session.charger && data.charge_session.charger != ''">
-          {{data.charge_session.charger}}
           <sp-widget widget="data.widget"></sp-widget>
           <button class="btn btn-option charge-button" ng-if="data.charge_session.details.state.value != 'requested'">Complete Session</button>
         </div>

@@ -20,6 +20,7 @@ ChargerUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 			TABLE_VEHICLES: 'x_snc_charger_vehicle',
 			CAT_ITEM_NEW_SESSION: '5faf888c870d8a106e4b11f83cbb35fc',
 			CAT_ITEM_JOIN_QUEUE: 'ef53f80c878d8a106e4b11f83cbb35b0',
+			CAT_ITEM_UPDATE_SESSION: 'f5ab6e33c34d861079ff4445990131b9',
 		};
 		
 		return constants;
@@ -119,13 +120,13 @@ ChargerUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-14 00:44:29</sys_created_on>
         <sys_id>f532efeb87bc4a106e4b11f83cbb3520</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name>ChargerUtils</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sys_script_include_f532efeb87bc4a106e4b11f83cbb3520</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-16 16:51:09</sys_updated_on>
+        <sys_updated_on>2024-03-27 02:02:20</sys_updated_on>
     </sys_script_include>
 </record_update>

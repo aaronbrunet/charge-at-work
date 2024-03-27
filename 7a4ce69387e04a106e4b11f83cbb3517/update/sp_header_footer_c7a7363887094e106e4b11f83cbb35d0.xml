@@ -457,7 +457,10 @@ data.menu = $sp.getWidgetFromInstance(menu);
 //data.langSelector = pm.isActive('com.glide.i18n')? $sp.getWidget('sp-lang-selector') : "";
 data.langSelector = "";
 
-data.location = new ChargerUtils().getMyLocation(gs.getUserID());
+var location_id = new ChargerUtils().getMyLocation(gs.getUserID());
+var locationGR = new GlideRecord('cmn_location');
+locationGR.get(location_id);
+data.location = locationGR.getDisplayValue('name');
 
 if (data.menu && data.menu.data) {
 	data.menu.data.replace = true;
@@ -480,14 +483,14 @@ data.loginWidget = $sp.getWidgetFromInstance('login-modal');]]></script>
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-17 18:48:23</sys_created_on>
         <sys_id>c7a7363887094e106e4b11f83cbb35d0</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_name>Charger Header</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sp_header_footer_c7a7363887094e106e4b11f83cbb35d0</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-27 01:32:20</sys_updated_on>
+        <sys_updated_on>2024-03-27 02:50:38</sys_updated_on>
         <template><![CDATA[<div>
   <nav class="navbar-inverse" ng-class="::{'navbar':!isViewNative, 'is-native': isViewNative}"
        role="navigation" aria-label="${Primary}">
@@ -539,7 +542,7 @@ data.loginWidget = $sp.getWidgetFromInstance('login-modal');]]></script>
             <span class="visible-lg-inline">{{::user.name}}</span>
           </a>
           <ul class="dropdown-menu" role="menu" aria-label="{{::data.profileBtnMsg}}">
-            <li role="presentation"><a tabindex="-1" ng-href="?id=user_profile&sys_id={{::user.sys_id}}" role="menuitem">${Profile}</a></li>
+            <li role="presentation"><a tabindex="-1" ng-href="?id=driver_registration&sys_id={{::user.sys_id}}" role="menuitem">${Profile}</a></li>
             <li ng-if="::!(isViewNative || isViewNativeTablet)" role="presentation"><a tabindex="-1" href="{{::portal.logoutUrl}}" role="menuitem">${Logout}</a></li>
           </ul>
         </li>

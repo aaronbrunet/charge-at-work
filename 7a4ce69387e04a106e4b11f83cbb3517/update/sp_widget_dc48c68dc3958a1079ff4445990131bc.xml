@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope,spModal) {
+  /* widget controller */
+  var c = this;
+
+	c.cancelModal = function(){
+		$scope.$parent.$parent.$dismiss();
+
+	}
+
+  c.action = function(action){
+	if(action == 'charge'){
+		c.cancelModal();
+		spModal.open({
+			"widget" : "sc-input-wrapper",
+			"widgetInput" : {
+				sys_id: c.data.constants.CAT_ITEM_NEW_SESSION,
+				"display_cart_on_right": "false",
+				"auto_redirect": false,
+				passed_fields: c.data.cat_item,
+				embedded: true
+			},
+			"buttons":[],
+		});
+	}
+  }
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>charger-details</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Charger Details</name>
+        <option_schema/>
+        <public>false</public>
+        <roles>x_snc_charger.user</roles>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+  data.charger = '';
+  if(input){
+	data.charger = input.charger_id;
+  }
+  var cu = new ChargerUtils();
+  data.constants = cu.getConstants();
+  const {TABLE_CHARGERS,TABLE_QUEUE,CAT_ITEM_NEW_SESSION} = data.constants;
+ 
+
+  var chargeGR = new GlideRecord(TABLE_CHARGERS);
+  chargeGR.get(data.charger);
+  if(chargeGR){
+	console.log('Hello');
+  }
+
+	var _options = {charger_id:data.charger};
+	data.widget = $sp.getWidget("charger-card",_options);
+
+	data.cat_item = {
+			values:
+			[
+				{fieldName:'charger',fieldValue:data.charger,enforced:true}
+			]
+		};
+
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>aaron.brunet</sys_created_by>
+        <sys_created_on>2024-03-30 20:17:26</sys_created_on>
+        <sys_id>dc48c68dc3958a1079ff4445990131bc</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Charger Details</sys_name>
+        <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
+        <sys_update_name>sp_widget_dc48c68dc3958a1079ff4445990131bc</sys_update_name>
+        <sys_updated_by>aaron.brunet</sys_updated_by>
+        <sys_updated_on>2024-03-30 20:39:14</sys_updated_on>
+        <template><![CDATA[<div class="charger-details-container column">
+	<sp-widget widget="data.widget"></sp-widget>
+  <div class="charger-details-controls column">
+    <button class="btn btn-primary" ng-click="c.action('charge')">Start charge</button>
+    <p>Is this information incorrect?</p>
+    <button class="btn btn-secondary">Update info</button>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

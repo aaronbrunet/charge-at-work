@@ -5,7 +5,8 @@
         <activation_success_page display_value="sn_user_activation_success">2df447b1533200102b12ddeeff7b12c5</activation_success_page>
         <activation_table>x_snc_charger_user_acti_req_857049</activation_table>
         <active>true</active>
-        <description><![CDATA[<p>Please register</p>]]></description>
+        <description><![CDATA[<p><span style="font-size: 10pt;">By registering, you agree to and confirm the following:</span></p>
+<ul style="list-style-position: inside;"><li style="font-size: 10pt;"><span style="font-size: 10pt;">I am an active ServiceNow employee who owns or operates an electric vehicle.</span></li><li style="font-size: 10pt;"><span style="font-size: 10pt;">I am registering for this service with the sole intent of using this service for its intended purpose.</span></li><li style="font-size: 10pt;"><span style="font-size: 10pt;">I confirm that all information provided is accurate and correct, and it is my responsibility to ensure this information is kept up-to-date.</span></li><li style="font-size: 10pt;"><span style="font-size: 10pt;">I agree to &#39;play nice&#39; at all times and conduct myself in this service appropriately.</span></li><li style="font-size: 10pt;"><span style="font-size: 10pt;">I consent to provide my basic information, including but not limited to name, email, and vehicle license plate.</span></li><li style="font-size: 10pt;"><span style="font-size: 10pt;">I consent to be contacted at the provided contact details for the usage of this service.</span></li><li style="font-size: 10pt;"><span style="font-size: 10pt;">I understand that my usage of this service may be terminated at any time for breach of expected usage.</span></li></ul>]]></description>
         <enable_captcha>false</enable_captcha>
         <enable_terms>false</enable_terms>
         <internal_name>x_snc_charger.Charger Registration</internal_name>
@@ -21,14 +22,14 @@
         <sys_created_on>2024-03-30 18:25:52</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>0b0fe509c3558a1079ff4445990131bd</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Charger Registration</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sys_user_registration_config_0b0fe509c3558a1079ff4445990131bd</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-30 19:03:55</sys_updated_on>
+        <sys_updated_on>2024-03-30 19:34:27</sys_updated_on>
         <terms_and_condition_url/>
         <transform_map display_value="u_reg_xmap_686284">163fe909c3558a1079ff44459901312a</transform_map>
         <user_onboarding_flow display_value="External User Onboarding">3539c77e5376001001a3ddeeff7b1214</user_onboarding_flow>

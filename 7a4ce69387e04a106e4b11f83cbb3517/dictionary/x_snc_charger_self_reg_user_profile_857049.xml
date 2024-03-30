@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="303f6909c3558a1079ff4445990131e8" extends="sys_self_registered_user_profile" label="Charger Self Reg User Profile 857049" max_length="40" name="x_snc_charger_self_reg_user_profile_857049" type="collection"/>
+    <element db_object_id="303f6909c3558a1079ff4445990131e8" extends="sys_self_registered_user_profile" label="Charger Self Reg User Profile 857049" max_length="40" name="x_snc_charger_self_reg_user_profile_857049" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=location" label="Location" max_length="40" name="location" type="string"/>
+    </element>
 </database>

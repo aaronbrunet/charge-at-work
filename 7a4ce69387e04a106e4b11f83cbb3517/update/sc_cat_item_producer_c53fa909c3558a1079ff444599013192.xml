@@ -13,7 +13,8 @@
         <delivery_plan/>
         <delivery_plan_script/>
         <delivery_time>1970-01-03 00:00:00</delivery_time>
-        <description><![CDATA[<p>Please register</p>]]></description>
+        <description><![CDATA[<p><span style="font-size: 10pt;">By registering, you agree to and confirm the following:</span></p>
+<ul style="list-style-position: inside;"><li style="font-size: 10pt;"><span style="font-size: 10pt;">I am an active ServiceNow employee who owns or operates an electric vehicle.</span></li><li style="font-size: 10pt;"><span style="font-size: 10pt;">I am registering for this service with the sole intent of using this service for its intended purpose.</span></li><li style="font-size: 10pt;"><span style="font-size: 10pt;">I confirm that all information provided is accurate and correct, and it is my responsibility to ensure this information is kept up-to-date.</span></li><li style="font-size: 10pt;"><span style="font-size: 10pt;">I agree to &#39;play nice&#39; at all times and conduct myself in this service appropriately.</span></li><li style="font-size: 10pt;"><span style="font-size: 10pt;">I consent to provide my basic information, including but not limited to name, email, and vehicle license plate.</span></li><li style="font-size: 10pt;"><span style="font-size: 10pt;">I consent to be contacted at the provided contact details for the usage of this service.</span></li><li style="font-size: 10pt;"><span style="font-size: 10pt;">I understand that my usage of this service may be terminated at any time for breach of expected usage.</span></li></ul>]]></description>
         <display_price_property>non_zero</display_price_property>
         <entitlement_script/>
         <flow_designer_flow/>
@@ -80,14 +81,14 @@
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-30 18:25:57</sys_created_on>
         <sys_id>c53fa909c3558a1079ff444599013192</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Charger Registration</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sc_cat_item_producer_c53fa909c3558a1079ff444599013192</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-30 18:32:48</sys_updated_on>
+        <sys_updated_on>2024-03-30 19:34:27</sys_updated_on>
         <table_name>x_snc_charger_user_reg_req_857049</table_name>
         <taxonomy_topic/>
         <template/>

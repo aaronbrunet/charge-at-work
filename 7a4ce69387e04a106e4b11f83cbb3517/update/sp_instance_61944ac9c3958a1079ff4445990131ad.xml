@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>3</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">032c9fa787bc4a106e4b11f83cbb3548</sp_column>
+        <sp_widget display_value="Charger Card List">198578e387a48a104c1fc99d0ebb3553</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>aaron.brunet</sys_created_by>
+        <sys_created_on>2024-03-30 19:59:49</sys_created_on>
+        <sys_id>61944ac9c3958a1079ff4445990131ad</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>All Chargers At My Location</sys_name>
+        <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
+        <sys_update_name>sp_instance_61944ac9c3958a1079ff4445990131ad</sys_update_name>
+        <sys_updated_by>aaron.brunet</sys_updated_by>
+        <sys_updated_on>2024-03-30 20:10:07</sys_updated_on>
+        <title>All Chargers At My Location</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"filter": {
+		"value": "all",
+		"displayValue": "All"
+	},
+	"click_action": {
+		"value": "details",
+		"displayValue": "Details"
+	},
+	"limit": {
+		"value": "3",
+		"displayValue": "3"
+	},
+	"location": {
+		"value": "ac1abebfc34d861079ff4445990131ae",
+		"displayValue": "Orlando"
+	},
+	"show_filter_buttons": {
+		"value": "false",
+		"displayValue": "false"
+	},
+	"hide_on_empty": {
+		"value": "false",
+		"displayValue": "false"
+	},
+	"live_update": {
+		"value": "true",
+		"displayValue": "true"
+	},
+	"embedded": {
+		"value": "false",
+		"displayValue": "false"
+	},
+	"title": {
+		"value": "All Chargers At My Location",
+		"displayValue": "All Chargers At My Location"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=61944ac9c3958a1079ff4445990131ad"/>
+</record_update>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="location" table="x_snc_charger_user_reg_req_857049" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>location</element>
+            <name>x_snc_charger_user_reg_req_857049</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>aaron.brunet</sys_created_by>
+            <sys_created_on>2024-03-30 19:30:50</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>location</sys_name>
+            <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
+            <sys_update_name>sys_choice_x_snc_charger_user_reg_req_857049_location</sys_update_name>
+            <sys_updated_by>aaron.brunet</sys_updated_by>
+            <sys_updated_on>2024-03-30 19:30:50</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Orlando</label>
+            <language>en</language>
+            <name>x_snc_charger_user_reg_req_857049</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>aaron.brunet</sys_created_by>
+            <sys_created_on>2024-03-30 19:30:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>aaron.brunet</sys_updated_by>
+            <sys_updated_on>2024-03-30 19:39:58</sys_updated_on>
+            <value>Orlando</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

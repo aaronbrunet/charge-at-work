@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="External User Self-Registration" source="com.snc.external_user_self_registration">a15d61c1c3558a1079ff44459901318d</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>aaron.brunet</sys_created_by>
+        <sys_created_on>2024-03-30 18:25:53</sys_created_on>
+        <sys_id>003f6909c3558a1079ff44459901317a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
+        <sys_updated_by>aaron.brunet</sys_updated_by>
+        <sys_updated_on>2024-03-30 18:25:53</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

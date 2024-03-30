@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="x_snc_charger.manager" name="x_snc_charger.manager">8d35ef158774c2106e4b11f83cbb3514</contains>
+        <role display_value="x_snc_charger.admin" name="x_snc_charger.admin">ba4ce69387e04a106e4b11f83cbb3529</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>aaron.brunet</sys_created_by>
+        <sys_created_on>2024-03-30 17:42:03</sys_created_on>
+        <sys_id>8e25290dc3158a1079ff44459901318d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_charger.manager.x_snc_charger.admin</sys_name>
+        <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
+        <sys_update_name>sys_user_role_contains_8e25290dc3158a1079ff44459901318d</sys_update_name>
+        <sys_updated_by>aaron.brunet</sys_updated_by>
+        <sys_updated_on>2024-03-30 17:42:03</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>

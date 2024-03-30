@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
     <sp_rel_widget_clone action="INSERT_OR_UPDATE">
-        <child display_value="Driver Registration">4b773e3fc34d861079ff444599013114</child>
+        <child display_value="Driver Profile">4b773e3fc34d861079ff444599013114</child>
         <cloned>2024-03-27 02:29:21</cloned>
         <last_validated>2024-03-27 02:29:21</last_validated>
         <parent display_value="User Profile">6e6ac664d710120023c84f80de610318</parent>

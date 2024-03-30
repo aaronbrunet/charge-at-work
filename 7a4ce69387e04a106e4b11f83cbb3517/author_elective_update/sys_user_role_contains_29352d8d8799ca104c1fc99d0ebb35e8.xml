@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="DELETE">
+        <contains display_value="x_snc_charger.user" name="x_snc_charger.user">3e4ce69387e04a106e4b11f83cbb352e</contains>
+        <role display_value="x_snc_charger.manager" name="x_snc_charger.manager">8d35ef158774c2106e4b11f83cbb3514</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>aaron.brunet</sys_created_by>
+        <sys_created_on>2024-03-30 17:42:17</sys_created_on>
+        <sys_id>29352d8d8799ca104c1fc99d0ebb35e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_charger.user.x_snc_charger.manager</sys_name>
+        <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
+        <sys_update_name>sys_user_role_contains_29352d8d8799ca104c1fc99d0ebb35e8</sys_update_name>
+        <sys_updated_by>aaron.brunet</sys_updated_by>
+        <sys_updated_on>2024-03-30 17:42:17</sys_updated_on>
+    </sys_user_role_contains>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</application>
+        <file_path/>
+        <instance_id>6bc7963ddb04515c07072f17d496198d</instance_id>
+        <instance_name>empabrunet02</instance_name>
+        <name>sys_user_role_contains_29352d8d8799ca104c1fc99d0ebb35e8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains"><sys_user_role_contains action="INSERT_OR_UPDATE"><contains display_value="x_snc_charger.user" name="x_snc_charger.user">3e4ce69387e04a106e4b11f83cbb352e</contains><role display_value="x_snc_charger.manager" name="x_snc_charger.manager">8d35ef158774c2106e4b11f83cbb3514</role><sys_class_name>sys_user_role_contains</sys_class_name><sys_created_by>aaron.brunet</sys_created_by><sys_created_on>2024-03-30 17:42:17</sys_created_on><sys_id>29352d8d8799ca104c1fc99d0ebb35e8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_charger.user.x_snc_charger.manager</sys_name><sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package><sys_policy/><sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope><sys_update_name>sys_user_role_contains_29352d8d8799ca104c1fc99d0ebb35e8</sys_update_name><sys_updated_by>aaron.brunet</sys_updated_by><sys_updated_on>2024-03-30 17:42:17</sys_updated_on></sys_user_role_contains></record_update>]]></payload>
+        <payload_hash>-43992645</payload_hash>
+        <record_name>x_snc_charger.user.x_snc_charger.manager</record_name>
+        <reverted_from/>
+        <source>7d25b4e387a48a104c1fc99d0ebb35df</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>aaron.brunet</sys_created_by>
+        <sys_created_on>2024-03-30 17:42:18</sys_created_on>
+        <sys_id>f9352d8d8799ca104c1fc99d0ebb35ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18e907482360000001</sys_recorded_at>
+        <sys_updated_by>aaron.brunet</sys_updated_by>
+        <sys_updated_on>2024-03-30 17:42:18</sys_updated_on>
+        <type>Contained Role</type>
+        <update_guid>fd352d8da399ca10a66d6e3248c0e8ed</update_guid>
+        <update_guid_history>fd352d8da399ca10a66d6e3248c0e8ed:-43992645</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>aaron.brunet</sys_created_by>
+        <sys_created_on>2024-03-30 18:50:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role_contains">sys_user_role_contains</sys_db_object>
+        <sys_id>d159b8dd881e4c24951fb84e543c5224</sys_id>
+        <sys_metadata>29352d8d8799ca104c1fc99d0ebb35e8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_charger.user.x_snc_charger.manager</sys_name>
+        <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
+        <sys_scope_delete display_value="">4ff64489119e40cbad30d7719c4fc3a9</sys_scope_delete>
+        <sys_update_name>sys_user_role_contains_29352d8d8799ca104c1fc99d0ebb35e8</sys_update_name>
+        <sys_update_version display_value="sys_user_role_contains_29352d8d8799ca104c1fc99d0ebb35e8">f9352d8d8799ca104c1fc99d0ebb35ee</sys_update_version>
+        <sys_updated_by>aaron.brunet</sys_updated_by>
+        <sys_updated_on>2024-03-30 18:50:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

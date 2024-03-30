@@ -11,7 +11,7 @@
         <short_description/>
         <size>md</size>
         <sp_column display_value="1">e507363fc34d861079ff44459901310f</sp_column>
-        <sp_widget display_value="Driver Registration">4b773e3fc34d861079ff444599013114</sp_widget>
+        <sp_widget display_value="Driver Profile">4b773e3fc34d861079ff444599013114</sp_widget>
         <sys_class_name>sp_instance</sys_class_name>
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-27 02:27:20</sys_created_on>

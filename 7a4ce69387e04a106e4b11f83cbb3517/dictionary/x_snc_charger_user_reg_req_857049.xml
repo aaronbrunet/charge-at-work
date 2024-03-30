@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c43f6909c3558a1079ff44459901316e" extends="sys_user_registration_request" label="Charger User Reg Req 857049" max_length="40" name="x_snc_charger_user_reg_req_857049" type="collection"/>
+</database>

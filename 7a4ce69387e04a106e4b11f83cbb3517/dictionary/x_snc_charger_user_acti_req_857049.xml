@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e83f6909c3558a1079ff4445990131a9" extends="user_activation_request" label="Charger User Acti Req 857049" max_length="40" name="x_snc_charger_user_acti_req_857049" type="collection"/>
+</database>

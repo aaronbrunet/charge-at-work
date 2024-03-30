@@ -212,10 +212,10 @@
         <docs/>
         <field_list/>
         <has_preview>false</has_preview>
-        <id>charger-driver-registration</id>
+        <id>charger-driver-profile</id>
         <internal>false</internal>
         <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
-        <name>Driver Registration</name>
+        <name>Driver Profile</name>
         <option_schema/>
         <public>false</public>
         <roles/>
@@ -334,14 +334,14 @@
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-27 02:29:21</sys_created_on>
         <sys_id>4b773e3fc34d861079ff444599013114</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Driver Registration</sys_name>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Driver Profile</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sp_widget_4b773e3fc34d861079ff444599013114</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-27 02:38:40</sys_updated_on>
+        <sys_updated_on>2024-03-30 17:40:02</sys_updated_on>
         <template><![CDATA[<div class="default-focus-outline user-profile-container">
   <div ng-if="!data.userExists" class="panel panel-default">
       <div class="panel-body wrapper-lg text-center">

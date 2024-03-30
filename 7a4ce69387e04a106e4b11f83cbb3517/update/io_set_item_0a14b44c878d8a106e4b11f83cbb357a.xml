@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
     <io_set_item action="INSERT_OR_UPDATE">
         <order>100</order>
-        <sc_cat_item display_value="Join Charge Queue">ef53f80c878d8a106e4b11f83cbb35b0</sc_cat_item>
+        <sc_cat_item display_value="Join the Queue">ef53f80c878d8a106e4b11f83cbb35b0</sc_cat_item>
         <sys_class_name>io_set_item</sys_class_name>
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-15 01:18:04</sys_created_on>

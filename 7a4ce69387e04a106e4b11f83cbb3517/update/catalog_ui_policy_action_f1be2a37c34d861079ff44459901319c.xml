@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
     <catalog_ui_policy_action action="INSERT_OR_UPDATE">
-        <catalog_item display_value="Join Charge Queue">ef53f80c878d8a106e4b11f83cbb35b0</catalog_item>
+        <catalog_item display_value="Join the Queue">ef53f80c878d8a106e4b11f83cbb35b0</catalog_item>
         <catalog_variable>IO:2baee637c34d861079ff444599013189</catalog_variable>
         <cleared>false</cleared>
         <disabled>ignore</disabled>

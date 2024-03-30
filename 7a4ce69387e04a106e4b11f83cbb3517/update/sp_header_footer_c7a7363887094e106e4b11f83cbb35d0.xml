@@ -124,7 +124,7 @@
   }&#13;
 }&#13;
 &#13;
-.navbar-inverse .navbar-nav &gt; li &gt; a:hover, .navbar-inverse .navbar-nav &gt; li &gt; a:focus {&#13;
+.navbar-inverse .navbar-nav a:hover, .navbar-inverse .navbar-nav a:focus {&#13;
 	color: $c-bg-inverse;&#13;
 }&#13;
 &#13;
@@ -139,6 +139,15 @@
 	&#13;
   	font-size: 1.5rem;&#13;
     font-weight: bold;&#13;
+  &#13;
+&#13;
+  	user-select:none;&#13;
+	color: $c-primary;&#13;
+  &#13;
+    a {&#13;
+      color: $c-primary;&#13;
+    }&#13;
+  &#13;
 }&#13;
 &#13;
 .navbar-inverse .navbar-toggle .icon-bar {&#13;
@@ -165,6 +174,10 @@
       align-items: center;&#13;
     justify-content: center;&#13;
     display: flex;&#13;
+  &#13;
+  &amp;:hover {&#13;
+  	background-color: $c-bg-inverse;&#13;
+  }&#13;
 }&#13;
 &#13;
 header[role="banner"],&#13;
@@ -279,7 +292,7 @@ margin: 0px;&#13;
   .about-menu:before {&#13;
     content: "";&#13;
     position: absolute;&#13;
-    border-color: rgba(194, 225, 245, 0);&#13;
+    border-color: $c-primary; /*rgba(194, 225, 245, 0);*/&#13;
     border: solid transparent;&#13;
     border-bottom-color: white;&#13;
     border-width: 11px;&#13;
@@ -298,7 +311,7 @@ margin: 0px;&#13;
       height: 0;&#13;
       border: solid transparent;&#13;
       border-width: 10px;&#13;
-      border-bottom-color: #2B1A41;&#13;
+      border-bottom-color: $c-primary;&#13;
       z-index: 0;&#13;
   }&#13;
 &#13;
@@ -518,14 +531,14 @@ data.loginWidget = $sp.getWidgetFromInstance('login-modal');]]></script>
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-17 18:48:23</sys_created_on>
         <sys_id>c7a7363887094e106e4b11f83cbb35d0</sys_id>
-        <sys_mod_count>43</sys_mod_count>
+        <sys_mod_count>53</sys_mod_count>
         <sys_name>Charger Header</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sp_header_footer_c7a7363887094e106e4b11f83cbb35d0</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-27 03:22:11</sys_updated_on>
+        <sys_updated_on>2024-03-30 14:57:01</sys_updated_on>
         <template><![CDATA[<div>
   <nav class="navbar-inverse" ng-class="::{'navbar':!isViewNative, 'is-native': isViewNative}"
        role="navigation" aria-label="${Primary}">
@@ -578,9 +591,10 @@ data.loginWidget = $sp.getWidgetFromInstance('login-modal');]]></script>
               <!--<sn-avatar class="avatar-small-medium" primary="avatarProfile" />-->
               <i class="fa-solid fa-user"></i>
             </span>
-            <span class="visible-lg-inline">{{::user.name}}</span>
           </a>
           <ul class="dropdown-menu" role="menu" aria-label="{{::data.profileBtnMsg}}">
+            <li role="presentation">
+              <span class="visible-lg-inline">{{::user.name}}</span></li>
             <li role="presentation"><a tabindex="-1" ng-href="?id=driver_registration&sys_id={{::user.sys_id}}" role="menuitem">${Profile}</a></li>
             <li ng-if="::!(isViewNative || isViewNativeTablet)" role="presentation"><a tabindex="-1" href="{{::portal.logoutUrl}}" role="menuitem">${Logout}</a></li>
           </ul>

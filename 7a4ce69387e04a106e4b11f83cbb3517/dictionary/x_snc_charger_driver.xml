@@ -9,7 +9,9 @@
                 <element inactive_on_update="false" label="Teams" sequence="2" value="teams"/>
             </choice>
         </element>
+        <element label="Email" max_length="40" name="email" type="string"/>
         <element label="Location" max_length="32" name="location" reference="cmn_location" reference_qual="cmn_location_type=site" reference_qual_condition="cmn_location_type=site" type="reference"/>
+        <element label="Name visible" max_length="40" name="name_visible" type="boolean"/>
         <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
         <element display="true" label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
         <index name="index">

@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="e83f6909c3558a1079ff4445990131a9" extends="user_activation_request" label="Charger User Acti Req 857049" max_length="40" name="x_snc_charger_user_acti_req_857049" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=color" label="Color" max_length="40" name="color" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=container_2_end" label="Container 2 end" max_length="40" name="container_2_end" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=container_2_split" label="Container 2 split" max_length="40" name="container_2_split" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=container_2_start" label="Container 2 start" max_length="40" name="container_2_start" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=container_end" label="Container end" max_length="40" name="container_end" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=container_split" label="Container split" max_length="40" name="container_split" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=container_start" label="Container start" max_length="40" name="container_start" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=i_consent_to_sharing_my_license_plate_with_other_charge_work_users" label="I consent to sharing my license plate with other Charge@Work users" max_length="40" name="i_consent_to_s_rge_work_users" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=license_plate" label="License plate" max_length="40" name="license_plate" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=license_plate_disclaimer" label="License plate disclaimer" max_length="40" name="license_plate_disclaimer" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=location" label="Location" max_length="40" name="location" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=make" label="Make" max_length="40" name="make" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=model" label="Model" max_length="40" name="model" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=year" label="Year" max_length="40" name="year" type="string"/>
     </element>
 </database>

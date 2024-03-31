@@ -106,15 +106,25 @@
   opacity: 0.4;&#13;
 }&#13;
 &#13;
+.navbar-brand {&#13;
+	display: flex;&#13;
+  	color: $c-bg-white; &#13;
+	user-select:none;&#13;
+}&#13;
+&#13;
+.inline-title {&#13;
+	align-self: baseline;&#13;
+    margin-left: 0;&#13;
+}&#13;
+&#13;
 .navbar-inverse {&#13;
-	background-color: $c-bg-light;&#13;
+	background-color: transparent;/*$c-bg-light;*/&#13;
+	background-color: $c-brand-secondary;&#13;
 }&#13;
 &#13;
 .navbar-inverse .navbar-toggle {&#13;
   /*border-color: rgba(255, 255, 255, 0.25);*/&#13;
 }&#13;
-&#13;
-&#13;
 &#13;
 .navbar-inverse .navbar-nav &gt; .open &gt; a, .navbar-inverse .navbar-nav &gt; .open &gt; a:hover, .navbar-inverse .navbar-nav &gt; .open &gt; a:focus {&#13;
 	background-color: transparent;&#13;
@@ -142,16 +152,16 @@
   &#13;
 &#13;
   	user-select:none;&#13;
-	color: $c-primary;&#13;
+	color: $c-bg-white;&#13;
   &#13;
     a {&#13;
-      color: $c-primary;&#13;
+      color: $c-bg-white;&#13;
     }&#13;
   &#13;
 }&#13;
 &#13;
 .navbar-inverse .navbar-toggle .icon-bar {&#13;
-  background-color: $c-bg-inverse;&#13;
+  background-color: $c-bg-white;&#13;
 }&#13;
 .navbar-inverse .navbar-toggle {&#13;
 	border: 0;&#13;
@@ -161,7 +171,7 @@
 	border-radius: 100%;&#13;
   &#13;
   	.icon-bar {&#13;
-      background-color: $c-bg-light;&#13;
+      background-color: $c-bg-white;&#13;
   }&#13;
 }&#13;
 &#13;
@@ -531,21 +541,21 @@ data.loginWidget = $sp.getWidgetFromInstance('login-modal');]]></script>
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-17 18:48:23</sys_created_on>
         <sys_id>c7a7363887094e106e4b11f83cbb35d0</sys_id>
-        <sys_mod_count>53</sys_mod_count>
+        <sys_mod_count>67</sys_mod_count>
         <sys_name>Charger Header</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sp_header_footer_c7a7363887094e106e4b11f83cbb35d0</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-30 14:57:01</sys_updated_on>
+        <sys_updated_on>2024-03-31 19:03:40</sys_updated_on>
         <template><![CDATA[<div>
   <nav class="navbar-inverse" ng-class="::{'navbar':!isViewNative, 'is-native': isViewNative}"
        role="navigation" aria-label="${Primary}">
     <div ng-show="::!isViewNative" class="navbar-header">
 <a class="navbar-brand" ng-if="::!portal.logo" href="?id={{::portal.homepage_dv}}"><span ng-bind="portal.title"></span></a>
       <a class="navbar-brand navbar-brand-logo" ng-if="::portal.logo" ng-href="?id={{::portal.homepage_dv}}" ng-click="collapse()" aria-label="{{::logoText}}">
-        <img ng-src="{{::portal.logo}}" title="{{::portal.title}}" alt="{{::portal.title}} ${Logo}" />
+        <img ng-src="{{::portal.logo}}" title="{{::portal.title}}" alt="{{::portal.title}} ${Logo}" /><span class="inline-title" ng-bind="portal.title"></span>
       </a>
       <button ng-if="data.hasMenuItems || (!user.logged_in && page.id != portal.login_page_dv && !data.hasLogin) || user.logged_in" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sp-nav-bar" aria-haspopup="menu">
         <span class="sr-only">${Toggle navigation}</span>

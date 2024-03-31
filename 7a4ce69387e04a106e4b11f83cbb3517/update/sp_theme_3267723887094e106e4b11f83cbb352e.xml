@@ -1,22 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_theme">
     <sp_theme action="INSERT_OR_UPDATE">
         <css_variables>$c-primary: #717171;&#13;
-$c-bg-light: white;&#13;
+$c-bg-light: #F4F4F4;&#13;
+$c-bg-white: white;&#13;
 $c-bg-inverse: black;&#13;
+$c-bg-brand: #b2efdd;&#13;
 $c-brand: #16c28f;&#13;
 $c-brand-light: #1AEAAC;&#13;
 $c-brand-secondary: #2859C5;&#13;
 &#13;
+&#13;
+body {&#13;
+	background-color: $c-brand-light;&#13;
+    background: linear-gradient(180deg, $c-brand 0%, $c-brand-light 100%);&#13;
+    background: $c-bg-light;&#13;
+}&#13;
+&#13;
 .btn {&#13;
-	width: 15rem;&#13;
+	width: auto;&#13;
+	line-height: 2;&#13;
+    border-radius: 2rem !important;&#13;
+    font-weight: bolder;&#13;
+    display: flex;&#13;
+}&#13;
+&#13;
+.btn svg {&#13;
+	margin: 0 .5rem;&#13;
+    height: 2rem;&#13;
+    width: auto;&#13;
+    &#13;
+}&#13;
+.btn-primary svg path {&#13;
+	fill: $c-bg-white;&#13;
+}&#13;
+.btn-secondary svg path {&#13;
+	fill: $c-primary;&#13;
 }&#13;
 &#13;
 .btn-primary {&#13;
-	background-color: $c-brand;&#13;
+	background-color: $c-brand-light;&#13;
     border: none;&#13;
 }&#13;
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus {&#13;
-	background-color: $c-brand-light;&#13;
+	background-color: $c-brand;&#13;
 }&#13;
 .btn-primary:focus {&#13;
 	border: 1px solid $c-brand;&#13;
@@ -27,8 +53,7 @@ $c-brand-secondary: #2859C5;&#13;
     background-color: transparent;&#13;
     color: $c-primary;&#13;
     border: 2px solid $c-primary;&#13;
-    border-radius: 2rem !important;&#13;
-    font-weight: bolder;&#13;
+    &#13;
 }&#13;
 .btn-ghost.btn-primary {&#13;
     color: $c-brand;&#13;
@@ -36,8 +61,12 @@ $c-brand-secondary: #2859C5;&#13;
 }&#13;
 .btn-ghost.btn-primary:hover, .btn-ghost.btn-primary:active, .btn-ghost.btn-primary:focus {&#13;
 	color: $c-bg-light;&#13;
-    border-color: $c-bg-light;&#13;
+    border-color: $c-bg-white;&#13;
     border-radius: 2rem;&#13;
+}&#13;
+&#13;
+.charger-widget {&#13;
+	background-color: $c-bg-white;&#13;
 }&#13;
 &#13;
 .charger-widget .block, .charger-widget.block {&#13;
@@ -87,14 +116,14 @@ $c-brand-secondary: #2859C5;&#13;
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-17 18:47:24</sys_created_on>
         <sys_id>3267723887094e106e4b11f83cbb352e</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>46</sys_mod_count>
         <sys_name>Charger Theme</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sp_theme_3267723887094e106e4b11f83cbb352e</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-31 15:42:47</sys_updated_on>
+        <sys_updated_on>2024-03-31 19:00:45</sys_updated_on>
         <turn_off_scss_compilation>false</turn_off_scss_compilation>
     </sp_theme>
 </record_update>

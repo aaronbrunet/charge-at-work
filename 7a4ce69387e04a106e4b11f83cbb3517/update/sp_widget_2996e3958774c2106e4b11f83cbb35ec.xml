@@ -154,14 +154,14 @@
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-07 01:15:14</sys_created_on>
         <sys_id>2996e3958774c2106e4b11f83cbb35ec</sys_id>
-        <sys_mod_count>134</sys_mod_count>
+        <sys_mod_count>136</sys_mod_count>
         <sys_name>Charger Queue</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sp_widget_2996e3958774c2106e4b11f83cbb35ec</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-30 17:43:43</sys_updated_on>
+        <sys_updated_on>2024-03-31 15:39:33</sys_updated_on>
         <template><![CDATA[<div class="charge-queue-container column charger-widget" ng-if="c.data.charge_session.details.state.value != 'in_progress'">
   <div ng-if="!c.data.charge_session.details.active.value && data.available_chargers_count > 0">
     <div class="charge-queue-title column">
@@ -186,8 +186,8 @@
     
      <div class="charge-queue-details column">
       <p ng-if="!data.available_chargers">Sorry, all chargers are currently full.</p>
-      <button ng-if="!data.my_request" class="btn btn-option" ng-click="c.action('join')">Join the Queue</button>
-      <button ng-if="data.my_request" class="btn btn-option" ng-click="c.action('update')">Update My Request</button>
+      <button ng-if="!data.my_request" class="btn btn-primary btn-ghost" ng-click="c.action('join')"><i class="fa-solid fa-plug-circle-plus"></i> Join the Queue</button>
+      <button ng-if="data.my_request" class="btn btn-option" ng-click="c.action('update')"><i class="fa-solid fa-plug-circle-exclamation"></i> Update My Request</button>
     </div>
   </div>
   

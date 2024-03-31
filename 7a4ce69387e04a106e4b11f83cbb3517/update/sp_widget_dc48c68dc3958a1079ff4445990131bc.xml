@@ -19,13 +19,27 @@
 				sys_id: c.data.constants.CAT_ITEM_NEW_SESSION,
 				"display_cart_on_right": "false",
 				"auto_redirect": false,
-				passed_fields: c.data.cat_item,
+				passed_fields: c.data.new_session,
 				embedded: true
 			},
 			"buttons":[],
 		});
 	}
-  }
+	if(action == 'update'){
+		c.cancelModal();
+		spModal.open({
+			"widget" : "sc-input-wrapper",
+			"widgetInput" : {
+				sys_id: c.data.constants.CAT_ITEM_REPORT_INFO,
+				"display_cart_on_right": "false",
+				"auto_redirect": false,
+				passed_fields: c.data.update_session,
+				embedded: true
+			},
+			"buttons":[],
+		});
+	}
+  };
 };]]></client_script>
         <controller_as>c</controller_as>
         <css/>
@@ -59,18 +73,29 @@
   var chargeGR = new GlideRecord(TABLE_CHARGERS);
   chargeGR.get(data.charger);
   if(chargeGR){
-	console.log('Hello');
+	console.log(chargeGR.getValue('state'));
   }
 
 	var _options = {charger_id:data.charger};
 	data.widget = $sp.getWidget("charger-card",_options);
 
-	data.cat_item = {
+	data.new_session = {
 			values:
 			[
-				{fieldName:'charger',fieldValue:data.charger,enforced:true}
+				{
+					fieldName:'charger',
+					fieldValue:data.charger,
+					enforced:true}
 			]
 		};
+		data.update_session = data.new_session;
+		data.update_session.values.push(
+			{
+				fieldName:'state',
+				fieldValue:chargeGR.getValue('state'),
+				enforced:false,
+			}
+		);
 
 
 })();]]></script>
@@ -79,20 +104,20 @@
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-30 20:17:26</sys_created_on>
         <sys_id>dc48c68dc3958a1079ff4445990131bc</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Charger Details</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sp_widget_dc48c68dc3958a1079ff4445990131bc</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-30 20:39:14</sys_updated_on>
+        <sys_updated_on>2024-03-31 02:38:46</sys_updated_on>
         <template><![CDATA[<div class="charger-details-container column">
 	<sp-widget widget="data.widget"></sp-widget>
   <div class="charger-details-controls column">
     <button class="btn btn-primary" ng-click="c.action('charge')">Start charge</button>
     <p>Is this information incorrect?</p>
-    <button class="btn btn-secondary">Update info</button>
+    <button class="btn btn-secondary" ng-click="c.action('update')">Update Charger</button>
   </div>
 </div>]]></template>
     </sp_widget>

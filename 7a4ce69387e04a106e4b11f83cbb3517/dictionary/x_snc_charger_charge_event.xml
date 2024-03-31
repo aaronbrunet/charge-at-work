@@ -3,11 +3,13 @@
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element label="Cancellation reason" max_length="500" name="cancellation_reason" type="string"/>
         <element label="Charger" max_length="32" name="charger" reference="x_snc_charger_charger" type="reference"/>
+        <element label="Ended" max_length="40" name="ended" type="glide_date_time"/>
         <element label="Location" max_length="32" name="location" reference="cmn_location" reference_qual="cmn_location_type=site" reference_qual_condition="cmn_location_type=site" type="reference"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
         <element default="javascript:gs.getUserID()" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Requested by" max_length="32" name="requested_by" reference="sys_user" type="reference" use_dynamic_default="true"/>
         <element default="javascript:new GlideDateTime();" label="Requested on" max_length="255" name="requested_on" type="glide_date_time"/>
         <element label="Request Preference" max_length="32" name="request_preference" reference="x_snc_charger_charger" type="reference"/>
+        <element label="Started" max_length="40" name="started" type="glide_date_time"/>
         <element choice="3" default="requested" label="State" max_length="40" name="state" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Requested" sequence="0" value="requested"/>

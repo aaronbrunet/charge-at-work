@@ -114,20 +114,20 @@
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-14 00:50:40</sys_created_on>
         <sys_id>084027ab87bc4a106e4b11f83cbb35e8</sys_id>
-        <sys_mod_count>101</sys_mod_count>
+        <sys_mod_count>105</sys_mod_count>
         <sys_name>My Charging Session</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sp_widget_084027ab87bc4a106e4b11f83cbb35e8</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-31 02:03:38</sys_updated_on>
+        <sys_updated_on>2024-03-31 02:13:28</sys_updated_on>
         <template><![CDATA[<div ng-if="data.charge_session.charger && data.charge_session.details.state.value == 'in_progress'" class="charger-widget my-charging-container">
     <div class="row block">
       <div class="column block">
         <div ng-if="data.charge_session.charger && data.charge_session.charger != ''">
           <sp-widget widget="data.widget"></sp-widget>
-          <button class="btn btn-option charge-button" ng-if="data.charge_session.details.state.value != 'requested'">Complete Session</button>
+          <button class="btn btn-option charge-button" ng-if="data.charge_session.details.state.value != 'requested'">Update Session</button>
         </div>
 
         <div ng-if="!data.charge_session.charger || data.charge_session.charger == ''">
@@ -141,12 +141,11 @@
 		<div>
           <h4 ng-if="data.charge_session.details.state.value != 'requested'">My Charge Session</h4>
           <h4 ng-if="data.charge_session.details.state.value == 'requested'">Waiting For Available Charger</h4>
-          <ul>
-            <li>Vehicle: {{data.charge_session.details.vehicle.display}}</li>
-            <li ng-if="data.charge_session.details.state.value == '!requested'">Started: {{data.charge_session.details.requested_on.display}}</li>
-            <li ng-if="data.charge_session.details.state.value == 'requested'">Requested: {{data.charge_session.details.requested_on.display}}</li>
+         
+            <h4><i class="fa-solid fa-car"></i> {{data.charge_session.details.vehicle.display}}</h4>
+            <h4 ng-if="data.charge_session.details.state.value != 'requested'">Started: {{data.charge_session.details.started.display}}</h4>
+            <h4 ng-if="data.charge_session.details.state.value == 'requested'">Requested: {{data.charge_session.details.requested_on.display}}</h4>
 
-          </ul>
         </div>
       </div>
       

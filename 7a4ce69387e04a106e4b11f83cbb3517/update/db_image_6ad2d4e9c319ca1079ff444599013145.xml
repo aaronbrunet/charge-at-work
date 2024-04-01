@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>Service Portal</category>
+        <format/>
+        <height/>
+        <image>f2f2d4e9c319ca1079ff44459901314b</image>
+        <name>x_snc_charger.icon-ev-charger.svg</name>
+        <size_bytes>3696</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>aaron.brunet</sys_created_by>
+        <sys_created_on>2024-04-01 00:59:48</sys_created_on>
+        <sys_id>6ad2d4e9c319ca1079ff444599013145</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_snc_charger.icon-ev-charger.svg</sys_name>
+        <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
+        <sys_update_name>db_image_6ad2d4e9c319ca1079ff444599013145</sys_update_name>
+        <sys_updated_by>aaron.brunet</sys_updated_by>
+        <sys_updated_on>2024-04-01 00:59:59</sys_updated_on>
+        <thumbnail/>
+        <width/>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/svg+xml</content_type>
+        <file_name>image</file_name>
+        <hash>afef94e9d7f9f1806d7aa2b473563adb2cadae57b17d1d60edb757d2d0253516</hash>
+        <image_height/>
+        <image_width/>
+        <size_bytes>3696</size_bytes>
+        <size_compressed>1515</size_compressed>
+        <state>available</state>
+        <sys_created_by>aaron.brunet</sys_created_by>
+        <sys_created_on>2024-04-01 00:59:59</sys_created_on>
+        <sys_id>f2f2d4e9c319ca1079ff44459901314b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-04-01 00:59:59</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>6ad2d4e9c319ca1079ff444599013145</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="f2f2d4e9c319ca1079ff44459901314b">f2f2d4e9c319ca1079ff44459901314b</sys_attachment>
+        <sys_created_by>aaron.brunet</sys_created_by>
+        <sys_created_on>2024-04-01 00:59:59</sys_created_on>
+        <sys_id>36f2d4e9c319ca1079ff44459901314b</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>rVdNbxs3EP0rC/XSHrgiZ/gZ2DnUKJAeChQI6kMuhbpWbaGy5EqKnZ/fNzPUR4I0SIMGtne5HJLz3jw+Mlf75/vhw+N6s7+ePRwOT6/m85eXl/GFx+3ufk7e+zkiZsOfq/X6erbZbpaz4Xm1fPlx++F65gc/xIqf2bC6u579tF5Oh91qcjcPi939anPv3h4Wh9V24/CyWy4e16vN0v26fv/4NMqkr6/ulvvp9XHYcBw29GHDedTw87TdvBokwz1S3J86Hv4ep+3j1VxnurrXPJbHPKZjHnubECs+LQ4PGnSLmO1uCDGV4XsstP1r+cMR5ndUU5uSNd3u/XqJSZ+Xm+3d3WzA2F8iDTzmmhNNzo+VagQTLoxp8GMuIVVr4Pc5TmBJQ6p1ZnyOrbU6WIi+7+Xd2WD97nrHs5MJ+iLUQ7JNf/rzbjZM69XTp5nuFZV7Wd0dHq5nAejnAv+zJNT/TgKXEwknDi4p+BwD7hMK3CUH7pIE9wUWLkn4vzjg+A064CYZkLIwIYvgYxYlSIq1pSRv9JzH4rlOwk4JLDIoTA3ksfBOo5ePcYw1xjWQcA6I5JyAecw+MgYkLjJnS177/LlFYwiQsFKfOQoXlAvje0UYErCnPd6w/9c0dQrrkY9xkG/00MaQG088lkKo7ZD7vDz6VOnU7E/dBS2FoMXiGCWw+hYkEWqEoiUsknjtOlLXoSI+UpFhXFruMmB5NuKLtigiQhAnUg2PCkfTBhb9+WZB/LYRq/hUAlputnIHKbeu7GsA6NEriWGsuUiT8E8ARy4s1aNmmXPwxCJ32SxCFJXWUJpITYlotWSJz5F0qwMgKAmQV7N2SZ5UN7Wc2nsCE1m2nedc0rG7907I0XttppajyIWLOVHh09rnpQPEI3rLTZuKBImndG6ecElcSVobr3n6nK1VgoyKNWkBCW1ZInM1kprosZGpIwYvam2lmD2EEiVb6sW2bAGtCaMp1I60iV00b0rzQdLo3c76Regpeksosa5FnknLFs5Lu/PaPprFRhT4hEMU6Fs5tw3Yu6+W0u90ElNYLBeLycQU1CEnsFmz7MaIbMGTiKmEho0FBppwzrAJ9EI7aDEn1l2XKYr9tozUi9CV8cjByhY4mb+ULIMoY4YK+YV2agbsQ8CnWy5YOExiG164DVVrnIM0WmVxqFqifstswlK5xZayKka93td2bpSWTB9QJhuzTYRPzYi8DBOBtCpG3licCMXysljxUW0GCsi9+SZBYhxJSstV9OslAjyZDIooqw/RDSiDbkQGDfWPbOvLiRHJUrN3O1v0g6VqNirBPVd3xDRSatjyaGfZu3hgP6m7xQrGOlXOuLoluDoSlvnhV02OSMxXhZOAGTOVXg7Z/r0gEpLgeQKkkTgFBBrEEsuIFgcrNwrsesFvAiAnkmySagdTpQAQej6qzL5KrW/f/3HYLabDVx9/lLHT5CJTxugJZgyxwmPEiSUdSCR7JYP41Igaupeqk/gBS3Vsu10ElCIHAke1RWKftCIxcDYHEZNQgzVLaZE43hBYlyLlESdTQzGgX+E8Gw14TLLZm93WogWj4BqMcyl71XOKkLKYBOmO89Wrt/hGenQHTHVc+rhyGwvA8NBQB/EWvRbIbQXntL4zJADrLToFaawCP5FktAyG2SAPHbDhHT5aUrZmMFuXggM4NqUl34YLJNLVAXe8shmxusW4HtTBuo62g3Ud7cc8f/O5epTXhR9eHq4kJ78snmByuHFILsnuB14Xjzj4tRCV1bUjJXVj3F7VN4iEpBDF0yN2VRZL9TIGMzahpZZiNwk9RFAdc5/qZY/5EoXP0lguVdj8QU9Jr34a9d6VEqkHa3yWfiyteg++SqFwgKgREemVi8lrL4cm9a5s1xTg0kMVl4ehw1JUceigFJOUQSC5jskguY7JIDnFJGlnO/hUcR2SU0wKWEHpDazZTcryUliu43IGzCky16F1ZK5D68hch9aROYWWv+Qx83v84v98r/8B3yA9U3AOAAA=</data>
+        <length>2008</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="f2f2d4e9c319ca1079ff44459901314b">f2f2d4e9c319ca1079ff44459901314b</sys_attachment>
+        <sys_created_by>aaron.brunet</sys_created_by>
+        <sys_created_on>2024-04-01 00:59:59</sys_created_on>
+        <sys_id>b6f2d4e9c319ca1079ff44459901314b</sys_id>
+    </sys_attachment_doc>
+</record_update>

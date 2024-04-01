@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_theme">
     <sp_theme action="INSERT_OR_UPDATE">
-        <css_variables>$c-primary: #717171;&#13;
+        <css_variables>$c-grey: #717171;&#13;
+$c-grey-light: #bababa;&#13;
+$c-primary: black;&#13;
 $c-bg-light: #F4F4F4;&#13;
 $c-bg-white: white;&#13;
 $c-bg-inverse: black;&#13;
 $c-bg-brand: #b2efdd;&#13;
 $c-brand: #16c28f;&#13;
 $c-brand-light: #1AEAAC;&#13;
-$c-brand-secondary: #2859C5;&#13;
-&#13;
+$c-brand-secondary: #3419d9;&#13;
+$c-brand-secondary-dark: #2859C5;&#13;
 &#13;
 body {&#13;
 	background-color: $c-brand-light;&#13;
@@ -16,54 +18,67 @@ body {&#13;
     background: $c-bg-light;&#13;
 }&#13;
 &#13;
-.btn {&#13;
-	width: auto;&#13;
+.charger-widget .btn {&#13;
+&#13;
 	line-height: 2;&#13;
     border-radius: 2rem !important;&#13;
     font-weight: bolder;&#13;
+	width: auto;    &#13;
     display: flex;&#13;
+    align-items: center;&#13;
 }&#13;
 &#13;
-.btn svg {&#13;
+.charger-widget .btn svg {&#13;
 	margin: 0 .5rem;&#13;
     height: 2rem;&#13;
     width: auto;&#13;
     &#13;
 }&#13;
-.btn-primary svg path {&#13;
+.charger-widget .btn-primary svg path {&#13;
 	fill: $c-bg-white;&#13;
 }&#13;
-.btn-secondary svg path {&#13;
-	fill: $c-primary;&#13;
+.charger-widget .btn-secondary svg path {&#13;
 }&#13;
 &#13;
-.btn-primary {&#13;
+.charger-widget .btn-primary {&#13;
 	background-color: $c-brand-light;&#13;
     border: none;&#13;
 }&#13;
-.btn-primary:hover, .btn-primary:active, .btn-primary:focus {&#13;
+.charger-widget .btn-primary:hover, .btn-primary:active, .btn-primary:focus {&#13;
 	background-color: $c-brand;&#13;
 }&#13;
-.btn-primary:focus {&#13;
+.charger-widget .btn-primary:focus {&#13;
 	border: 1px solid $c-brand;&#13;
 }&#13;
 &#13;
-.btn-ghost {&#13;
+.charger-widget .btn-ghost {&#13;
 	line-height: 2;&#13;
+    border-radius: 2rem;&#13;
     background-color: transparent;&#13;
     color: $c-primary;&#13;
     border: 2px solid $c-primary;&#13;
     &#13;
 }&#13;
-.btn-ghost.btn-primary {&#13;
+.charger-widget .btn-ghost.btn-primary {&#13;
     color: $c-brand;&#13;
-    border: 2px solid $c-brand;&#13;
+    border: 2px solid $c-brand-light;&#13;
 }&#13;
-.btn-ghost.btn-primary:hover, .btn-ghost.btn-primary:active, .btn-ghost.btn-primary:focus {&#13;
+.charger-widget .btn-ghost.btn-primary:hover, .btn-ghost.btn-primary:active, .btn-ghost.btn-primary:focus {&#13;
 	color: $c-bg-light;&#13;
     border-color: $c-bg-white;&#13;
     border-radius: 2rem;&#13;
 }&#13;
+&#13;
+.charger-widget .btn-ghost.btn-secondary {&#13;
+	color: $c-brand-secondary-dark;&#13;
+    border: 2px solid $c-brand-secondary-dark;&#13;
+    &#13;
+    &amp;:hover, &amp;:active, &amp;:focus {&#13;
+    	color: $c-brand-secondary;&#13;
+        border-color: $c-brand-secondary;&#13;
+    }&#13;
+}&#13;
+&#13;
 &#13;
 .charger-widget {&#13;
 	background-color: $c-bg-white;&#13;
@@ -106,7 +121,18 @@ body {&#13;
   &#13;
   .radio .radio-control label input[type="radio"]:checked ~ span:before {&#13;
       border: .5rem solid $c-brand;&#13;
-  }</css_variables>
+  }&#13;
+  &#13;
+  h2 {&#13;
+  	font-weight: bolder;&#13;
+  }&#13;
+  &#13;
+  .charge-badge {&#13;
+	background-color: $c-brand-secondary-dark;&#13;
+    color: $c-bg-white;&#13;
+    border-radius: 1rem;&#13;
+    padding: 0 .5rem;&#13;
+}</css_variables>
         <footer/>
         <footer_fixed>false</footer_fixed>
         <header display_value="Charger Header">c7a7363887094e106e4b11f83cbb35d0</header>
@@ -116,14 +142,14 @@ body {&#13;
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-17 18:47:24</sys_created_on>
         <sys_id>3267723887094e106e4b11f83cbb352e</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>60</sys_mod_count>
         <sys_name>Charger Theme</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sp_theme_3267723887094e106e4b11f83cbb352e</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-31 19:00:45</sys_updated_on>
+        <sys_updated_on>2024-04-01 01:56:53</sys_updated_on>
         <turn_off_scss_compilation>false</turn_off_scss_compilation>
     </sp_theme>
 </record_update>

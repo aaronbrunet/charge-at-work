@@ -108,29 +108,44 @@
 &#13;
 .navbar-brand {&#13;
 	display: flex;&#13;
-  	color: $c-bg-white; &#13;
+  	color: $c-bg-inverse; &#13;
 	user-select:none;&#13;
+    &amp;:hover {&#13;
+		color: $c-bg-inverse;&#13;
+    }&#13;
+}&#13;
+&#13;
+.icon-charger-user:before {&#13;
+	content: url(x_snc_charger.icon-user.svg);&#13;
+      display: block;&#13;
+    height: 3rem;&#13;
+    width: 3rem;&#13;
 }&#13;
 &#13;
 .inline-title {&#13;
 	align-self: baseline;&#13;
-    margin-left: 0;&#13;
+    margin-left: 0 !important;&#13;
+}&#13;
+&#13;
+.dropdown-menu {&#13;
+	border-radius: 1rem !important;&#13;
 }&#13;
 &#13;
 .navbar-inverse {&#13;
 	background-color: transparent;/*$c-bg-light;*/&#13;
-	background-color: $c-brand-secondary;&#13;
+	/*background-color: $c-brand-secondary;*/&#13;
 }&#13;
 &#13;
-.navbar-inverse .navbar-toggle {&#13;
-  /*border-color: rgba(255, 255, 255, 0.25);*/&#13;
+.navbar-inverse .navbar-toggle:focus, .navbar-nav &gt; li &gt; a:focus {&#13;
+	box-shadow: none;&#13;
 }&#13;
+&#13;
 &#13;
 .navbar-inverse .navbar-nav &gt; .open &gt; a, .navbar-inverse .navbar-nav &gt; .open &gt; a:hover, .navbar-inverse .navbar-nav &gt; .open &gt; a:focus {&#13;
 	background-color: transparent;&#13;
   	color: initial;&#13;
   .navbar-avatar {&#13;
-  	background-color: $c-bg-inverse;&#13;
+  	background-color: $c-brand-secondary;&#13;
   }&#13;
 }&#13;
 &#13;
@@ -152,16 +167,17 @@
   &#13;
 &#13;
   	user-select:none;&#13;
-	color: $c-bg-white;&#13;
+	color: $c-bg-inverse;&#13;
   &#13;
     a {&#13;
-      color: $c-bg-white;&#13;
+      color: $c-bg-inverse;&#13;
+      cursor: pointer;&#13;
     }&#13;
   &#13;
 }&#13;
 &#13;
 .navbar-inverse .navbar-toggle .icon-bar {&#13;
-  background-color: $c-bg-white;&#13;
+  background-color: $c-brand-secondary;&#13;
 }&#13;
 .navbar-inverse .navbar-toggle {&#13;
 	border: 0;&#13;
@@ -179,9 +195,7 @@
 	border-radius: 100%;&#13;
   width: 3rem;&#13;
   height: 3rem;&#13;
-  background-color: $c-primary;&#13;
-  color: white;&#13;
-      align-items: center;&#13;
+    align-items: center;&#13;
     justify-content: center;&#13;
     display: flex;&#13;
   &#13;
@@ -302,7 +316,7 @@ margin: 0px;&#13;
   .about-menu:before {&#13;
     content: "";&#13;
     position: absolute;&#13;
-    border-color: $c-primary; /*rgba(194, 225, 245, 0);*/&#13;
+    border-color: $c-grey; &#13;
     border: solid transparent;&#13;
     border-bottom-color: white;&#13;
     border-width: 11px;&#13;
@@ -321,7 +335,7 @@ margin: 0px;&#13;
       height: 0;&#13;
       border: solid transparent;&#13;
       border-width: 10px;&#13;
-      border-bottom-color: $c-primary;&#13;
+      border-bottom-color: $c-grey-light;&#13;
       z-index: 0;&#13;
   }&#13;
 &#13;
@@ -541,14 +555,14 @@ data.loginWidget = $sp.getWidgetFromInstance('login-modal');]]></script>
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-17 18:48:23</sys_created_on>
         <sys_id>c7a7363887094e106e4b11f83cbb35d0</sys_id>
-        <sys_mod_count>67</sys_mod_count>
+        <sys_mod_count>85</sys_mod_count>
         <sys_name>Charger Header</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sp_header_footer_c7a7363887094e106e4b11f83cbb35d0</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-03-31 19:03:40</sys_updated_on>
+        <sys_updated_on>2024-04-01 02:12:35</sys_updated_on>
         <template><![CDATA[<div>
   <nav class="navbar-inverse" ng-class="::{'navbar':!isViewNative, 'is-native': isViewNative}"
        role="navigation" aria-label="${Primary}">
@@ -569,7 +583,8 @@ data.loginWidget = $sp.getWidgetFromInstance('login-modal');]]></script>
       <!-- Include The Menu -->
       <div class="nav navbar-nav nav-item">
         <span>
-          <i class="fa-solid fa-location-dot"></i> {{::data.location}}
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14" height="14" width="14" id="Ai-Navigation-Spark--Streamline-Core"><desc>Ai Navigation Spark Streamline Icon: https://streamlinehq.com</desc><g id="ai-navigation-spark--map-location-direction-travel-artificial-intelligence-ai"><path id="Subtract" fill="#1aeaac" fill-rule="evenodd" d="M7.034 1.982c-0.952 0.892 -0.646 2.75 0.916 3.021 0.485 0.085 0.871 0.454 0.977 0.936l0.018 0.082c0.174 0.795 0.76 1.25 1.405 1.363 -0.177 1.545 -1.012 3.054 -1.934 4.199a9.464 9.464 0 0 1 -1.623 1.605 4.595 4.595 0 0 1 -0.775 0.482c-0.24 0.114 -0.503 0.2 -0.758 0.2 -0.256 0 -0.518 -0.086 -0.759 -0.2a4.595 4.595 0 0 1 -0.774 -0.482 9.465 9.465 0 0 1 -1.623 -1.605c-1.04 -1.291 -1.97 -3.045 -1.97 -4.79a5.125 5.125 0 0 1 6.9 -4.81Z" clip-rule="evenodd" stroke-width="1"></path><path id="Ellipse 1507" fill="#2859c5" d="M3.552 6.792a1.708 1.708 0 1 0 3.416 0 1.708 1.708 0 1 0 -3.416 0" stroke-width="1"></path><path id="Union" fill="#2859c5" fill-rule="evenodd" d="M11.437 0.727c-0.186 -0.815 -1.349 -0.81 -1.527 0.006l-0.007 0.032 -0.013 0.06a2.2 2.2 0 0 1 -1.77 1.688c-0.851 0.148 -0.851 1.37 0 1.517a2.2 2.2 0 0 1 1.772 1.697l0.018 0.082c0.178 0.817 1.341 0.822 1.527 0.007l0.022 -0.096c0.198 -0.87 0.9 -1.536 1.779 -1.689 0.852 -0.148 0.852 -1.371 0 -1.52A2.214 2.214 0 0 1 11.445 0.764l-0.008 -0.037Z" clip-rule="evenodd" stroke-width="1"></path></g></svg>
+          <span class="charge-badge">{{::data.location}}</span>
         </span>
       </div>
       <div class="nav navbar-nav nav-item">
@@ -599,7 +614,7 @@ data.loginWidget = $sp.getWidgetFromInstance('login-modal');]]></script>
           <a href class="toggle-dropdown" data-toggle="dropdown" aria-expanded="false" aria-label="{{::data.profileBtnMsg}}: {{::user.name}}" id="profile-dropdown"  role="menuitem" aria-haspopup="true">
             <span class="navbar-avatar" aria-hidden="true">
               <!--<sn-avatar class="avatar-small-medium" primary="avatarProfile" />-->
-              <i class="fa-solid fa-user"></i>
+              <i class="icon-charger-user"></i>
             </span>
           </a>
           <ul class="dropdown-menu" role="menu" aria-label="{{::data.profileBtnMsg}}">
@@ -612,7 +627,7 @@ data.loginWidget = $sp.getWidgetFromInstance('login-modal');]]></script>
         <li ng-if="showSMAvatar" class="visible-xs-block visible-sm-block" role="presentation"><a role="menuitem" ng-href="?id=user_profile&sys_id={{::user.sys_id}}" ng-click="collapse()">
           <span class="navbar-avatar">
             <!--<sn-avatar class="avatar-small-medium" primary="avatarProfile" />-->
-            <i class="fa-solid fa-user"></i>
+              <i class="icon-charger-user"></i>
           </span>{{::user.name}}</a>
         </li>
         <li ng-if="::!(isViewNative || isViewNativeTablet)" class="visible-xs-block visible-sm-block" role="presentation"><a role="menuitem" ng-href="{{::portal.logoutUrl}}" ng-click="collapse()">${Logout}</a></li>

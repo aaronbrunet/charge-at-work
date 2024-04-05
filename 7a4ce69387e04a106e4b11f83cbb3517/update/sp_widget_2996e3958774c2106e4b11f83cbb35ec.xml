@@ -154,15 +154,16 @@
         <sys_created_by>aaron.brunet</sys_created_by>
         <sys_created_on>2024-03-07 01:15:14</sys_created_on>
         <sys_id>2996e3958774c2106e4b11f83cbb35ec</sys_id>
-        <sys_mod_count>148</sys_mod_count>
+        <sys_mod_count>150</sys_mod_count>
         <sys_name>Charger Queue</sys_name>
         <sys_package display_value="Charger" source="x_snc_charger">7a4ce69387e04a106e4b11f83cbb3517</sys_package>
         <sys_policy/>
         <sys_scope display_value="Charger">7a4ce69387e04a106e4b11f83cbb3517</sys_scope>
         <sys_update_name>sp_widget_2996e3958774c2106e4b11f83cbb35ec</sys_update_name>
         <sys_updated_by>aaron.brunet</sys_updated_by>
-        <sys_updated_on>2024-04-01 00:54:50</sys_updated_on>
+        <sys_updated_on>2024-04-05 16:22:56</sys_updated_on>
         <template><![CDATA[<div class="charge-queue-container column charger-widget" ng-if="c.data.charge_session.details.state.value != 'in_progress'">
+  <!-- REMOVED PENDING API ACCESS
   <div ng-if="!c.data.charge_session.details.active.value && data.available_chargers_count > 0">
     <div class="charge-queue-title column">
     	<h2>Available Chargers</h2>
@@ -172,7 +173,7 @@
       <sp-widget widget="data.widget"></sp-widget>
     </div>
   </div>
-  
+  -->
   <div ng-if="(!data.available_chargers_count || data.available_chargers_count == 0 || data.queue_length > 0) && (c.data.charge_session.details.state.value=='requested' || !data.my_request)">
     <div class="charge-queue-title column">
       <div class="">
@@ -181,11 +182,14 @@
        	  <h4 ng-if="data.queue_length"><i class="fa-solid fa-user"></i>{{data.queue_length}}</h4>
           <h4>There {{data.queue_length == 1 ? 'is' : 'are'}} {{data.queue_length || '0'}} currently waiting.</h4>
         	<h4 ng-if="data.my_request">You are #{{data.my_queue || '0'}} in queue.</h4>
+        <p ng-if="!data.queue_length || data.queue_length == 0">Looks like you're first in line!</p>
       </div>
     </div>
     
      <div class="charge-queue-details column">
-      <p ng-if="!data.available_chargers">Sorry, all chargers are currently full.</p>
+      <!-- REMOVED PENDING API ACCESS 
+		<p ng-if="!data.available_chargers">Sorry, all chargers are currently full.</p>
+	-->
       <button ng-if="!data.my_request" class="btn btn-primary" ng-click="c.action('join')">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" height="48" width="48" id="Flash-1--Streamline-Plump"><desc>Flash 1 Streamline Icon: https://streamlinehq.com</desc><g id="flash-1--flash-power-connect-charge-electricity-lightning"><path id="Union" fill="#1aeaac" d="M31.0468 0.731C27.2447 0.5129 20.7577 0.2866 14.362 0.7538C12.2385 0.9095 10.3976 2.2818 9.6421 4.2725C6.4172 12.7488 4.8806 20.5669 4.2255 24.7095C3.8154 27.3083 5.7039 29.6257 8.3017 29.8032C10.5215 29.9559 13.7826 30.1147 17.5889 30.094C17.184 33.3884 16.7614 37.7843 16.3409 42.5126C15.9661 46.7487 21.0598 49.2955 24.0915 46.0468C31.8753 37.7065 39.0113 28.4317 42.9235 23.1459C45.0768 20.2388 43.1809 16.1709 39.5045 16.0754C37.4318 16.0233 35.3585 16.007 33.2853 16.0266C34.009 12.8724 34.6631 9.4451 35.2642 6.1372C35.7522 3.4512 33.8283 0.8908 31.0468 0.731Z" stroke-width="1"></path></g></svg> 
         Join the Queue</button>
